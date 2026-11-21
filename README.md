@@ -2,6 +2,10 @@
 
 React + Vite + TypeScript + Tailwind CSS + Recharts。繁體中文、桌面與手機版、可追溯的日資料研究工作台。
 
+- 公開網站：[直接開啟市場指標雷達](https://huangming-dotcom.github.io/market-indicator-dashboard/)
+- 原始碼：[GitHub repository](https://github.com/huangming-dotcom/market-indicator-dashboard)
+- 更新與部署狀態：[GitHub Actions](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml)
+
 ## 立即使用
 
 需要 Node.js 22.12 以上（交付時使用 24.18）與 npm。在本目錄開啟終端機：
@@ -67,8 +71,9 @@ npm run data:update -- --start 2026-06-01 --end 2026-11-21 --strict
 
 ### 自動執行與發布
 
-- 附 `.github/workflows/daily-data.yml`：放到你自己的 GitHub repository、啟用 Actions 後，每日 **UTC 00:30＝台灣 08:30** 擷取、測試、建置、提交資料，保留原始封存 artifact。排程可能延後，畫面仍以資料觀測日為準。
-- 該工作流不含網站服務商的部署密鑰。網站平台需設定「資料 commit 後重新建置／部署 dist」；否則線上版維持上次已發布快照。
+- `.github/workflows/daily-data.yml` 是更新與發布的單一工作流：推送 `main` 後，以現有資料驗證、測試、建置及發布到 GitHub Pages；每日 **UTC 00:30＝台灣 08:30** 則先擷取官方資料、提交成功快照，再發布同一份建置。排程可能延後，畫面仍以資料觀測日為準。
+- 每日任一資料來源失敗時不發布，網站保留前次成功版本。原始回應與執行紀錄保存為 Actions artifact 90 日。可在 Actions 選 **Daily market data → Run workflow** 手動重新發布；勾選 `update_data` 才會先擷取資料。
+- GitHub Pages 採 GitHub Actions 模式，以內建 `GITHUB_TOKEN` 與部署識別驗證，不需另存個人權杖。Vite 使用相對資產路徑，支援 `/market-indicator-dashboard/` 子目錄。`npm run test:build` 會以該子目錄測試 JS、CSS 與歷史資料載入。
 - Windows 本機可使用 `scripts/daily-update.ps1`。若需要排程，在 Windows 工作排程器建立每日 08:30 工作，程式選 PowerShell，參數為 `-NoProfile -File "完整路徑\scripts\daily-update.ps1"`。需要電腦開機及網路。這是交付的排程設定方式，**本次未在你的電腦註冊常駐排程**。
 - 不把更新金鑰放入 `VITE_*` 或前端 bundle。新增有授權的 provider 時從執行環境讀取秘密。
 
@@ -114,6 +119,8 @@ data/runs/             每次更新紀錄（不納入 Git／網站）
 **部分指標顯示缺值？** 該指標尚未接通、來源未發布、未有核對快照，或所選日期在歷史範圍之外。請到來源頁查看，切勿直接把「—」改成 0。
 
 **網頁重新整理後仍是昨天資料？** 重新載入只讀已發布快照；執行資料更新後要重新 build／部署線上版。本機 dev 讀取最新檔案。
+
+**如何更新 GitHub 網站？** 修改後推送 `main` 即會自動部署。資料每天由 Actions 更新；若網站資料較舊，先看 Actions 是否失敗，來源尚未發布的日資料仍會保留自己的觀測日期。
 
 **為何有 6／6 輸入卻資料不足？** 跨市場觀測日期落差可能超過 3 日，例如匯率來源延遲。這個限制避免不同日期訊號強行合成。
 

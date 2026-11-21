@@ -8,5 +8,6 @@
 - 歷史修訂追加 vintage，既有數據不得無聲覆寫。Regime 方法變更升級規則版本。
 - 私密金鑰不進前端，raw 證據不放 public/。外部來源先驗證格式、日期與單位再入庫。
 - 驗收：npm test、npm run data:validate、npm run build；資料管線更動需涵蓋部分失敗、冪等與資料保留測試。
+- GitHub 公開程式碼位於 huangming-dotcom/market-indicator-dashboard；GitHub Pages 採相對資產路徑。更新與發布集中在 .github/workflows/daily-data.yml，避免每日資料提交後沒有重新部署。發布前另跑 npm run test:build。
 - 專案進度僅在 HANDOVER.md 保存精簡快照；使用方式在 README，資料契約在 docs/DATA_CONTRACT.md，不複製多份權威定義。
 - 使用者規則：Evernote 筆記可直接建立／修改／移動；刪除既有筆記或內容前須就該次具體操作取得確認。開工／收工依使用者提供的流程。

@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
@@ -31,6 +31,7 @@ afterEach(async () => {
     dirs.splice(0).map((dir) => rm(dir, { recursive: true, force: true })),
   );
   vi.restoreAllMocks();
+  vi.useRealTimers();
 });
 describe("資料 schema", () => {
   it("拒絕錯誤單位、未來觀測、錯誤日期與以零代表缺值", () => {
@@ -187,6 +188,10 @@ describe("官方端點解析防漂移", () => {
   });
 });
 describe("管線整合", () => {
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-11-21T08:00:00Z"));
+  });
   it("部分失敗保留舊資料，成功資料可入庫；重跑冪等", async () => {
     const dir = await mkdtemp(path.join(os.tmpdir(), "radar-test-"));
     dirs.push(dir);

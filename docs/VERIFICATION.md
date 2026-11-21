@@ -26,5 +26,11 @@
 
 - 尚未接通的來源清單以 README 為準；AI 與 FedWatch 保留缺值。沒有把測試資料放進網站。
 - Vite 對約 818KB 未壓縮主 JS 產生大分塊提示，gzip 約 238KB；不影響建置。後續資料規模增加時可再拆分圖表頁與資料 API。
-- CI 每日排程與 Windows 工作排程器尚未在使用者帳戶啟用，交付可執行的管線與設定方式。
+- GitHub 發布更新：新增 main 推送部署與每日資料更新後部署，採 GitHub Pages Actions 模式；Windows 本機工作排程器未註冊。
 - 日資料存在發布延遲，不作即時行情或 point-in-time 回測用途。
+
+## GitHub Pages 部署驗收
+
+- Vite 設定相對資產路徑，同時支援根目錄與儲存庫子目錄。
+- 新增 `npm run test:build`：以 `/market-indicator-dashboard/` 子目錄實際提供正式建置，檢查 HTML、JavaScript、CSS 與 history.json HTTP 回應，並驗證資料契約。
+- 管線整合測試固定測試日期，避免 CI 執行日期影響合成資料的未來日期限制。
