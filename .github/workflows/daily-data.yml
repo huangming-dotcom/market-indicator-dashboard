@@ -46,6 +46,16 @@ jobs:
             git commit -m 'data: update verified market history'
             git push
           fi
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: dist
+      - name: Deploy verified dashboard
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+      # Keep the Pages artifact first and archive evidence after deployment.
+      # The artifact service can omit the Pages artifact from discovery when
+      # another artifact was uploaded earlier in the same job.
       - name: Archive source evidence and run logs
         if: always()
         uses: actions/upload-artifact@v4
@@ -56,10 +66,3 @@ jobs:
             data/runs
           retention-days: 90
           if-no-files-found: ignore
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
-        with:
-          path: dist
-      - name: Deploy verified dashboard
-        id: deployment
-        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
