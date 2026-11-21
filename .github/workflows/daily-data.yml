@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 20
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -52,10 +52,18 @@ jobs:
           path: dist
       - name: Deploy verified dashboard
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
-      # Keep the Pages artifact first and archive evidence after deployment.
-      # The artifact service can omit the Pages artifact from discovery when
-      # another artifact was uploaded earlier in the same job.
+      # Artifact registration is eventually consistent. Retry once after a
+      # bounded delay; a second failure fails the job and preserves the live site.
+      - name: Wait for Pages artifact registration after a failed attempt
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - name: Retry Pages deployment
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+      # Keep source evidence separate until the website artifact is deployed.
       - name: Archive source evidence and run logs
         if: always()
         uses: actions/upload-artifact@v4

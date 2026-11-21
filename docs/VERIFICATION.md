@@ -1,6 +1,6 @@
 # 驗收紀錄｜2026-11-21
 
-## 自動驗收
+## 初版自動驗收
 
 - Node.js 24.18.0，Windows PowerShell。
 - `npm test`：3 個測試檔，27 項全部通過。
@@ -34,3 +34,5 @@
 - Vite 設定相對資產路徑，同時支援根目錄與儲存庫子目錄。
 - 新增 `npm run test:build`：以 `/market-indicator-dashboard/` 子目錄實際提供正式建置，檢查 HTML、JavaScript、CSS 與 history.json HTTP 回應，並驗證資料契約。
 - 管線整合測試固定測試日期，避免 CI 執行日期影響合成資料的未來日期限制。
+- 公開網站 HTML、JS、CSS、history.json 已實際確認 HTTP 200；瀏覽器可直接顯示市場總覽，不經過 ChatGPT 登入頁。
+- GitHub 初次部署與手動完整更新發布皆已成功；雲端資料擷取的 11 個來源工作全數成功。另觀察到 GitHub artifact 註冊存在短暫延遲，已將證據封存放至部署之後，並在部署失敗時等待 10 秒後重試一次；第二次仍失敗則保留原網站並讓工作回報失敗。
