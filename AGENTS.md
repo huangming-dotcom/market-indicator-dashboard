@@ -1,0 +1,12 @@
+# 專案藍圖與慣例
+
+- 技術固定 React + Vite + TypeScript + Tailwind CSS + Recharts，介面使用繁體中文。
+- 數據權威是原始發布機構。不得將聊天內容、搜尋摘要、示範或測試數字加入 public/data。
+- 指標口徑與門檻以 src/catalog.mjs 為單一來源；runtime schema 以 src/schema.mjs 為單一來源；計算集中於 src/analytics.ts。
+- 未核實數值顯示缺值；不可默認 0、插值或沿用舊值冒充當日。逾期排除風險判讀。
+- 比較必須保留各市場觀測日期；利率 bp、機率 pp、金額差與百分比不得混用。
+- 歷史修訂追加 vintage，既有數據不得無聲覆寫。Regime 方法變更升級規則版本。
+- 私密金鑰不進前端，raw 證據不放 public/。外部來源先驗證格式、日期與單位再入庫。
+- 驗收：npm test、npm run data:validate、npm run build；資料管線更動需涵蓋部分失敗、冪等與資料保留測試。
+- 專案進度僅在 HANDOVER.md 保存精簡快照；使用方式在 README，資料契約在 docs/DATA_CONTRACT.md，不複製多份權威定義。
+- 使用者規則：Evernote 筆記可直接建立／修改／移動；刪除既有筆記或內容前須就該次具體操作取得確認。開工／收工依使用者提供的流程。

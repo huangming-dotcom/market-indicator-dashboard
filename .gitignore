@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+data/raw/
+data/runs/
+.update.lock
+*.tmp

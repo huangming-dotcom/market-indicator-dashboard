@@ -1,0 +1,42 @@
+{
+  "name": "market-indicator-agent-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "data:update": "node scripts/update.mjs",
+    "data:validate": "node scripts/validate.mjs",
+    "data:import": "node scripts/import.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "csv-parse": "^7.0.3",
+    "fast-xml-parser": "^5.0.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "recharts": "^3.0.0",
+    "tailwindcss": "^4.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.10.1",
+    "typescript": "~5.8.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}
