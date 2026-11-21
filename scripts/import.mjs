@@ -16,6 +16,9 @@ if (!file || !process.argv.includes("--reviewed")) {
 } else
   await withLock(async () => {
     const input = JSON.parse(await readFile(file, "utf8"));
+    input.observations ??= [];
+    input.events ??= [];
+    input.policy ??= [];
     const data = await loadData();
     if (!Array.isArray(input.observations) || !Array.isArray(input.events))
       throw new Error("需 observations 與 events 陣列");
@@ -34,8 +37,13 @@ if (!file || !process.argv.includes("--reviewed")) {
       "atmeta.com",
       "krx.co.kr",
       "nasdaq.com",
+      "yahoo.com",
+      "nikkei.co.jp",
+      "federalreserve.gov",
+      "reuters.com",
+      "marketscreener.com",
     ];
-    for (const o of [...input.observations, ...input.events]) {
+    for (const o of [...input.observations, ...input.events, ...input.policy]) {
       const host = new URL(o.source.url).hostname;
       if (!allowed.some((h) => host === h || host.endsWith("." + h)))
         throw new Error("不在官方來源允許清單：" + host);
@@ -56,6 +64,14 @@ if (!file || !process.argv.includes("--reviewed")) {
       generatedAt: new Date().toISOString(),
       observations: mergeObservations(data.observations, input.observations),
       events: [...eventMap.values()],
+      policy: [
+        ...new Map(
+          [...(data.policy ?? []), ...input.policy].map((item) => [
+            item.id,
+            item,
+          ]),
+        ).values(),
+      ],
     });
     await atomicJson(dataPath, next);
     console.log("已匯入並通過 schema 驗證；請執行 npm test 與 npm run build。");

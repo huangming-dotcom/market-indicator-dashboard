@@ -3,7 +3,9 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "30 0 * * *"
+    # Taipei 07:00, 09:00, 17:30, 22:30: US closes, retry, Asia closes, Taiwan credit updates.
+    - cron: "0 23,1 * * *"
+    - cron: "30 9,14 * * *"
   workflow_dispatch:
     inputs:
       update_data:
@@ -31,8 +33,12 @@ jobs:
           node-version: "24"
           cache: npm
       - run: npm ci
-      - run: npm run data:update -- --strict
+      - run: npm run data:update
         if: github.event_name == 'schedule' || inputs.update_data == true
+        env:
+          CME_FEDWATCH_URL: ${{ vars.CME_FEDWATCH_URL }}
+          CME_API_TOKEN: ${{ secrets.CME_API_TOKEN }}
+          DAILY_RADAR_POLICY_URL: ${{ vars.DAILY_RADAR_POLICY_URL }}
       - run: npm run data:validate
       - run: npm test
       - run: npm run build

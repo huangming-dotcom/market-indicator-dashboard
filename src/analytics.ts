@@ -1,4 +1,9 @@
-import { CATALOG, METRICS, RULE_VERSION } from "./catalog.mjs";
+import {
+  CATALOG,
+  ACTIVE_METRICS as METRICS,
+  RULE_VERSION,
+} from "./catalog.mjs";
+import { expectedSession, sessionLag } from "./sessions.mjs";
 import type { Dataset, Observation } from "./types";
 export const dayDistance = (a: string, b: string) =>
   (Date.parse(a + "T00:00:00Z") - Date.parse(b + "T00:00:00Z")) / 86400000;
@@ -28,19 +33,42 @@ export function snapshot(data: Dataset, id: string, date: string) {
   const rows = history(data, id, date);
   const current = rows.at(-1);
   const previous = rows.at(-2);
+  const expected = expectedSession(CATALOG[id].dailyMarket, date);
+  const lag = expected
+    ? sessionLag(CATALOG[id].dailyMarket, current?.date, expected.date)
+    : null;
+  const calendarUnknown = !!CATALOG[id].dailyMarket && !expected;
   const stale =
-    !!current && dayDistance(date, current.date) > CATALOG[id].maxAge;
+    !!current &&
+    (expected
+      ? current.date < expected.date
+      : dayDistance(date, current.date) > CATALOG[id].maxAge);
   // Do not skip missing observations: an outage must not become a multi-session "1D" move.
-  const change = delta(current, previous, id);
-  const five = delta(current, rows.at(-6), id);
+  const dailyMarket = CATALOG[id].dailyMarket;
+  const completeGap = (other: Observation | undefined, sessions: number) =>
+    !dailyMarket ||
+    (!!other &&
+      !!current &&
+      sessionLag(dailyMarket, other.date, current.date) === sessions);
+  const change = completeGap(previous, 1) ? delta(current, previous, id) : null;
+  const five = completeGap(rows.at(-6), 5)
+    ? delta(current, rows.at(-6), id)
+    : null;
   return {
     current,
     previous,
     change,
     five,
     stale,
+    expected: expected?.date ?? null,
+    lag,
+    calendarUnknown,
     rows,
-    valid: current?.value !== null && current?.value !== undefined && !stale,
+    valid:
+      current?.value !== null &&
+      current?.value !== undefined &&
+      !stale &&
+      !calendarUnknown,
   };
 }
 export function delta(
@@ -193,7 +221,9 @@ export function alerts(data: Dataset, date: string) {
       items.push({
         id: m.id,
         title: m.label + "・資料逾期",
-        detail: `最後觀測 ${s.current!.date}，超過 ${m.maxAge} 日容許值`,
+        detail: s.expected
+          ? `應到 ${s.expected}，目前 ${s.current!.date}，落後 ${s.lag} 個交易日`
+          : `最後觀測 ${s.current!.date}，超過 ${m.maxAge} 日容許值`,
         kind: "quality",
       });
     if (

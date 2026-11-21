@@ -13,7 +13,8 @@ export interface Observation {
   period?: string;
   meetingDate?: string;
   vintage: string;
-  method: "official-api" | "reviewed-import";
+  method: "official-api" | "reviewed-import" | "market-data-api";
+  sessionStatus?: "close" | "snapshot";
   evidence?: string;
   rawHash?: string;
 }
@@ -46,4 +47,19 @@ export interface Dataset {
   observations: Observation[];
   events: FundamentalEvent[];
   runs: Run[];
+  policy?: PolicyItem[];
+}
+export interface PolicyItem {
+  id: string;
+  kind: "fomc" | "fedwatch-commentary";
+  date: string;
+  title: string;
+  summary: string;
+  source: { name: string; url: string };
+  publishedAt: string | null;
+  retrievedAt: string;
+  confidence: "official" | "reported";
+  meetingDate?: string;
+  referenceUrl?: string;
+  approximate?: boolean;
 }

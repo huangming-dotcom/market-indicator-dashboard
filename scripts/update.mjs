@@ -12,6 +12,9 @@ import {
   mergeObservations,
 } from "./lib.mjs";
 import * as providers from "./providers.mjs";
+import * as markets from "./market-providers.mjs";
+import * as policyProviders from "./policy-providers.mjs";
+import { readFile } from "node:fs/promises";
 export async function update({
   start,
   end,
@@ -34,7 +37,8 @@ export async function update({
         startedAt = new Date().toISOString(),
         id = randomUUID(),
         results = [],
-        incoming = [];
+        incoming = [],
+        policyIncoming = [];
       async function run(name, fn) {
         try {
           const rows = await fn();
@@ -56,6 +60,27 @@ export async function update({
             message: String(e.message).slice(0, 300),
           });
           return [];
+        }
+      }
+      async function runPolicy(name, fn) {
+        try {
+          const rows = await fn();
+          validateDataset({
+            ...data,
+            policy: rows,
+            observations: [],
+            events: [],
+            runs: [],
+          });
+          policyIncoming.push(...rows);
+          results.push({ name, status: "success", count: rows.length });
+        } catch (e) {
+          results.push({
+            name,
+            status: "failed",
+            count: 0,
+            message: String(e.message).slice(0, 300),
+          });
         }
       }
       if (providerFns) {
@@ -81,7 +106,39 @@ export async function update({
           for (const kind of ["flow", "breadth", "margin"])
             await run("TWSE " + kind, () => providers.twseDaily(dates, kind));
         }
-        await run("TPEX 指數", () => providers.tpex(start, end));
+        // FRED remains the historical fallback. The newer close source is merged last.
+        await Promise.all(
+          Object.keys(markets.YAHOO).map((id) =>
+            run("Yahoo 收盤 " + id, () => markets.yahoo(start, end, id)),
+          ),
+        );
+        await run("TAIFEX TX 外資未平倉", () => markets.taifex(start, end));
+        await run("TPEX 外資買賣超", () =>
+          dates.length
+            ? markets.tpexFlowHistory(dates)
+            : markets.tpexFlow(start, end),
+        );
+        if (dates.length)
+          await run("TPEX 股票市場廣度", () => markets.tpexBreadth(dates));
+        const otc = await run("TPEX 儀表板融資與指數", () =>
+          markets.tpexMargin(start, end),
+        );
+        if (!otc.some((o) => o.metricId === "tpex"))
+          await run("TPEX 指數備援", () => providers.tpex(start, end));
+        await run("CME FedWatch 精確快照", () => policyProviders.fedwatch(end));
+        await runPolicy("Fed 官方 FOMC 公告", () =>
+          policyProviders.fedPolicy(end),
+        );
+        await runPolicy("每日雷達核對補充", () =>
+          policyProviders.reviewedPolicy(end),
+        );
+        const policySources = JSON.parse(
+          await readFile(path.join(root, "data/policy-sources.json"), "utf8"),
+        );
+        for (const reference of policySources)
+          await runPolicy("Reuters 政策補充 " + reference.date, () =>
+            policyProviders.reportedFedwatch(reference, end),
+          );
       }
       const failures = results.filter((r) => r.status === "failed");
       const status =
@@ -95,6 +152,14 @@ export async function update({
         ...data,
         generatedAt: finishedAt,
         observations: mergeObservations(data.observations, incoming),
+        policy: [
+          ...new Map(
+            [...(data.policy ?? []), ...policyIncoming].map((item) => [
+              item.id,
+              item,
+            ]),
+          ).values(),
+        ].sort((a, b) => b.date.localeCompare(a.date)),
         runs: [
           ...data.runs,
           { id, startedAt, finishedAt, status, providers: results },
@@ -118,6 +183,9 @@ export async function update({
         ),
       );
       if (strict && failures.length) process.exitCode = 1;
+      // Partial source failures are published with per-indicator lag markers.
+      // An entirely failed update must not replace the live deployment.
+      if (status === "failed" && !providerFns) process.exitCode = 1;
       return next;
     },
     path.join(storageDir, ".update.lock"),

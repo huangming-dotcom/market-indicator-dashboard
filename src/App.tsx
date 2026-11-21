@@ -40,7 +40,14 @@ import {
   TriangleAlert,
   X,
 } from "lucide-react";
-import { CATALOG, METRICS, GROUPS } from "./catalog.mjs";
+import {
+  CATALOG,
+  ACTIVE_METRICS as METRICS,
+  GROUPS,
+  RULE_VERSION,
+} from "./catalog.mjs";
+import OverviewBoard from "./OverviewBoard";
+import PolicyPanel from "./PolicyPanel";
 import { validateDataset } from "./schema.mjs";
 import {
   alerts,
@@ -62,7 +69,6 @@ const NAV = [
   { id: "macro", label: "總經與利率", icon: Landmark },
   { id: "global", label: "全球股市", icon: Globe2 },
   { id: "taiwan", label: "台股資金與結構", icon: BarChart3 },
-  { id: "ai", label: "AI 基本面", icon: Sparkles },
   { id: "history", label: "風險狀態歷史", icon: History },
   { id: "sources", label: "資料來源與品質", icon: Database },
 ];
@@ -138,24 +144,35 @@ function SourceFoot({
       <span>
         {s.current?.date ?? "尚無觀測"} ·{" "}
         {s.current?.source.name ?? CATALOG[id].source.name}
+        {s.expected && <small className="block">應到 {s.expected}</small>}
       </span>
       {s.stale ? (
-        <span className="badge warn">逾期</span>
+        <span className="badge warn">
+          {s.expected ? `落後 ${s.lag ?? "?"} 交易日` : "逾期"}
+        </span>
+      ) : s.calendarUnknown ? (
+        <span className="badge warn">日曆待更新</span>
       ) : s.valid ? (
-        <span className="badge">來源資料</span>
+        <span className="badge">{s.expected ? "最新收盤" : "來源資料"}</span>
       ) : (
         <span className="badge muted">缺值</span>
       )}
     </div>
   );
 }
-function MetricCard({ id, data, date, onSelect }: { id: string } & Props) {
+function MetricCard({
+  id,
+  data,
+  date,
+  onSelect,
+  variant = "full",
+}: { id: string; variant?: string } & Props) {
   const s = snapshot(data, id, date),
     m = CATALOG[id],
     risk = riskDirection(id, s.change, s.stale);
   return (
     <button
-      className="metric-card"
+      className={"metric-card card-" + variant}
       onClick={() => onSelect(id)}
       aria-label={`檢視${m.label}詳細資料`}
     >
@@ -175,6 +192,23 @@ function MetricCard({ id, data, date, onSelect }: { id: string } & Props) {
         </strong>
         <span>較前一交易觀測</span>
       </div>
+      {variant === "trend" && (
+        <div className="sparkline" aria-label="近 20 筆交易觀測走勢">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={s.rows.slice(-20)}>
+              <Line
+                dataKey="value"
+                type="linear"
+                stroke="#ccf876"
+                strokeWidth={2}
+                dot={false}
+                connectNulls={false}
+                isAnimationActive={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      )}
       <div className="mini-compare">
         <span>
           前值 {s.previous?.date ?? "—"} · {formatValue(id, s.previous?.value)}
@@ -307,16 +341,38 @@ function YieldPanel({ data, date, onSelect }: Props) {
   );
 }
 function FedPanel({ data, date, onSelect }: Props) {
-  const meeting = snapshot(data, "fedHold", date).current?.meetingDate;
+  const report = (data.policy ?? []).find(
+    (item) => item.kind === "fedwatch-commentary" && item.date <= date,
+  );
+  const meeting =
+    snapshot(data, "fedHold", date).current?.meetingDate ?? report?.meetingDate;
   return (
     <section className="panel">
       <div className="panel-heading">
         <div>
           <h3>FedWatch 政策機率</h3>
-          <p>{meeting ? `目標會議 ${meeting}` : "尚未匯入可核對的會議快照"}</p>
+          <p>
+            {meeting
+              ? `目標會議 ${meeting}`
+              : "精確機率尚未串接；可查看官方工具與下方政策補充"}
+          </p>
         </div>
         <Landmark size={20} className="muted" />
       </div>
+      {report && (
+        <div className="policy-summary">
+          <span className="badge warn">{report.date} 報導補充・非精確機率</span>
+          <p>{report.summary}</p>
+          <a
+            href={report.source.url}
+            className="source-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            核對報導原文 <ExternalLink size={13} />
+          </a>
+        </div>
+      )}
       <div className="fed-rows">
         {["fedCut", "fedHold", "fedHike"].map((id) => {
           const s = snapshot(data, id, date);
@@ -330,7 +386,7 @@ function FedPanel({ data, date, onSelect }: Props) {
                 <div style={{ width: `${s.current?.value ?? 0}%` }} />
               </div>
               <div className="mini-compare">
-                <span>{s.current?.date ?? "缺值・等待官方快照"}</span>
+                <span>{s.current?.date ?? "尚未串接完整機率快照"}</span>
                 <span>{formatChange(id, s.change)}</span>
               </div>
             </button>
@@ -339,7 +395,11 @@ function FedPanel({ data, date, onSelect }: Props) {
       </div>
       <div className="info-box">
         <ShieldCheck size={17} />
-        <p>只比較同一場會議。未取得 CME 授權資料前，不以新聞敘述推估機率。</p>
+        <p>
+          同會議、同觀測時間才比較。報導中的「接近
+          100%」保留為文字，不填成精確數值；FOMC 官方公告與 Reuters
+          補充列於下方。
+        </p>
       </div>
       <a
         className="source-link"
@@ -347,7 +407,7 @@ function FedPanel({ data, date, onSelect }: Props) {
         target="_blank"
         rel="noreferrer"
       >
-        CME 官方工具 <ExternalLink size={14} />
+        開啟 CME 官方機率表 <ExternalLink size={14} />
       </a>
     </section>
   );
@@ -359,29 +419,31 @@ function GlobalPanel(props: Props) {
         <span className="meta">各市場當地最近觀測，非同步即時報價</span>
       </SectionTitle>
       <div className="market-grid">
-        {["sp500", "nasdaq", "sox", "kospi", "taiex", "tpex"].map((id) => {
-          const s = snapshot(props.data, id, props.date);
-          return (
-            <button
-              key={id}
-              onClick={() => props.onSelect(id)}
-              className={
-                "market-tile " + (s.valid ? toneFor(s.change) : "muted")
-              }
-            >
-              <span>{CATALOG[id].label}</span>
-              <strong>{formatChange(id, s.change)}</strong>
-              <div>
-                {formatValue(id, s.current?.value)}
-                <small> 點</small>
-              </div>
-              <footer>
-                {s.current?.date ?? "缺值・待匯入"}
-                {s.stale ? " · 逾期" : ""}
-              </footer>
-            </button>
-          );
-        })}
+        {["sp500", "nasdaq", "sox", "kospi", "nikkei", "taiex", "tpex"].map(
+          (id) => {
+            const s = snapshot(props.data, id, props.date);
+            return (
+              <button
+                key={id}
+                onClick={() => props.onSelect(id)}
+                className={
+                  "market-tile " + (s.valid ? toneFor(s.change) : "muted")
+                }
+              >
+                <span>{CATALOG[id].label}</span>
+                <strong>{formatChange(id, s.change)}</strong>
+                <div>
+                  {formatValue(id, s.current?.value)}
+                  <small> 點</small>
+                </div>
+                <footer>
+                  {s.current?.date ?? "缺值・待匯入"}
+                  {s.stale ? ` · 落後 ${s.lag ?? "?"} 交易日` : ""}
+                </footer>
+              </button>
+            );
+          },
+        )}
       </div>
     </>
   );
@@ -515,7 +577,7 @@ function TrendPanel({
     </section>
   );
 }
-function TaiwanPanel(props: Props) {
+function TaiwanPanel(props: Props & { showCards?: boolean }) {
   const { data, date, onSelect } = props;
   const flow = ["foreign", "trust", "dealer"].map((id) => {
     const s = snapshot(data, id, date);
@@ -672,113 +734,19 @@ function TaiwanPanel(props: Props) {
             <BarChart3 size={35} />
           </div>
           <p className="panel-note">
-            20 筆交易觀測含當日；不足 20 筆顯示缺值。
+            上櫃廣度統計四碼股票且有數值漲跌，排除 ETF、權證及無比價。 20
+            筆交易觀測含當日；不足 20 筆顯示缺值。
             {vol ? `均量 ${vol.average.toFixed(2)} 億股` : "上市櫃不混算"}
           </p>
         </section>
       </div>
-      <div className="metrics-grid secondary">
-        {["futures", "marginTw", "marginOtc", "foreignOtc"].map((id) => (
-          <MetricCard {...props} key={id} id={id} />
-        ))}
-      </div>
-    </>
-  );
-}
-function AIPanel({ data, date, onSelect }: Props) {
-  const events = data.events
-    .filter(
-      (e) => Date.parse(e.publishedAt) <= Date.parse(date + "T23:59:59+08:00"),
-    )
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-  return (
-    <>
-      <SectionTitle eyebrow="AI FUNDAMENTALS" title="AI 需求，回到基本面">
-        <span className="meta">依公告期間比較，非日變化</span>
-      </SectionTitle>
-      <section className="panel">
-        <div className="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>企業／指標</th>
-                <th>最新公告值</th>
-                <th>前期變化</th>
-                <th>財報期間</th>
-                <th>觀測日／狀態</th>
-                <th>來源</th>
-              </tr>
-            </thead>
-            <tbody>
-              {METRICS.filter((m) => m.group === "ai").map((m) => {
-                const s = snapshot(data, m.id, date);
-                return (
-                  <tr key={m.id}>
-                    <td>
-                      <button
-                        className="text-button"
-                        onClick={() => onSelect(m.id)}
-                      >
-                        {m.label}
-                      </button>
-                    </td>
-                    <td>
-                      {formatValue(m.id, s.current?.value)}{" "}
-                      <small>{m.unit}</small>
-                    </td>
-                    <td>{formatChange(m.id, s.change)}</td>
-                    <td>{s.current?.period ?? "—"}</td>
-                    <td>
-                      <span className={"badge " + (!s.valid ? "muted" : "")}>
-                        {s.stale ? "逾期" : (s.current?.date ?? "缺值・待核對")}
-                      </span>
-                    </td>
-                    <td>
-                      <a
-                        className="source-link"
-                        href={s.current?.source.url ?? m.source.url}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        官方公告 <ExternalLink size={13} />
-                      </a>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+      {props.showCards !== false && (
+        <div className="metrics-grid secondary">
+          {["futures", "marginTw", "marginOtc", "foreignOtc"].map((id) => (
+            <MetricCard {...props} key={id} id={id} />
+          ))}
         </div>
-        <p className="panel-note">
-          Revenue、EPS、毛利率、Capex
-          必須保留幣別、GAAP／調整後口徑、季度與年度期間；股價下跌不代表公司已下修指引。
-        </p>
-      </section>
-      <section className="panel guidance">
-        <div className="panel-heading">
-          <div>
-            <h3>Guidance 與財報事件</h3>
-            <p>公司原始公告與核對摘要</p>
-          </div>
-          <Sparkles size={20} />
-        </div>
-        {events.length ? (
-          events.slice(0, 12).map((e) => (
-            <article key={e.id} className="event">
-              <span className="eyebrow">
-                {e.company} · {e.period}
-              </span>
-              <h4>{e.title}</h4>
-              <p>{e.detail}</p>
-              <a href={e.source.url} target="_blank" rel="noreferrer">
-                {e.source.name} · {fmtTime(e.publishedAt)}
-              </a>
-            </article>
-          ))
-        ) : (
-          <Empty small text="尚未匯入可核對的企業指引；不以推測補寫" />
-        )}
-      </section>
+      )}
     </>
   );
 }
@@ -801,7 +769,7 @@ function RegimeHistory({
           <h3>Market Regime 歷史</h3>
           <p>最近 {days} 曆日 · 依目前資料版本重算 · 非當時可得資訊回測</p>
         </div>
-        <span className="badge">regime-v1</span>
+        <span className="badge">{RULE_VERSION}</span>
       </div>
       <div className="regime-history">
         {dates.length ? (
@@ -912,9 +880,20 @@ function Sources({ data, date }: Omit<Props, "onSelect">) {
                     </td>
                     <td>
                       <span className={"badge " + (!s.valid ? "warn" : "")}>
-                        {s.stale ? "逾期" : s.valid ? "有值" : "缺值"}
+                        {s.stale
+                          ? s.expected
+                            ? `落後 ${s.lag} 交易日`
+                            : "逾期"
+                          : s.calendarUnknown
+                            ? "日曆待更新"
+                            : s.valid
+                              ? "有值"
+                              : "缺值"}
                       </span>
                       <small className="block">{o?.date ?? "尚未取得"}</small>
+                      {s.expected && (
+                        <small className="block muted">應到 {s.expected}</small>
+                      )}
                     </td>
                     <td>
                       <a
@@ -1057,6 +1036,10 @@ export default function App() {
     : [];
   const latest = availableDates.at(-1);
   const marketAlerts = warnings.filter((a) => a.kind === "market");
+  const closeMetrics = METRICS.filter((m) => m.dailyMarket);
+  const closeReady = data
+    ? closeMetrics.filter((m) => snapshot(data, m.id, date).valid).length
+    : 0;
   function exportSnapshot() {
     if (!data) return;
     const blob = new Blob(
@@ -1071,6 +1054,7 @@ export default function App() {
               ...snapshot(data, m.id, date),
             })),
             alerts: warnings,
+            policy: (data.policy ?? []).filter((item) => item.date <= date),
           },
           null,
           2,
@@ -1258,7 +1242,7 @@ export default function App() {
                     <span>
                       選定 {date}{" "}
                       <span className="muted">
-                        ／ 最近資料 {latest ?? "缺值"}
+                        ／ 資料集最新 {latest ?? "缺值"}
                       </span>
                     </span>
                   </div>
@@ -1271,6 +1255,23 @@ export default function App() {
                     <span className="muted">
                       查看品質 <SlidersHorizontal size={14} />
                     </span>
+                  </button>
+                </div>
+                <div className="close-quality">
+                  <span>
+                    收盤資料到齊{" "}
+                    <strong>
+                      {closeReady} / {closeMetrics.length}
+                    </strong>{" "}
+                    · 依各市場交易日曆檢查
+                  </span>
+                  <button
+                    className="text-button"
+                    onClick={() => nav("sources")}
+                  >
+                    {data.runs.at(-1)?.status === "partial"
+                      ? "部分來源待補；其他有效資料已更新"
+                      : "查看每項應到日期與來源"}
                   </button>
                 </div>
                 {view === "overview" && (
@@ -1358,22 +1359,23 @@ export default function App() {
                         </div>
                       </section>
                     </div>
-                    <SectionTitle
-                      eyebrow="KEY INDICATORS"
-                      title="今日與前一交易觀測"
-                    >
-                      <span className="meta">點選卡片查看日期、趨勢與來源</span>
-                    </SectionTitle>
-                    <div className="metrics-grid">
-                      {["us10y", "nasdaq", "taiex", "usdtwd"].map((id) => (
-                        <MetricCard key={id} id={id} {...props} />
-                      ))}
-                    </div>
-                    <GlobalPanel {...props} />
+                    <OverviewBoard
+                      data={data}
+                      date={date}
+                      renderCard={(id, style) => (
+                        <MetricCard
+                          key={id}
+                          id={id}
+                          variant={style}
+                          {...props}
+                        />
+                      )}
+                    />
                     <div className="macro-grid">
                       <YieldPanel {...props} />
                       <FedPanel {...props} />
                     </div>
+                    <PolicyPanel data={data} date={date} />
                     <TrendPanel
                       data={data}
                       date={date}
@@ -1382,12 +1384,7 @@ export default function App() {
                       selected={selected}
                       setSelected={setSelected}
                     />
-                    <TaiwanPanel {...props} />
-                    <div className="metrics-grid secondary">
-                      {["wti", "brent"].map((id) => (
-                        <MetricCard key={id} id={id} {...props} />
-                      ))}
-                    </div>
+                    <TaiwanPanel {...props} showCards={false} />
                   </>
                 )}
                 {view === "macro" && (
@@ -1396,6 +1393,7 @@ export default function App() {
                       <YieldPanel {...props} />
                       <FedPanel {...props} />
                     </div>
+                    <PolicyPanel data={data} date={date} />
                     <div className="metrics-grid secondary">
                       {["usdtwd", "wti", "brent"].map((id) => (
                         <MetricCard key={id} id={id} {...props} />
@@ -1436,9 +1434,6 @@ export default function App() {
                       setSelected={setSelected}
                     />
                   </>
-                )}
-                {(view === "overview" || view === "ai") && (
-                  <AIPanel {...props} />
                 )}
                 {(view === "overview" || view === "history") && (
                   <>
@@ -1576,6 +1571,16 @@ export default function App() {
                 />
                 <div className="detail-source">
                   <h3>資料來源與時間</h3>
+                  {s.expected && (
+                    <p className={s.stale ? "warn" : "positive"}>
+                      應到收盤日 {s.expected} · 目前 {o?.date ?? "缺值"} ·{" "}
+                      {s.stale
+                        ? `落後 ${s.lag} 交易日`
+                        : s.valid
+                          ? "已到齊"
+                          : "尚未到齊"}
+                    </p>
+                  )}
                   <a
                     href={o?.source.url ?? m.source.url}
                     target="_blank"
@@ -1586,10 +1591,13 @@ export default function App() {
                   <dl>
                     <dt>資料狀態</dt>
                     <dd>
-                      {s.stale ? "逾期" : s.valid ? "有來源數值" : "缺值"} ·{" "}
+                      {s.stale ? "落後／逾期" : s.valid ? "有來源數值" : "缺值"}{" "}
+                      ·{" "}
                       {o?.method === "reviewed-import"
                         ? "人工核對匯入"
-                        : "官方端點"}
+                        : o?.method === "market-data-api"
+                          ? "行情來源日線"
+                          : "官方端點"}
                     </dd>
                     <dt>觀測時區</dt>
                     <dd>{o?.timezone ?? "未提供"}</dd>

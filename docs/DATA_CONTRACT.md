@@ -4,7 +4,7 @@
 
 Runtime 驗證以 `src/schema.mjs` 為準。`docs/history.schema.json` 是結構的機器可讀輸出，跨欄位邏輯（機率合計、單位對照等）仍由 runtime 驗證。新增指標先更新 catalog，不得只在卡片寫死值。
 
-根節點：`schemaVersion: 1`、`generatedAt`、`observations`、`events`、`runs`。
+根節點：`schemaVersion: 1`、`generatedAt`、`observations`、`events`、`runs`、`policy`。新增 policy 為相容擴充，舊檔預設空陣列。
 
 | Observation 欄位  | 契約                                                              |
 | ----------------- | ----------------------------------------------------------------- |
@@ -18,7 +18,8 @@ Runtime 驗證以 `src/schema.mjs` 為準。`docs/history.schema.json` 是結構
 | unit              | 必須完全符合 catalog，金額先轉為億元／十億 USD 等統一單位         |
 | market / timezone | 原市場／來源時區，不用瀏覽器所在時區推測                          |
 | vintage           | 此數值版本進入資料集的時間；來源修訂追加版本                      |
-| method            | official-api 或 reviewed-import                                   |
+| method            | official-api、market-data-api（Yahoo）或 reviewed-import          |
+| sessionStatus     | 選填 close（已完成日線）或 snapshot（時間點快照）                 |
 | rawHash           | 自動資料原始回應 SHA-256，指向 data/raw 封存                      |
 | period            | AI 必填，例如 2026-10、FY2027-Q3；寫明 GAAP 或租賃口徑於 evidence |
 | meetingDate       | FedWatch 必填；不同會議不計算機率日變化                           |
@@ -45,7 +46,38 @@ FedWatch 同一觀測日、會議與 vintage，應一次匯入 `fedCut`、`fedHo
 4. 增加實際來源格式的 parser 測試，並測試假日、空值、千元／元／億元、日期不符、HTML 錯誤頁。
 5. 前端從 catalog 讀取，若新增規則輸入需另升級 RULE_VERSION；既有 Regime 不應無聲改變方法。
 
-每日 TWSE 三類詳情初始化只抓最近 6 交易日，避免不必要的大量請求。之後每日累積；如需較長歷史，可另外批次回補並遵守來源速率限制。TPEX OpenAPI 僅回傳當月，舊月份必須使用官方歷史端點或核對匯入。
+每日 TWSE 三類詳情、TPEX 外資及股票廣度先抓最近 6 交易日；之後每日累積。TPEX 儀表板融資趨勢可回補其回傳範圍，原當月指數 API 作備援。TAIFEX 最新端點只有當日，前值缺少時不捏造。較長歷史須另外批次回補並遵守來源限制。
+
+## 政策補充與 CME 正規化快照
+
+policy 每筆包含 id、kind（fomc／fedwatch-commentary）、date、title、summary、source{name,url}、publishedAt（可 null）、retrievedAt、confidence（official／reported）；可另有 meetingDate、referenceUrl、approximate。政策文字不進入機率加總或風險數值計算。id 作穩定識別，同一文章重新擷取會更新該項；數值 observation 仍保留所有 vintage。每日雷達輸出可為 policy 陣列或 {policy: [...]}，應保留原始報導連結及發布時間。
+
+本機匯入：npm run data:import -- path/to/reviewed.json --reviewed，可同時包含 observations、events、policy。數字仍須逐筆核對；官方網域不是內容正確的證明。
+
+CME_FEDWATCH_SNAPSHOT_FILE 使用下列契約（示意全部為測試數字，不載入網站）：
+
+```json
+{
+  "date": "2026-11-20",
+  "meetingDate": "2026-12-09",
+  "observedAt": "2026-11-20T22:00:00Z",
+  "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool",
+  "currentTargetUpperBp": 400,
+  "scenarios": [
+    { "targetUpperBp": 375, "probabilityPct": 10 },
+    { "targetUpperBp": 400, "probabilityPct": 20 },
+    { "targetUpperBp": 425, "probabilityPct": 70 }
+  ]
+}
+```
+
+targetUpperBp 是目標區間上緣（bp），probabilityPct 為 0–100。完整情境加總 100%，分類為低於／等於／高於目前區間的降／維持／升息三筆，同一會議同一 vintage。拒絕重複區間、未來快照、缺漏情境或文字百分比。CME_FEDWATCH_URL 也必須回傳此正規化格式且為官方 HTTPS 網域，選填 CME_API_TOKEN 只走伺服器端 Authorization header。**這是接入邊界，不是已完成 CME 付費原始 API 轉接**；未配置時顯示缺值及原因。
+
+## 日行情時效與版面
+
+catalog.dailyMarket 決定股票／台股結構日行情使用的 US、TW、JP、KR 日曆。預期日是選定日期以前且實際已收盤的最近 session；落後一個 session 即排除規則計算。US 時區／提早收盤由版本化日曆提供。美債、FX 與現貨油不套股票日曆。超出 2025–2027 覆蓋範圍回報未知；更新日曆及臨時休市需維護來源模型。單日與五日比較另檢查相距 1／5 個 session，避免漏抓交易日形成錯誤差值。
+
+自訂版面是獨立 layout schema v1，保存於瀏覽器 localStorage（market-radar-layout-v1），不改市場數據。可匯入／匯出 JSON；只接受有效 active metric ID、唯一卡片、指定樣式與寬度。舊版儲存損壞時使用預設版面。
 
 ## 建議資料庫遷移
 

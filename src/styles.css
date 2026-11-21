@@ -2036,3 +2036,248 @@ table,
     font-size: 0.75rem;
   }
 }
+
+/* Personal dashboard and source completeness */
+.board-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.board-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a9bfad;
+  font-size: 0.875rem;
+}
+.board-toolbar select,
+.layout-row select {
+  background: #1b281e;
+  color: #cfe0ce;
+  border: 1px solid #43583e;
+  border-radius: 6px;
+  padding: 7px;
+  font-size: 0.875rem;
+  max-width: 220px;
+}
+.custom-board {
+  align-items: stretch;
+}
+.board-slot {
+  min-width: 0;
+  height: 100%;
+}
+.board-slot.width-2 {
+  grid-column: span 2;
+}
+.board-slot .metric-card {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.board-slot[draggable="true"] {
+  cursor: grab;
+}
+.sparkline {
+  height: 55px;
+  margin-top: 10px;
+}
+.card-compact .mini-compare {
+  display: none;
+}
+.card-compact .source-foot {
+  margin-top: 15px;
+}
+.source-foot small {
+  font-size: 0.75rem;
+  color: #94ac91;
+  margin-top: 3px;
+}
+.layout-dialog {
+  width: min(960px, 95vw);
+}
+.layout-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.layout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.layout-row {
+  display: grid;
+  grid-template-columns: 16px minmax(180px, 1fr) 135px 100px 35px 35px;
+  align-items: center;
+  gap: 9px;
+  padding: 10px;
+  border: 1px solid #364c35;
+  border-radius: 7px;
+  background: #1d2b1f;
+}
+.layout-row > label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.875rem;
+}
+.layout-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: #b9e786;
+  flex-shrink: 0;
+}
+.layout-row select {
+  width: 100%;
+}
+.layout-done {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.layout-message {
+  color: #c3dea7;
+  font-size: 0.875rem;
+  margin: 12px 0;
+}
+.policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.policy-item {
+  border: 1px solid #385038;
+  border-radius: 8px;
+  padding: 17px;
+  background: #1c291e;
+}
+.policy-summary {
+  padding: 14px;
+  border: 1px solid #5e593a;
+  background: #302d1e55;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.policy-summary p {
+  font-size: 0.875rem;
+  color: #c7c9af;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.policy-item time {
+  font-size: 0.75rem;
+  color: #a3b89e;
+}
+.policy-item h4 {
+  font-size: 1rem;
+  margin: 13px 0 8px;
+  color: #dfecd7;
+}
+.policy-item > p {
+  font-size: 0.875rem;
+  color: #b2c4ae;
+  line-height: 1.9;
+  margin: 9px 0 13px;
+}
+.policy-item .policy-meeting {
+  font-size: 0.75rem;
+  color: #d0d7a7;
+}
+.policy-item .source-link {
+  margin-right: 12px;
+}
+.market-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.global-freshness {
+  margin-top: 6px;
+  font-size: 0.75rem;
+}
+.close-quality {
+  margin: 12px 0 20px;
+  padding: 15px 18px;
+  background: #1c2a1c;
+  border: 1px solid #48623b;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.875rem;
+}
+.close-quality strong {
+  color: #d2f4a8;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+  .market-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .layout-row {
+    grid-template-columns: 16px minmax(160px, 1fr) 120px 90px 32px 32px;
+    gap: 6px;
+  }
+}
+@media (max-width: 760px) {
+  .board-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .board-toolbar label {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .board-toolbar select {
+    max-width: 240px;
+  }
+  .custom-board .board-slot .metric-card {
+    padding: 15px 12px 0;
+  }
+  .layout-row {
+    grid-template-columns: 1fr 1fr 35px 35px;
+    gap: 8px;
+  }
+  .layout-row > svg {
+    display: none;
+  }
+  .layout-row > label {
+    grid-column: 1 / -1;
+  }
+  .layout-row select {
+    font-size: 0.875rem;
+  }
+  .layout-actions .button {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+  .market-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .policy-item {
+    padding: 14px;
+  }
+  .policy-item .flex-between {
+    flex-wrap: wrap;
+  }
+  .close-quality {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .board-slot .source-foot {
+    flex-wrap: wrap;
+  }
+  .policy-panel .panel-heading {
+    align-items: flex-start;
+  }
+  .policy-panel .panel-heading p {
+    font-size: 0.875rem;
+  }
+}

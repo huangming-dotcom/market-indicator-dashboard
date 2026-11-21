@@ -40,6 +40,7 @@ const m = (id, label, unit, group, source, extra = {}) => ({
   threshold: 0,
   note: "",
   meeting: false,
+  dailyMarket: null,
   ...extra,
 });
 export const METRICS = [
@@ -101,7 +102,7 @@ export const METRICS = [
   m("sox", "費城半導體 SOX", "點", "global", "fred", {
     threshold: 2,
     direction: "up",
-    note: "需授權行情或官方歷史匯入",
+    note: "Yahoo Finance 日線收盤；來源與觀測日逐筆保留",
     source: {
       name: "Nasdaq 指數資料",
       url: "https://indexes.nasdaq.com/Index/Overview/SOX",
@@ -110,8 +111,17 @@ export const METRICS = [
   m("kospi", "韓國 KOSPI", "點", "global", "fred", {
     threshold: 2,
     direction: "up",
-    note: "需 KRX 官方歷史匯入",
+    note: "Yahoo Finance KOSPI 價格指數日線，非期貨",
     source: { name: "韓國交易所 KRX", url: "https://data.krx.co.kr/" },
+  }),
+  m("nikkei", "日經 Nikkei 225", "點", "global", "fred", {
+    threshold: 2,
+    direction: "up",
+    source: {
+      name: "Nikkei／Yahoo Finance",
+      url: "https://indexes.nikkei.co.jp/en/nkave",
+    },
+    note: "Nikkei 225 價格指數，非期貨；收盤以原市場交易日記錄",
   }),
   m("taiex", "台灣加權指數", "點", "global", "twse", {
     threshold: 2,
@@ -161,10 +171,12 @@ export const METRICS = [
   m("advancersOtc", "上漲家數・上櫃", "家", "structure", "tpex", {
     change: "absolute",
     precision: 0,
+    note: "上櫃日行情四位數股票代碼且有數值漲跌；排除 ETF、權證與無比價",
   }),
   m("declinersOtc", "下跌家數・上櫃", "家", "structure", "tpex", {
     change: "absolute",
     precision: 0,
+    note: "上櫃日行情四位數股票代碼且有數值漲跌；排除 ETF、權證與無比價",
   }),
   m("volume", "成交股數・上市", "億股", "structure", "twse", {
     change: "percent",
@@ -214,8 +226,20 @@ export const METRICS = [
     change: "percent",
   }),
 ];
+for (const metric of METRICS) {
+  if (["sp500", "nasdaq", "sox"].includes(metric.id)) metric.dailyMarket = "US";
+  if (metric.id === "kospi") metric.dailyMarket = "KR";
+  if (metric.id === "nikkei") metric.dailyMarket = "JP";
+  if (
+    ["taiex", "tpex"].includes(metric.id) ||
+    ["flow", "structure"].includes(metric.group)
+  )
+    metric.dailyMarket = "TW";
+}
 export const CATALOG = Object.fromEntries(METRICS.map((x) => [x.id, x]));
-export const RULE_VERSION = "regime-v1";
+// Preserve historical AI data validation while removing it from navigation and coverage.
+export const ACTIVE_METRICS = METRICS.filter((metric) => metric.group !== "ai");
+export const RULE_VERSION = "regime-v2-close";
 export const GROUPS = {
   macro: "總經與利率",
   fed: "FedWatch",

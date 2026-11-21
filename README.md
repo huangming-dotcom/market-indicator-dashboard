@@ -1,127 +1,109 @@
 # Market Indicator Agent Dashboard｜市場指標雷達
 
-React + Vite + TypeScript + Tailwind CSS + Recharts。繁體中文、桌面與手機版、可追溯的日資料研究工作台。
+React + Vite + TypeScript + Tailwind CSS + Recharts，繁體中文市場日資料工作台。
 
-- 公開網站：[直接開啟市場指標雷達](https://huangming-dotcom.github.io/market-indicator-dashboard/)
-- 原始碼：[GitHub repository](https://github.com/huangming-dotcom/market-indicator-dashboard)
-- 更新與部署狀態：[GitHub Actions](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml)
+- [公開網站](https://huangming-dotcom.github.io/market-indicator-dashboard/)
+- [GitHub 程式碼](https://github.com/huangming-dotcom/market-indicator-dashboard)
+- [資料更新與部署紀錄](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml)
 
-## 立即使用
+## 本機執行
 
-需要 Node.js 22.12 以上（交付時使用 24.18）與 npm。在本目錄開啟終端機：
+需要 Node.js 22.12 以上（驗收使用 24.18）及 npm：
 
 ```sh
 npm ci
 npm run dev
 ```
 
-開啟終端機列出的網址（預設 `http://127.0.0.1:5173`）。交付附有已抓取的官方歷史資料，首次啟動不需要 API 金鑰。請勿直接雙擊 index.html；資料載入需要 HTTP 服務。
+開啟終端機列出的網址，通常為 http://127.0.0.1:5173。附有真實來源的歷史快照；勿直接雙擊 index.html。
 
 ```sh
-npm test                 # 計算、格式、管線與互動測試
-npm run data:validate    # 檢查完整歷史資料
-npm run build           # TypeScript 檢查與正式打包
-npm run preview         # 預覽 dist 正式成品
+npm test
+npm run data:validate
+npm run build
+npm run test:build
+npm run preview
 ```
 
-## 畫面操作
+## 操作方式
 
-1. **選擇日期**：右上日期是「截至當日」的日資料視圖。各市場保留自己的最近觀測日；假日不製造資料。卡片同時顯示最新與前值日期，避免將來源延遲誤認為今日行情。
-2. **比較 KPI**：日變化依同一序列的前一筆交易觀測計算。利率採 bp，機率與比率差採 pp，價格採百分比，法人與期貨部位採原單位差。金融市場未同步，並非同時點橫向比較。
-3. **點選指標**：開啟詳情，查看前一觀測、1／5 日變化、7／30／90 曆日趨勢、來源、觀測時區、發布／擷取／版本時間。
-4. **切換左側分頁**：總經、全球、台股、AI 基本面、風險歷史、來源品質。來源頁可搜尋與篩選缺值／逾期。
-5. **匯出快照**：下載當前選定日期的 JSON，包含數據、比較、規則版本與異常。重新載入按鈕只取得已發布的 history.json；不會在瀏覽器執行資料蒐集。
+1. 選擇右上日期，查看截至該日的資料。各指標保留原市場觀測日、前值日期及來源時間。
+2. 點「自訂版面」選擇卡片、完整／精簡／趨勢樣式、單／雙欄寬度；用上下按鈕或拖曳排列。可改依漲跌幅或異常程度排序。設定自動保存在目前瀏覽器；跨裝置可匯出／匯入版面 JSON。
+3. 點指標開啟詳情，查看日變化、5 日變化、7／30／90 曆日趨勢、實際來源及擷取／發布／版本時間。
+4. 分頁包含總經、全球股市、台股、風險歷史、來源品質。AI 基本面已依需求移除；舊資料契約保留相容性。
+5. 「匯出快照」下載目前日期的數據、政策補充、規則版本及提醒。重新載入只讀取網站已發布快照；資料蒐集在更新管線執行。
 
-灰色「—」代表未知，**不是零**。逾期值可供參考但不參與風險判定。市場上漲用綠色、下跌用珊瑚紅；「風險改善／惡化」另依指標方向標示。美債、原油及融資等沒有單向利多解讀，顯示「需綜合判讀」。
+「—」是未知，不能視為零。日行情落後應到收盤日即標示落後，排除風險判讀；卡片顯示應到日期與落後交易日數。缺少中間交易日，不把跨日漲跌冒充單日變化。利率變化用 bp、機率差用 pp、價格用百分比、部位用原單位差。
 
-## 已完成的資料連線
+## 資料來源與口徑
 
-| 指標                   | 來源與口徑                                                                                                                             | 初始歷史範圍                            |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| 2Y／10Y／30Y           | [美國財政部 Par Yield XML](https://home.treasury.gov/treasury-daily-interest-rate-xml-feed)                                            | 自 2026-06-01，依來源可用日期           |
-| USD/TWD                | [FRED DEXTAUS](https://fred.stlouisfed.org/series/DEXTAUS)，Fed H.10 美國午間買入匯率                                                  | 同上；非台北收盤匯率                    |
-| WTI／Brent             | [DCOILWTICO](https://fred.stlouisfed.org/series/DCOILWTICO)、[DCOILBRENTEU](https://fred.stlouisfed.org/series/DCOILBRENTEU)，EIA 現貨 | 同上；非期貨結算價                      |
-| S&P 500／NASDAQ        | FRED SP500／NASDAQCOM，保留原始發布機構口徑                                                                                            | 同上；來源可能延遲                      |
-| 加權、成交股數與金額   | TWSE FMTQIK 月報                                                                                                                       | 同上                                    |
-| 上市外資／投信／自營商 | TWSE BFI82U；自營商合併自行與避險，外資不含外資自營商                                                                                  | 初始化最近 6 個台股交易日               |
-| 上市漲跌家數           | TWSE MI_INDEX「股票」欄；不混用整體證券欄                                                                                              | 初始化最近 6 個交易日                   |
-| 上市融資               | TWSE MI_MARGN 融資金額，仟元轉億元                                                                                                     | 初始化最近 6 個交易日；今日餘額可能更帳 |
-| 櫃買指數               | TPEX tpex_index 官方 OpenAPI                                                                                                           | 來源回傳當月；每日累積                  |
+| 指標                   | 實際來源／定義                                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------------- |
+| 2Y／10Y／30Y           | 美國財政部 Par Yield XML，5 日變化須有 6 筆觀測                                                 |
+| USD/TWD                | FRED DEXTAUS／Fed H.10，美國午間買入匯率，非台北收盤                                            |
+| WTI／Brent             | FRED DCOILWTICO／DCOILBRENTEU，EIA 現貨，非期貨結算                                             |
+| S&P 500／NASDAQ        | Yahoo Finance ^GSPC／^IXIC 已完成日線；FRED 作歷史與備援，不覆蓋已取得的 Yahoo 日線             |
+| SOX／KOSPI／Nikkei 225 | Yahoo Finance ^SOX／^KS11／^N225，未調整價格指數收盤，非 ETF／期貨                              |
+| 加權／量額             | TWSE FMTQIK 月報，逐月回補；20 日均量為上市成交股數含當日                                       |
+| 上市法人／融資／廣度   | TWSE BFI82U／MI_MARGN／MI_INDEX；外資不含外資自營商；自營商合併自行與避險；融資仟元轉億元       |
+| 外資台指期淨部位       | TAIFEX 官方 OpenAPI，TX 大台外資及陸資「多方未平倉－空方未平倉」，不含小台／微台，不是成交淨額  |
+| 上櫃外資               | TPEX 歷史法人日報，外資及陸資不含自營商，元轉億元                                               |
+| 上櫃融資／指數         | TWSE 儀表板使用的 TPEX dashboardOtc/marginTrend 官方端點；marginBalance 已為億元                |
+| 上櫃廣度               | TPEX 上櫃股票日行情，四位數股票代碼且漲跌為數值；排除 ETF、權證、除權息等無比價，與上市統計分開 |
+| FOMC                   | 聯準會官方 monetary RSS，公告及會議紀錄連結、發布時間                                           |
+| FedWatch 補充          | 已核對的 Reuters 轉載或每日雷達政策 feed；獨立顯示定性描述，不填精確機率                        |
 
-**未連線而明確缺值的項目**：CME FedWatch、SOX、KOSPI、台指期外資淨部位、上櫃法人／融資／廣度、台積電月營收與 AI 企業財報／Guidance。這些模組、欄位與比較功能已完成，可透過核對匯入接上；不宣稱已取得授權行情。FedWatch 需要完整會議快照，不以第三方新聞百分比替代。網站及文件沒有使用原對話中的示範行情。
+每筆資料保留實際網址及時間。初始回補約 150 曆日；上市法人／融資／廣度、上櫃外資／廣度先抓最近 6 個交易日；上櫃融資端點目前回傳約 40 日。TAIFEX 最新端點先建立 1 日，前值需後續每日累積或核對匯入。沒有前值時保留缺值。
 
-初始資料快照截至 **2026-11-21（台灣時間）**，實際可用日以每個指標標記為準。請先看來源頁更新紀錄。原始 HTTP 回應與 SHA-256 封存在 `data/raw/`，每次執行紀錄在 `data/runs/`；這些檔案留在本機／備份，不進入網站靜態公開資產。
+Yahoo 公開端點不是服務保證，可能限流或改版。解析驗證代碼、時區、價格範圍與已收盤狀態；失敗保留歷史並標示品質。所有資料再發布須遵守原來源條款。
 
-## 每日更新
+### FedWatch 為何仍可能缺精確百分比？
+
+CME 網頁透過動態嵌入工具載入；一般網頁回應沒有完整機率表。官方另有需訂閱的 FedWatch EOD API。本專案沒有取得該授權，也沒有把新聞「接近 100%」改成數字。現已另列 Reuters 定性補充與官方 FOMC 公告，並提供原工具連結。
+
+精確百分比可透過完整官方快照匯入。CME_FEDWATCH_SNAPSHOT_FILE 指向符合[資料契約](docs/DATA_CONTRACT.md)的 JSON；也預留 CME_FEDWATCH_URL 與伺服器端 CME_API_TOKEN。這是**正規化資料介面**，並非已驗證能直接解析 CME 付費 API 原始格式；接入時須依授權回應完成轉換。必須一次包含同會議、同時間全部情境及目前政策利率區間。
+
+每日雷達可先輸出核對後的 policy feed，設定 DAILY_RADAR_POLICY_URL（HTTPS），或本機 data/policy-reviewed.json。不會自動讀取 ChatGPT 排程對話，也不把其未核實數字入庫。人工匯入方式見資料契約。
+
+## 每日更新與發布
 
 ```sh
 npm run data:update
-npm run data:validate
-npm test
-npm run build
-```
-
-預設回抓最近 150 曆日，包含跨年美債與逐月 TWSE，以新版本追加來源修訂。也可指定：
-
-```sh
 npm run data:update -- --start 2026-06-01 --end 2026-11-21 --strict
 ```
 
-不得指定未來日期。端點重試最多 3 次、每次逾時 20 秒。成功來源可更新；失敗來源保留原歷史並在 run 標記失敗。`--strict` 有任何失敗便回傳非零，讓自動部署停在驗收階段。完整 schema 驗證成功後才以暫存檔原子替換 history.json。檔案鎖防止同時更新；中斷後請先確認沒有更新程序，再移除 `.update.lock`。
+預設回抓 150 曆日；不可指定未來。HTTP 最多重試 3 次，每次逾時 20 秒。驗證後原子替換 JSON；修訂追加 vintage，不刪歷史。相同數值且僅查詢日期範圍改變不新增版本。更新鎖防止重複執行。
 
-### 自動執行與發布
+- GitHub Actions 在台灣時間 **07:00、09:00、17:30、22:30** 更新，涵蓋美股收盤、重試、亞洲收盤與台股信用資料；排程可能延後，並非即時行情保證。
+- 單一來源失敗會保留舊值，成功來源仍更新並發布；頁面顯示部分來源待補及落後日期。全部來源失敗、schema 或驗收失敗則不部署。
+- --strict 適合診斷：任一來源失敗回傳非零；正常排程採部分成功發布，避免 CME 未配置阻擋其他市場。
+- 推送 main 後自動驗證、測試與部署；手動更新在 Actions → Daily market data → Run workflow 勾選 update_data。
+- 可選 GitHub Repository Variables：CME_FEDWATCH_URL、DAILY_RADAR_POLICY_URL；Secret：CME_API_TOKEN。本次未配置付費 API／金鑰。秘密不可使用 VITE_*。
+- 原始 HTTP 回應／雜湊與執行紀錄在 data/raw、data/runs，Git 忽略；Actions 另保留 90 日 artifact，不放網站公開資產。
+- Windows 可用 scripts/daily-update.ps1；未註冊本機常駐排程。正式自動更新由 GitHub 執行。
 
-- `.github/workflows/daily-data.yml` 是更新與發布的單一工作流：推送 `main` 後，以現有資料驗證、測試、建置及發布到 GitHub Pages；每日 **UTC 00:30＝台灣 08:30** 則先擷取官方資料、提交成功快照，再發布同一份建置。排程可能延後，畫面仍以資料觀測日為準。
-- 每日任一資料來源失敗時不發布，網站保留前次成功版本。原始回應與執行紀錄保存為 Actions artifact 90 日。可在 Actions 選 **Daily market data → Run workflow** 手動重新發布；勾選 `update_data` 才會先擷取資料。
-- GitHub Pages 採 GitHub Actions 模式，以內建 `GITHUB_TOKEN` 與部署識別驗證，不需另存個人權杖。Vite 使用相對資產路徑，支援 `/market-indicator-dashboard/` 子目錄。`npm run test:build` 會以該子目錄測試 JS、CSS 與歷史資料載入。
-- Windows 本機可使用 `scripts/daily-update.ps1`。若需要排程，在 Windows 工作排程器建立每日 08:30 工作，程式選 PowerShell，參數為 `-NoProfile -File "完整路徑\scripts\daily-update.ps1"`。需要電腦開機及網路。這是交付的排程設定方式，**本次未在你的電腦註冊常駐排程**。
-- 不把更新金鑰放入 `VITE_*` 或前端 bundle。新增有授權的 provider 時從執行環境讀取秘密。
+## 計算、時效與限制
 
-## 人工核對匯入
+- 定義以 src/catalog.mjs、schema 以 src/schema.mjs、計算以 src/analytics.ts 為單一來源；[JSON Schema](docs/history.schema.json)是匯出檔。
+- 日行情採 US／TW／JP／KR 交易日曆（2025–2027，exchange_calendars 4.13.3），處理休市、夏令時間及提早收盤。日曆是社群模型；臨時休市須維護。超出覆蓋範圍顯示未知，不宣稱最新。開發者可在隔離 Python 環境安裝該版本後執行 scripts/generate-calendars.py；網站和更新不需 Python。
+- 美債／匯率／現貨能源保留各自發布頻率及時效，不能套股票交易日曆，不能保證與股市同步。
+- Risk Regime 版本 regime-v2-close，納入交易日落後判斷；至少 4／6 有效輸入且跨市場日期差不超過 3 日，否則資料不足。歷史使用目前資料版本重算，不保證 point-in-time 回測。
+- 7／30／90 是曆日視窗；缺值不插補。廣度排除持平、未成交與無比價。
+- 發布時間未知保留 null，擷取時間不等於發布時間。本工具的風險規則未經投資績效驗證。
 
-詳見 [資料契約與擴充](docs/DATA_CONTRACT.md)。複製 `docs/import.example.json`，填入官方來源、正確單位、觀測日、財報期間／會議日、發布與擷取時間、核對依據，再執行：
+## 擴充與交接
 
-```sh
-npm run data:import -- path/to/reviewed.json --reviewed
-npm run data:validate
-npm test
-npm run build
-```
-
-`--reviewed` 表示操作者已逐筆核對數值；格式與官方網域檢查**無法自動證明人工填入的數值為真**。拒絕缺少證據、未知指標、錯誤單位、未來觀測、錯誤日期、殘缺 FedWatch 機率。事件 ID 衝突不覆寫，修訂請新增 ID。
-
-## 計算與資料限制
-
-- 權威 schema 是 `src/schema.mjs`，JSON Schema 匯出為 `docs/history.schema.json`。指標定義、單位、時效與異常門檻集中於 `src/catalog.mjs`。計算集中於 `src/analytics.ts`。
-- Risk Regime 是 `regime-v1` 規則推論。方法在風險歷史頁可展開；至少 4／6 個有效輸入，跨市場日期落差不超過 3 日。未達門檻顯示資料不足，不能當成 Neutral。
-- 趨勢的 7／30／90 日是**曆日視窗**；缺值及非交易日不連線。美債 5 日變化是第 6 筆交易觀測至最新的差，沒有 6 筆就不輸出。
-- 20 日均量採上市全市場成交股數最近 20 筆交易觀測，**含當日**；不混用成交金額或上市櫃合計。廣度不含持平、未成交及無比價。
-- AI 表的比較是**前期公告值**，不是前一交易日。Capex 不能混用不同期間、租賃口徑或年度指引。
-- 來源未提供精確發布時間時保留 null。觀測日、發布時間與擷取時間不能互換；歷史回補可能包含修訂，歷史視圖明確標示為目前版本重算，**不具 point-in-time 回測保證**。
-- 目前儲存是版本化 JSON。多年／多人服務可用同一觀測契約遷移 SQLite 或 PostgreSQL，詳見資料契約；前端讀取 API 結果即可。
-- 本工具描述市場與資料品質，風險規則未經投資績效驗證。資料再發布應遵守來源授權，尤其指數與 CME 資料。
-
-## 專案結構
+- [資料契約、精確機率及核對匯入](docs/DATA_CONTRACT.md)
+- [驗收紀錄](docs/VERIFICATION.md)
+- [專案藍圖](AGENTS.md)、[目前交接](HANDOVER.md)
 
 ```text
-src/                   React、指標定義、資料驗證、分析邏輯、樣式
-scripts/               官方來源解析、每日更新、驗證、人工核對匯入
-public/data/history.json 前端讀取的版本化歷史資料
-tests/                 合成測試資料（從不載入前端）
-docs/                  資料契約、JSON Schema、匯入範本、驗收紀錄
-data/raw/              原始回應封存（不納入 Git／網站）
-data/runs/             每次更新紀錄（不納入 Git／網站）
-.github/workflows/     GitHub Actions 每日更新及驗收
+src/                     React、catalog、schema、分析及版面設定
+src/data/                版本化交易日曆
+scripts/                 來源解析、更新、驗證、人工匯入
+public/data/history.json 網站版本化歷史資料
+data/policy-sources.json  已核對的政策報導來源設定
+tests/                   合成測試（不載入網站）
+docs/                    資料契約、Schema、驗收
+.github/workflows/       更新與 GitHub Pages 發布
 ```
-
-## 常見問題
-
-**部分指標顯示缺值？** 該指標尚未接通、來源未發布、未有核對快照，或所選日期在歷史範圍之外。請到來源頁查看，切勿直接把「—」改成 0。
-
-**網頁重新整理後仍是昨天資料？** 重新載入只讀已發布快照；執行資料更新後要重新 build／部署線上版。本機 dev 讀取最新檔案。
-
-**如何更新 GitHub 網站？** 修改後推送 `main` 即會自動部署。資料每天由 Actions 更新；若網站資料較舊，先看 Actions 是否失敗，來源尚未發布的日資料仍會保留自己的觀測日期。
-
-**為何有 6／6 輸入卻資料不足？** 跨市場觀測日期落差可能超過 3 日，例如匯率來源延遲。這個限制避免不同日期訊號強行合成。
-
-**來源格式改了？** 更新紀錄會顯示失敗並保留舊資料。修改 `scripts/providers.mjs` 對應解析器，先新增來源回應 fixture 測試，確認單位與日期再恢復更新。

@@ -72,11 +72,24 @@ export function mergeObservations(existing, incoming) {
       )
       .sort((a, b) => a.vintage.localeCompare(b.vintage))
       .at(-1);
+    // Secondary FRED backfill must not supersede a completed primary close.
+    if (
+      same?.method === "market-data-api" &&
+      new URL(o.source.url).hostname === "fred.stlouisfed.org"
+    )
+      continue;
+    const canonical = (value) => {
+      const url = new URL(value);
+      for (const key of ["cosd", "coed", "period1", "period2", "range"])
+        url.searchParams.delete(key);
+      url.searchParams.sort();
+      return url.href;
+    };
     if (
       same &&
       same.value === o.value &&
       same.status === o.status &&
-      same.source.url === o.source.url &&
+      canonical(same.source.url) === canonical(o.source.url) &&
       same.period === o.period &&
       same.publishedAt === o.publishedAt
     )
@@ -151,7 +164,10 @@ export function observation(id, date, value, ctx, extra = {}) {
     ...extra,
   };
 }
-export async function fetchArchived(url, { signal, archive = true } = {}) {
+export async function fetchArchived(
+  url,
+  { signal, archive = true, headers = {} } = {},
+) {
   let error;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -160,6 +176,7 @@ export async function fetchArchived(url, { signal, archive = true } = {}) {
         headers: {
           Accept: "application/json,text/csv,application/xml,text/xml",
           "User-Agent": "MarketIndicatorDashboard/1.0",
+          ...headers,
         },
       });
       if (!r.ok) throw new Error("HTTP " + r.status);

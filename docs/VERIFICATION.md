@@ -1,38 +1,35 @@
-# 驗收紀錄｜2026-11-21
+# 驗收紀錄｜2026-11-21 改善版
 
-## 初版自動驗收
+## 自動驗收
 
 - Node.js 24.18.0，Windows PowerShell。
-- `npm test`：3 個測試檔，27 項全部通過。
-- `npm run data:validate`：1,362 筆觀測、schema v1 通過。
-- `npm run build`：TypeScript 與正式建置通過。
-- `npm audit --omit=dev`：0 個已知弱點；安裝完整依賴時亦為 0。
-- 實際每日更新 `--start 2026-06-01 --end 2026-11-21 --strict`：11 個來源工作全部成功；先前一次 Treasury 解析錯誤有保留在 run 歷史，修正後成功，不清除紀錄。
+- npm test：5 個檔案、48 項測試通過。
+- npm run data:validate：3580 筆觀測，schema v1；另有 12 筆政策補充。
+- npm run build：TypeScript 與 Vite 正式建置通過。
+- npm run test:build：以 /market-indicator-dashboard/ 實際 HTTP 提供正式建置，HTML、JS、CSS 與 history.json 通過。
+- npm audit --omit=dev：0 個已知弱點。主 JS 約 999KB／gzip 260KB，有大分塊提示，未阻擋建置。
 
-## 計算與管線覆蓋
+## 本次資料管線實測
 
-前一交易觀測、週末、不跨缺值算單日變化、bp／pp／百分比、零分母、六筆觀測才計算五日變化、不同 Fed 會議、已知發布時間防前視、來源修訂 vintage、逾期排除、同日廣度、20 筆均量、最低風險覆蓋及跨市場時間落差、異常門檻、schema 日期／單位／未來資料／FedWatch 完整性、人工證據、Treasury 型別 XML、FRED CSV 空白、TWSE 單位與日期、欄位變動、部分來源失敗保留歷史、冪等與執行鎖。
+本機完整更新 23 個來源工作中 22 個成功，精確 CME 快照因未配置官方資料接入而明確失敗。整體 partial，成功來源正常發布；沒有使用測試或聊天示範數值。再次相同範圍更新後觀測仍 3580 筆，避免滾動查詢參數產生重複版本。
 
-## 實際瀏覽器驗收
+Yahoo 五個指數最新日 2026-11-20；期交所 TX 外資未平倉、TPEX 外資、融資與廣度成功。政策補充為 Fed 官方 RSS 11 筆及已核對 Reuters 轉載 1 筆。Reuters 只有定性描述，不生成精確機率。
 
-- 1440×1000 桌面：市場總覽、KPI、來源日期與缺值標記可讀；各分頁與詳情正常。
-- 390×844 手機：側欄可開關並切換總經頁；美債圖與比較表可操作；頁面寬度 375px（扣除捲軸），沒有整頁水平溢出。
-- 指標詳情：10Y 顯示前一觀測日期；可切換 WTI 及 90 日趨勢。
-- 資料品質：搜尋 Fed 可找到三項缺值與 CME 官方連結。
-- 日期欄位：發現瀏覽器 input 事件與 change 行為差異，已補齊 input 處理並加入回歸測試；切到 2026-11-18 確認 KPI、異常及 Regime 同步更新。
-- 截圖交付：outputs 內的 dashboard-desktop.jpg、dashboard-mobile.jpg。
+## 回歸與新增覆蓋
 
-## 已知限制
+- 既有 bp／pp／百分比、零分母、缺值、20 日均量、跨會議機率、來源修訂、schema／日期／單位驗證。
+- 週末、感恩節、日本假日、美國夏令時間與提早收盤、台灣日期已跨日但美國仍盤中、超出日曆範圍。
+- 落後一個交易日排除規則；中間漏抓不把兩日變化當單日；週末不阻斷有效前值比較。
+- Yahoo 指數代碼／時區／高低價範圍、未收盤排除、null 保留；FRED 備援不覆蓋 Yahoo。
+- TAIFEX 只取 TX 外資未平倉淨額，拒絕多空不平；TPEX 金額單位與指定日期、股票廣度範圍。
+- 完整 CME 情境分類與 100% 合計、拒絕近似文字；Fed 官方 RSS 與未來公告篩選。
+- 卡片顯示／樣式／寬度／排序保存及重新載入、版面 schema 無效輸入／重複 ID／損壞設定、AI 選單移除。
+- 部分來源失敗保留歷史、鎖、冪等、原子寫入及正式部署子目錄。
 
-- 尚未接通的來源清單以 README 為準；AI 與 FedWatch 保留缺值。沒有把測試資料放進網站。
-- Vite 對約 818KB 未壓縮主 JS 產生大分塊提示，gzip 約 238KB；不影響建置。後續資料規模增加時可再拆分圖表頁與資料 API。
-- GitHub 發布更新：新增 main 推送部署與每日資料更新後部署，採 GitHub Pages Actions 模式；Windows 本機工作排程器未註冊。
-- 日資料存在發布延遲，不作即時行情或 point-in-time 回測用途。
+## 視覺驗收限制
 
-## GitHub Pages 部署驗收
+本次桌面瀏覽器與備援桌面工具啟動均回報 kernel assets 路徑不存在，無法執行新版真實瀏覽器桌面／手機視覺驗收。已完成 React DOM 互動測試及正式 HTTP 檢查，但不能等同實際視覺驗收。初版 desktop／mobile 截圖是歷史交付，不能作為這次自訂版面改版的證據。
 
-- Vite 設定相對資產路徑，同時支援根目錄與儲存庫子目錄。
-- 新增 `npm run test:build`：以 `/market-indicator-dashboard/` 子目錄實際提供正式建置，檢查 HTML、JavaScript、CSS 與 history.json HTTP 回應，並驗證資料契約。
-- 管線整合測試固定測試日期，避免 CI 執行日期影響合成資料的未來日期限制。
-- 公開網站 HTML、JS、CSS、history.json 已實際確認 HTTP 200；瀏覽器可直接顯示市場總覽，不經過 ChatGPT 登入頁。
-- GitHub 初次部署與手動完整更新發布皆已成功；雲端資料擷取的 11 個來源工作全數成功。另觀察到 GitHub artifact 註冊存在短暫延遲，已將證據封存放至部署之後，並在部署失敗時等待 10 秒後重試一次；第二次仍失敗則保留原網站並讓工作回報失敗。
+## 部署
+
+GitHub Actions 在 main 推送後執行驗證、測試、建置及 Pages 部署；來源原始證據另封存 90 日，部署登錄延遲時最多重試一次。實際發布與雲端擷取結果以 [Actions](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml) 為準。

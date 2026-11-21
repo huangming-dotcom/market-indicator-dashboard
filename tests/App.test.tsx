@@ -27,6 +27,7 @@ vi.mock("recharts", () => ({
   Cell: () => null,
 }));
 beforeEach(() => {
+  localStorage.clear();
   vi.stubGlobal(
     "fetch",
     vi.fn().mockResolvedValue({
@@ -57,6 +58,29 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("使用者操作", () => {
+  it("可調整卡片風格、寬度、顯示與順序，重開後保留；AI 選單已移除", async () => {
+    const first = render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    expect(screen.queryByRole("button", { name: "AI 基本面" })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "自訂版面" }));
+    fireEvent.change(screen.getByLabelText("美債 10Y卡片風格"), {
+      target: { value: "trend" },
+    });
+    fireEvent.change(screen.getByLabelText("美債 10Y卡片寬度"), {
+      target: { value: "2" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "下移美債 10Y" }));
+    fireEvent.click(screen.getByRole("button", { name: "完成設定" }));
+    expect(
+      document.querySelector(".board-slot.width-2.style-trend"),
+    ).toBeTruthy();
+    first.unmount();
+    render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    expect(
+      document.querySelector(".board-slot.width-2.style-trend"),
+    ).toBeTruthy();
+  });
   it("日期欄位 input 事件立即切換觀測，避免僅改變輸入文字", async () => {
     render(<App />);
     await screen.findByText("今日與前一交易觀測");
@@ -76,7 +100,13 @@ describe("使用者操作", () => {
     });
     fireEvent.click(screen.getByLabelText("檢視台灣加權指數詳細資料"));
     await waitFor(() =>
-      expect(document.querySelector("dialog")?.open).toBe(true),
+      expect(
+        (
+          screen.getByRole("dialog", {
+            name: "台灣加權指數",
+          }) as HTMLDialogElement
+        ).open,
+      ).toBe(true),
     );
     expect(screen.getByRole("heading", { name: "台灣加權指數" })).toBeTruthy();
     expect(screen.getAllByText("2026-11-19").length).toBeGreaterThan(0);
@@ -87,9 +117,9 @@ describe("使用者操作", () => {
     await screen.findByText("今日與前一交易觀測");
     fireEvent.click(screen.getByRole("button", { name: "資料來源與品質" }));
     fireEvent.change(screen.getByLabelText("搜尋資料來源"), {
-      target: { value: "NVIDIA" },
+      target: { value: "SOX" },
     });
-    expect(screen.getAllByText(/NVIDIA 季營收/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/費城半導體 SOX/).length).toBeGreaterThan(0);
     fireEvent.click(screen.getByRole("button", { name: "缺值／逾期" }));
     expect(screen.getAllByText("缺值").length).toBeGreaterThan(0);
   });

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",
+    "cheerio": "^1.2.0",
     "csv-parse": "^7.0.3",
     "fast-xml-parser": "^5.0.0",
     "lucide-react": "^0.468.0",

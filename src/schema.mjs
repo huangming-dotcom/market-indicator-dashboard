@@ -32,7 +32,8 @@ export const observationSchema = z
     period: z.string().optional(),
     meetingDate: dateSchema.optional(),
     vintage: timestamp,
-    method: z.enum(["official-api", "reviewed-import"]),
+    method: z.enum(["official-api", "reviewed-import", "market-data-api"]),
+    sessionStatus: z.enum(["close", "snapshot"]).optional(),
     evidence: z.string().optional(),
     rawHash: z.string().optional(),
   })
@@ -84,6 +85,24 @@ export const datasetSchema = z
     generatedAt: timestamp,
     observations: z.array(observationSchema),
     events: z.array(eventSchema),
+    policy: z
+      .array(
+        z.object({
+          id: z.string().min(1),
+          kind: z.enum(["fomc", "fedwatch-commentary"]),
+          date: dateSchema,
+          title: z.string().min(1),
+          summary: z.string().min(1),
+          source: sourceSchema,
+          publishedAt: timestamp.nullable(),
+          retrievedAt: timestamp,
+          confidence: z.enum(["official", "reported"]),
+          meetingDate: dateSchema.optional(),
+          referenceUrl: z.string().url().optional(),
+          approximate: z.boolean().optional(),
+        }),
+      )
+      .default([]),
     runs: z.array(
       z.object({
         id: z.string(),

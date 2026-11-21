@@ -24,11 +24,17 @@
             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
           },
           "value": {
-            "type": ["number", "null"]
+            "type": [
+              "number",
+              "null"
+            ]
           },
           "status": {
             "type": "string",
-            "enum": ["verified", "missing"]
+            "enum": [
+              "verified",
+              "missing"
+            ]
           },
           "source": {
             "type": "object",
@@ -42,7 +48,10 @@
                 "format": "uri"
               }
             },
-            "required": ["name", "url"],
+            "required": [
+              "name",
+              "url"
+            ],
             "additionalProperties": false
           },
           "retrievedAt": {
@@ -90,7 +99,18 @@
           },
           "method": {
             "type": "string",
-            "enum": ["official-api", "reviewed-import"]
+            "enum": [
+              "official-api",
+              "reviewed-import",
+              "market-data-api"
+            ]
+          },
+          "sessionStatus": {
+            "type": "string",
+            "enum": [
+              "close",
+              "snapshot"
+            ]
           },
           "evidence": {
             "type": "string"
@@ -158,7 +178,10 @@
                 "format": "uri"
               }
             },
-            "required": ["name", "url"],
+            "required": [
+              "name",
+              "url"
+            ],
             "additionalProperties": false
           },
           "evidence": {
@@ -176,6 +199,103 @@
           "retrievedAt",
           "source",
           "evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "policy": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "fomc",
+              "fedwatch-commentary"
+            ]
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "name",
+              "url"
+            ],
+            "additionalProperties": false
+          },
+          "publishedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "official",
+              "reported"
+            ]
+          },
+          "meetingDate": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "referenceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "approximate": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "date",
+          "title",
+          "summary",
+          "source",
+          "publishedAt",
+          "retrievedAt",
+          "confidence"
         ],
         "additionalProperties": false
       }
@@ -200,7 +320,11 @@
           },
           "status": {
             "type": "string",
-            "enum": ["success", "partial", "failed"]
+            "enum": [
+              "success",
+              "partial",
+              "failed"
+            ]
           },
           "providers": {
             "type": "array",
@@ -212,7 +336,10 @@
                 },
                 "status": {
                   "type": "string",
-                  "enum": ["success", "failed"]
+                  "enum": [
+                    "success",
+                    "failed"
+                  ]
                 },
                 "count": {
                   "type": "number"
@@ -221,12 +348,22 @@
                   "type": "string"
                 }
               },
-              "required": ["name", "status", "count"],
+              "required": [
+                "name",
+                "status",
+                "count"
+              ],
               "additionalProperties": false
             }
           }
         },
-        "required": ["id", "startedAt", "finishedAt", "status", "providers"],
+        "required": [
+          "id",
+          "startedAt",
+          "finishedAt",
+          "status",
+          "providers"
+        ],
         "additionalProperties": false
       }
     }
@@ -236,6 +373,7 @@
     "generatedAt",
     "observations",
     "events",
+    "policy",
     "runs"
   ],
   "additionalProperties": false
