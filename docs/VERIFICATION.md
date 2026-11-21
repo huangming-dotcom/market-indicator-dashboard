@@ -33,3 +33,8 @@ Yahoo 五個指數最新日 2026-11-20；期交所 TX 外資未平倉、TPEX 外
 ## 部署
 
 GitHub Actions 在 main 推送後執行驗證、測試、建置及 Pages 部署；來源原始證據另封存 90 日，部署登錄延遲時最多重試一次。實際發布與雲端擷取結果以 [Actions](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml) 為準。
+
+- [改善版首次部署](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/44916640455)成功。
+- [雲端完整資料更新及再次部署](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/44916679456)成功；22／23 來源工作成功，唯一待配置為 CME 精確快照，未影響其他資料發布。資料生成時間 2026-11-21 22:59:29（台灣），觀測仍 3580 筆。
+- 公開網站 HTML、兩個 JS／CSS 資產及 history.json 實際 HTTP 200；線上五個全球指數、TX 外資部位、上櫃外資及融資最新日均確認為 2026-11-20。
+- Windows daily-update.ps1 與 GitHub 一致採部分來源成功發布，完成建置後另檢查正式網站子目錄。
