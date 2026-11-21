@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T09:35:29.518Z",
+  "generatedAt": "2026-11-21T09:37:40.995Z",
   "observations": [
     {
       "metricId": "brent",
@@ -33946,6 +33946,69 @@
       "id": "3751d18e-322f-4bfb-a6d1-62077128ca9f",
       "startedAt": "2026-11-21T09:35:17.695Z",
       "finishedAt": "2026-11-21T09:35:29.518Z",
+      "status": "success",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 312
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 99
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 306
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 指數",
+          "status": "success",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": "0e18c40d-6216-4523-9539-6cc23c4d7ad2",
+      "startedAt": "2026-11-21T09:37:34.083Z",
+      "finishedAt": "2026-11-21T09:37:40.995Z",
       "status": "success",
       "providers": [
         {
