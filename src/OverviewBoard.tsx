@@ -145,7 +145,8 @@ export default function OverviewBoard({
       )}
       {cards.some((c) => ["wti", "brent"].includes(c.id)) && (
         <p className="panel-note oil-reference">
-          原油卡片採 EIA 現貨；Google Finance 的報價為期貨，另供參考：{" "}
+          EIA 現貨與 Google 期貨分開成卡；期貨為最新／延遲報價快照，1D
+          依來源基準：{" "}
           <a href={CATALOG.wti.reference.url} target="_blank" rel="noreferrer">
             WTI 期貨
           </a>{" "}

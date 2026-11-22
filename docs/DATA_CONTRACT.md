@@ -79,9 +79,17 @@ catalog.dailyMarket 決定股票／台股結構日行情使用的 US、TW、JP�
 
 自訂版面是獨立 layout schema v1，保存於瀏覽器 localStorage（market-radar-layout-v1），不改市場數據。可匯入／匯出 JSON；只接受有效 active metric ID、唯一卡片、指定樣式與寬度。舊版儲存損壞時使用預設版面。
 
-layout.defaultsRevision=2 為現行預設修訂。缺此標記的舊版設定一次啟用 WTI／Brent 現貨，保留其他設定；修訂 2 之後隱藏原油的選擇會保留，不重設整個版面。
+layout.defaultsRevision=3 為現行預設修訂。缺此標記的舊版設定一次啟用 WTI／Brent 現貨；修訂 2 升級到 3 僅新增兩張 Google 期貨卡，不重新開啟已隱藏的現貨；後續隱藏期貨的選擇也會保留。
 
-USD/TWD 使用 market=FX、timezone=Europe/London、method=market-data-api、sessionStatus=close；驗證 TWD=X／CURRENCY／報價幣別 TWD，保留 4 位小數，只收來源日已結束且為週一至五的日線。FRED H.10 保持 official-api 與其原時區，跨方法不計算匯率差值；備援不覆蓋既有 Yahoo 日線。Google Finance CLW00／BZW00 是期貨參考連結，禁止寫入 wti／brent 現貨 metric。
+USD/TWD 使用 market=FX、timezone=Europe/London、method=market-data-api、sessionStatus=close；驗證 TWD=X／CURRENCY／報價幣別 TWD，保留 4 位小數，只收來源日已結束且為週一至五的日線。FRED H.10 保持 official-api 與其原時區，跨方法不計算匯率差值；備援不覆蓋既有 Yahoo 日線。
+
+## Google 期貨快照
+
+wtiFutures／brentFutures 使用獨立 metric，method=market-data-api、sessionStatus=snapshot、market=US-FUTURES、timezone=America/New_York，date 為報價時間的紐約日期。quote 欄位包含 symbol（CLW00:NYMEX／BZW00:NYMEX）、quotedAt（精確來源時間）、referencePrice、change、changePct（百分比單位）。publishedAt 未提供保持 null；quote 時間不可晚於 retrievedAt。
+
+Provider 安全解析頁面中的 JSON 資料、不執行頁面腳本；驗證 canonical、商品類型、USD、畫面主報價、嵌入資料一致、來源 1D 基準及時間。格式或時間／數值不符即失敗；不是只看 HTTP 200。
+
+1D 取來源 changePct，標示 Google 1D（來源基準），不是本平台前一筆快照變化。5 日比較固定缺值，歷史僅自首次擷取每日累積；未聲稱回補連續合約歷史或官方結算。相同價格但 quotedAt／基準變更會追加 vintage，完全相同快照重抓不追加。不准寫入 wti／brent 現貨序列。新卡片不加入既有六項 Regime 輸入。
 
 ## 建議資料庫遷移
 

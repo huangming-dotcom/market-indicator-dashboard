@@ -7,6 +7,23 @@ import {
   LAYOUT_KEY,
 } from "../src/layout";
 describe("版面保存與匯入", () => {
+  it("修訂 2 自動加入 Google 期貨卡，保留現貨隱藏選擇；修訂 3 可再隱藏期貨", () => {
+    const old = defaultLayout();
+    old.defaultsRevision = 2;
+    old.cards = old.cards.filter(
+      (c) => !["wtiFutures", "brentFutures"].includes(c.id),
+    );
+    old.cards.find((c) => c.id === "wti")!.visible = false;
+    const next = parseLayout(old);
+    expect(next.defaultsRevision).toBe(3);
+    expect(next.cards.find((c) => c.id === "wti")!.visible).toBe(false);
+    for (const id of ["wtiFutures", "brentFutures"])
+      expect(next.cards.find((c) => c.id === id)?.visible).toBe(true);
+    next.cards.find((c) => c.id === "wtiFutures")!.visible = false;
+    expect(
+      parseLayout(next).cards.find((c) => c.id === "wtiFutures")!.visible,
+    ).toBe(false);
+  });
   it("預設提供 Nikkei、SOX 等卡片，不包含 AI 基本面", () => {
     const l = defaultLayout();
     expect(l.cards.some((c) => c.id === "nikkei" && c.visible)).toBe(true);

@@ -145,6 +145,11 @@ function SourceFoot({
         {s.current?.date ?? "尚無觀測"} ·{" "}
         {s.current?.source.name ?? CATALOG[id].source.name}
         {s.expected && <small className="block">應到 {s.expected}</small>}
+        {s.current?.quote && (
+          <small className="block">
+            報價 {fmtTime(s.current.quote.quotedAt)}（台灣）
+          </small>
+        )}
       </span>
       {s.stale ? (
         <span className="badge warn">
@@ -153,7 +158,9 @@ function SourceFoot({
       ) : s.calendarUnknown ? (
         <span className="badge warn">日曆待更新</span>
       ) : s.valid ? (
-        <span className="badge">{s.expected ? "最新收盤" : "來源資料"}</span>
+        <span className="badge">
+          {s.expected ? "最新收盤" : s.current?.quote ? "報價快照" : "來源資料"}
+        </span>
       ) : (
         <span className="badge muted">缺值</span>
       )}
@@ -190,7 +197,9 @@ function MetricCard({
         <strong className={toneFor(s.change)}>
           {formatChange(id, s.change)}
         </strong>
-        <span>較前一交易觀測</span>
+        <span>
+          {m.quoteSymbol ? "Google 1D（來源基準）" : "較前一交易觀測"}
+        </span>
       </div>
       {variant === "trend" && (
         <div className="sparkline" aria-label="近 20 筆交易觀測走勢">
@@ -211,7 +220,9 @@ function MetricCard({
       )}
       <div className="mini-compare">
         <span>
-          前值 {s.previous?.date ?? "—"} · {formatValue(id, s.previous?.value)}
+          {m.quoteSymbol
+            ? `來源基準 ${formatValue(id, s.current?.quote?.referencePrice)}`
+            : `前值 ${s.previous?.date ?? "—"} · ${formatValue(id, s.previous?.value)}`}
         </span>
         <span className={risk.tone}>{risk.label}</span>
       </div>
@@ -222,6 +233,9 @@ function MetricCard({
             ? "1 USD 對應 TWD · 日線口徑見來源，非台北收盤"
             : "EIA 現貨 · 非期貨，依來源發布日期更新"}
         </p>
+      )}
+      {m.quoteSymbol && (
+        <p className="card-definition">期貨最新／延遲快照 · 非現貨、非結算價</p>
       )}
     </button>
   );
@@ -1562,12 +1576,16 @@ export default function App() {
                     <strong>{o?.date ?? "缺值"}</strong>
                   </div>
                   <div>
-                    <span>前一交易觀測</span>
+                    <span>
+                      {m.quoteSymbol ? "前一日保存快照" : "前一交易觀測"}
+                    </span>
                     <strong>{s.previous?.date ?? "缺值"}</strong>
                     <small>{formatValue(detail, s.previous?.value)}</small>
                   </div>
                   <div>
-                    <span>1 日變化</span>
+                    <span>
+                      {m.quoteSymbol ? "Google 1D（來源基準）" : "1 日變化"}
+                    </span>
                     <strong>{formatChange(detail, s.change)}</strong>
                   </div>
                   <div>
@@ -1615,6 +1633,21 @@ export default function App() {
                     </dd>
                     <dt>觀測時區</dt>
                     <dd>{o?.timezone ?? "未提供"}</dd>
+                    {o?.quote && (
+                      <>
+                        <dt>來源報價時間</dt>
+                        <dd>{fmtTime(o.quote.quotedAt)}（台灣）</dd>
+                        <dt>Google 1D 比較基準</dt>
+                        <dd>
+                          {formatValue(detail, o.quote.referencePrice)} {m.unit}
+                          ；非前一日保存快照
+                        </dd>
+                        <dt>來源漲跌金額</dt>
+                        <dd>
+                          {o.quote.change.toFixed(2)} {m.unit}
+                        </dd>
+                      </>
+                    )}
                     <dt>擷取時間</dt>
                     <dd>{fmtTime(o?.retrievedAt)}</dd>
                     <dt>發布時間</dt>

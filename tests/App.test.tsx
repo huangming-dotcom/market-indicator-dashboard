@@ -58,6 +58,47 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("使用者操作", () => {
+  it("Google 期貨卡顯示價格、來源 1D、來源基準與報價時間，與現貨分列", async () => {
+    const quote = {
+      symbol: "CLW00:NYMEX",
+      quotedAt: "2026-11-20T22:50:00Z",
+      referencePrice: 100,
+      change: 1.5,
+      changePct: 1.5,
+    };
+    vi.mocked(fetch).mockResolvedValue({
+      ok: true,
+      json: async () =>
+        dataset([
+          obs("wtiFutures", "2026-11-20", 101.5, {
+            quote,
+            sessionStatus: "snapshot",
+            method: "market-data-api",
+            source: {
+              name: "Google Finance",
+              url: "https://www.google.com/finance/quote/CLW00:NYMEX",
+            },
+          }),
+        ]),
+    } as Response);
+    render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    const card = screen.getByLabelText("檢視WTI 原油期貨・Google詳細資料");
+    expect(card.textContent).toContain("101.50");
+    expect(card.textContent).toContain("+1.50 %");
+    expect(card.textContent).toContain("Google 1D（來源基準）");
+    expect(card.textContent).toContain("來源基準 100.00");
+    expect(card.textContent).toContain("報價快照");
+    expect(
+      screen.getByLabelText("檢視布蘭特原油期貨・Google詳細資料"),
+    ).toBeTruthy();
+    expect(screen.getByLabelText("檢視WTI 原油現貨詳細資料")).toBeTruthy();
+    fireEvent.click(card);
+    expect(await screen.findByText("來源報價時間")).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: "Google Finance" }).getAttribute("href"),
+    ).toContain("CLW00:NYMEX");
+  });
   it("總覽預設顯示兩張原油現貨卡、更新時段與分開標示的 Google 期貨連結", async () => {
     render(<App />);
     await screen.findByText("今日與前一交易觀測");

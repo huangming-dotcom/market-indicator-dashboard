@@ -29,7 +29,7 @@ npm run preview
 
 1. 選擇右上日期，查看截至該日的資料。各指標保留原市場觀測日、前值日期及來源時間。
 2. 點「自訂版面」選擇卡片、完整／精簡／趨勢樣式、單／雙欄寬度；用上下按鈕或拖曳排列。可改依漲跌幅或異常程度排序。設定自動保存在目前瀏覽器；跨裝置可匯出／匯入版面 JSON。
-   WTI 與布蘭特現貨預設顯示在總覽。舊版儲存的版面會一次補入這兩張卡片，保留其他排序／風格；之後自行隱藏不會再次強制開啟。
+   WTI／布蘭特的現貨與 Google 期貨共四張卡片預設顯示在總覽。舊版儲存的版面會一次補入新卡片，保留其他排序／風格；之後自行隱藏不會再次強制開啟。
 3. 點指標開啟詳情，查看日變化、5 日變化、7／30／90 曆日趨勢、實際來源及擷取／發布／版本時間。
 4. 分頁包含總經、全球股市、台股、風險歷史、來源品質。AI 基本面已依需求移除；舊資料契約保留相容性。
 5. 「匯出快照」下載目前日期的數據、政策補充、規則版本及提醒。重新載入只讀取網站已發布快照；資料蒐集在更新管線執行。
@@ -38,21 +38,22 @@ npm run preview
 
 ## 資料來源與口徑
 
-| 指標                   | 實際來源／定義                                                                                  |
-| ---------------------- | ----------------------------------------------------------------------------------------------- |
-| 2Y／10Y／30Y           | 美國財政部 Par Yield XML，5 日變化須有 6 筆觀測                                                 |
-| USD/TWD                | Yahoo Finance TWD=X 已結束來源日線，1 USD 對應 TWD；FRED DEXTAUS 保留歷史與備援，非台北收盤     |
-| WTI／Brent             | FRED DCOILWTICO／DCOILBRENTEU，EIA 現貨，非期貨結算                                             |
-| S&P 500／NASDAQ        | Yahoo Finance ^GSPC／^IXIC 已完成日線；FRED 作歷史與備援，不覆蓋已取得的 Yahoo 日線             |
-| SOX／KOSPI／Nikkei 225 | Yahoo Finance ^SOX／^KS11／^N225，未調整價格指數收盤，非 ETF／期貨                              |
-| 加權／量額             | TWSE FMTQIK 月報，逐月回補；20 日均量為上市成交股數含當日                                       |
-| 上市法人／融資／廣度   | TWSE BFI82U／MI_MARGN／MI_INDEX；外資不含外資自營商；自營商合併自行與避險；融資仟元轉億元       |
-| 外資台指期淨部位       | TAIFEX 官方 OpenAPI，TX 大台外資及陸資「多方未平倉－空方未平倉」，不含小台／微台，不是成交淨額  |
-| 上櫃外資               | TPEX 歷史法人日報，外資及陸資不含自營商，元轉億元                                               |
-| 上櫃融資／指數         | TWSE 儀表板使用的 TPEX dashboardOtc/marginTrend 官方端點；marginBalance 已為億元                |
-| 上櫃廣度               | TPEX 上櫃股票日行情，四位數股票代碼且漲跌為數值；排除 ETF、權證、除權息等無比價，與上市統計分開 |
-| FOMC                   | 聯準會官方 monetary RSS，公告及會議紀錄連結、發布時間                                           |
-| FedWatch 補充          | 已核對的 Reuters 轉載或每日雷達政策 feed；獨立顯示定性描述，不填精確機率                        |
+| 指標                    | 實際來源／定義                                                                                  |
+| ----------------------- | ----------------------------------------------------------------------------------------------- |
+| 2Y／10Y／30Y            | 美國財政部 Par Yield XML，5 日變化須有 6 筆觀測                                                 |
+| USD/TWD                 | Yahoo Finance TWD=X 已結束來源日線，1 USD 對應 TWD；FRED DEXTAUS 保留歷史與備援，非台北收盤     |
+| WTI／Brent              | FRED DCOILWTICO／DCOILBRENTEU，EIA 現貨，非期貨結算                                             |
+| WTI／布蘭特期貨・Google | Google Finance CLW00:NYMEX／BZW00:NYMEX 最新／延遲報價快照；1D 依來源比較基準，非官方結算       |
+| S&P 500／NASDAQ         | Yahoo Finance ^GSPC／^IXIC 已完成日線；FRED 作歷史與備援，不覆蓋已取得的 Yahoo 日線             |
+| SOX／KOSPI／Nikkei 225  | Yahoo Finance ^SOX／^KS11／^N225，未調整價格指數收盤，非 ETF／期貨                              |
+| 加權／量額              | TWSE FMTQIK 月報，逐月回補；20 日均量為上市成交股數含當日                                       |
+| 上市法人／融資／廣度    | TWSE BFI82U／MI_MARGN／MI_INDEX；外資不含外資自營商；自營商合併自行與避險；融資仟元轉億元       |
+| 外資台指期淨部位        | TAIFEX 官方 OpenAPI，TX 大台外資及陸資「多方未平倉－空方未平倉」，不含小台／微台，不是成交淨額  |
+| 上櫃外資                | TPEX 歷史法人日報，外資及陸資不含自營商，元轉億元                                               |
+| 上櫃融資／指數          | TWSE 儀表板使用的 TPEX dashboardOtc/marginTrend 官方端點；marginBalance 已為億元                |
+| 上櫃廣度                | TPEX 上櫃股票日行情，四位數股票代碼且漲跌為數值；排除 ETF、權證、除權息等無比價，與上市統計分開 |
+| FOMC                    | 聯準會官方 monetary RSS，公告及會議紀錄連結、發布時間                                           |
+| FedWatch 補充           | 已核對的 Reuters 轉載或每日雷達政策 feed；獨立顯示定性描述，不填精確機率                        |
 
 每筆資料保留實際網址及時間。初始回補約 150 曆日；上市法人／融資／廣度、上櫃外資／廣度先抓最近 6 個交易日；上櫃融資端點目前回傳約 40 日。TAIFEX 最新端點先建立 1 日，前值需後續每日累積或核對匯入。沒有前值時保留缺值。
 
@@ -60,7 +61,9 @@ Yahoo 公開端點不是服務保證，可能限流或改版。解析驗證代�
 
 USD/TWD 以 Yahoo Europe/London 來源日期為準，只匯入已跨入下一來源日的週一至週五日線，保留 4 位小數（卡片顯示 3 位），不以 regularMarketPrice 盤中報價冒充收盤。Yahoo 日線與 Fed H.10 午間定價是不同口徑，跨來源方法的匯率比較顯示缺值。
 
-Google Finance 的 [WTI CLW00](https://www.google.com/finance/quote/CLW00:NYMEX) 與 [Brent BZW00](https://www.google.com/finance/quote/BZW00:NYMEX) 明確屬於期貨，僅在總覽與指標詳情提供另開參考連結，不寫入現貨序列。原油現貨仍使用 EIA／FRED；2026-11-22 核對 [EIA WTI](https://www.eia.gov/dnav/pet/hist/RWTCD.htm) 與 [EIA Brent](https://www.eia.gov/dnav/pet/hist/RBRTEd.htm) 兩者最新已發布觀測都為 11/17，不能用較新的期貨價格填成現貨。
+Google Finance 的 [WTI CLW00](https://www.google.com/finance/quote/CLW00:NYMEX) 與 [Brent BZW00](https://www.google.com/finance/quote/BZW00:NYMEX) 已新增為獨立報價卡，隨既有每日四次排程擷取。卡片顯示價格、Google 1D 百分比、來源基準及台灣時間的報價時間；點卡片可看來源連結與擷取時間。這是最新／延遲期貨快照，非保證即時或官方結算，不寫入現貨序列。沒有匯入完整期貨歷史，趨勢從首次擷取日起逐日累積，5 日變化保留缺值；1D 不以兩次擷取相減。Google 頁面無穩定公開 API 保證，格式／限流／同意頁失敗會保留歷史並顯示品質。
+
+原油現貨仍使用 EIA／FRED；2026-11-22 核對 [EIA WTI](https://www.eia.gov/dnav/pet/hist/RWTCD.htm) 與 [EIA Brent](https://www.eia.gov/dnav/pet/hist/RBRTEd.htm) 兩者最新已發布觀測都為 11/17，不能用較新的期貨價格填成現貨。
 
 ### FedWatch 為何仍可能缺精確百分比？
 

@@ -103,6 +103,24 @@ export const METRICS = [
       url: "https://www.google.com/finance/quote/BZW00:NYMEX",
     },
   }),
+  m("wtiFutures", "WTI 原油期貨・Google", "USD／桶", "macro", "fred", {
+    quoteSymbol: "CLW00:NYMEX",
+    maxAge: 3,
+    source: {
+      name: "Google Finance · CLW00:NYMEX",
+      url: "https://www.google.com/finance/quote/CLW00:NYMEX",
+    },
+    note: "Google 最新／延遲期貨報價快照，非現貨或官方結算。1D 依來源比較基準；換月可能影響比較。",
+  }),
+  m("brentFutures", "布蘭特原油期貨・Google", "USD／桶", "macro", "fred", {
+    quoteSymbol: "BZW00:NYMEX",
+    maxAge: 3,
+    source: {
+      name: "Google Finance · BZW00:NYMEX",
+      url: "https://www.google.com/finance/quote/BZW00:NYMEX",
+    },
+    note: "Google Brent Crude Oil Last Day Financial Futures 最新／延遲快照，非現貨或官方結算。1D 依來源比較基準；換月可能影響比較。",
+  }),
   m("sp500", "S&P 500", "點", "global", "fred", {
     threshold: 2,
     direction: "up",

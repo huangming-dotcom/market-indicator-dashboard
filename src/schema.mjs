@@ -36,11 +36,53 @@ export const observationSchema = z
     sessionStatus: z.enum(["close", "snapshot"]).optional(),
     evidence: z.string().optional(),
     rawHash: z.string().optional(),
+    quote: z
+      .object({
+        symbol: z.string(),
+        quotedAt: timestamp,
+        referencePrice: z.number().positive(),
+        change: z.number().finite(),
+        changePct: z.number().finite(),
+      })
+      .optional(),
   })
   .superRefine((o, ctx) => {
     const err = (message) =>
       ctx.addIssue({ code: z.ZodIssueCode.custom, message });
     if (!CATALOG[o.metricId]) return;
+    if (CATALOG[o.metricId].quoteSymbol && o.value !== null && !o.quote)
+      err("期貨報價需附報價時間與來源比較基準");
+    if (o.quote) {
+      const quoteDate = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "America/New_York",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }).format(new Date(o.quote.quotedAt));
+      if (quoteDate !== o.date) err("報價觀測日須與紐約報價日期一致");
+      const quoteSource = new URL(o.source.url);
+      if (
+        quoteSource.hostname !== "www.google.com" ||
+        decodeURIComponent(quoteSource.pathname) !==
+          `/finance/quote/${o.quote.symbol}`
+      )
+        err("期貨來源須為對應 Google 報價頁");
+      if (
+        o.quote.symbol !== CATALOG[o.metricId].quoteSymbol ||
+        o.sessionStatus !== "snapshot"
+      )
+        err("期貨代碼或快照口徑不符");
+      if (Date.parse(o.quote.quotedAt) > Date.parse(o.retrievedAt))
+        err("報價時間不可晚於擷取時間");
+      if (
+        o.value === null ||
+        Math.abs(o.value - o.quote.referencePrice - o.quote.change) > 0.03 ||
+        Math.abs(
+          (o.quote.change / o.quote.referencePrice) * 100 - o.quote.changePct,
+        ) > 0.04
+      )
+        err("報價與來源漲跌不一致");
+    }
     if ((o.status === "missing") !== (o.value === null))
       err("缺值必須為 null；有效值必須為 verified");
     if (o.value === null && !o.reason) err("缺值必須附原因");

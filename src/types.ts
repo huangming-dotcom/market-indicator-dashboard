@@ -17,6 +17,13 @@ export interface Observation {
   sessionStatus?: "close" | "snapshot";
   evidence?: string;
   rawHash?: string;
+  quote?: {
+    symbol: string;
+    quotedAt: string;
+    referencePrice: number;
+    change: number;
+    changePct: number;
+  };
 }
 export interface FundamentalEvent {
   id: string;
