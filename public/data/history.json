@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T12:36:23.865Z",
+  "generatedAt": "2026-11-22T17:18:17.310Z",
   "observations": [
     {
       "metricId": "brent",
@@ -42684,6 +42684,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-21",
+      "value": 2067.29,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-21",
       "value": 27122.09,
@@ -42979,6 +42999,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-21",
+      "value": 412.57,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -43339,6 +43378,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-22",
+      "value": 2085.24,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-22",
       "value": 27244.28,
@@ -43634,6 +43693,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-22",
+      "value": 415.17,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -43994,6 +44072,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-23",
+      "value": 2108.51,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-23",
       "value": 26936.04,
@@ -44289,6 +44387,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-23",
+      "value": 413.76,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -44629,6 +44746,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-24",
+      "value": 2117.28,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-24",
       "value": 26939.37,
@@ -44944,6 +45081,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-24",
+      "value": 412.99,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -46370,6 +46526,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-29",
+      "value": 2136.75,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-29",
       "value": 26797.54,
@@ -46685,6 +46861,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-29",
+      "value": 412.25,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -47045,6 +47240,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-09-30",
+      "value": 2158.79,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-30",
       "value": 26861.06,
@@ -47360,6 +47575,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-09-30",
+      "value": 417.07,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -47720,6 +47954,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-01",
+      "value": 2188.72,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-01",
       "value": 26871.6,
@@ -48035,6 +48289,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-01",
+      "value": 418.82,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -48395,6 +48668,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-02",
+      "value": 2215.39,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-02",
       "value": 27190.86,
@@ -48710,6 +49003,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-02",
+      "value": 426.93,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -49050,6 +49362,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-05",
+      "value": 2241.73,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-05",
       "value": 27477.31,
@@ -49365,6 +49697,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-05",
+      "value": 432.48,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -49725,6 +50076,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-06",
+      "value": 2261.51,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-06",
       "value": 27599.89,
@@ -50040,6 +50411,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-06",
+      "value": 430.86,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -50400,6 +50790,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-07",
+      "value": 2289.58,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-07",
       "value": 27538.69,
@@ -50715,6 +51125,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-07",
+      "value": 430.46,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -51075,6 +51504,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-08",
+      "value": 2278.72,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-08",
       "value": 27193.34,
@@ -51390,6 +51839,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-08",
+      "value": 426.71,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -52273,6 +52741,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-12",
+      "value": 2283.47,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-12",
       "value": 27245.9,
@@ -52573,6 +53061,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-12",
+      "value": 427.9,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-12",
       "value": 8945.21928358,
@@ -52814,6 +53321,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-13",
+      "value": 2232.01,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -53135,6 +53662,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-13",
+      "value": 414.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -53495,6 +54041,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-14",
+      "value": 2255.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-14",
       "value": 26692.87,
@@ -53810,6 +54376,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-14",
+      "value": 420.13,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -54170,6 +54755,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-15",
+      "value": 2189.63,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-15",
       "value": 26713.03,
@@ -54485,6 +55090,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-15",
+      "value": 396.9,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -54845,6 +55469,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-16",
+      "value": 2182.5,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-16",
       "value": 26140.03,
@@ -55160,6 +55804,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-16",
+      "value": 400.26,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -55520,6 +56183,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-19",
+      "value": 2152.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-19",
       "value": 26430.89,
@@ -55835,6 +56518,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-19",
+      "value": 394.05,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -56195,6 +56897,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-20",
+      "value": 2150.08,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-20",
       "value": 26424.82,
@@ -56510,6 +57232,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-20",
+      "value": 387.88,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -56870,6 +57611,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-21",
+      "value": 2159.68,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-21",
       "value": 26702.86,
@@ -57185,6 +57946,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-21",
+      "value": 395.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -57545,6 +58325,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-22",
+      "value": 2126.3,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-22",
       "value": 26008.86,
@@ -57860,6 +58660,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-22",
+      "value": 381.69,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -59306,6 +60125,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-27",
+      "value": 2092.64,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-27",
       "value": 26477.81,
@@ -59621,6 +60460,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-27",
+      "value": 379.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -59981,6 +60839,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-28",
+      "value": 2112.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-28",
       "value": 26549.85,
@@ -60296,6 +61174,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-28",
+      "value": 394.61,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -60656,6 +61553,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-29",
+      "value": 2099.59,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-29",
       "value": 26184.72,
@@ -60971,6 +61888,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-29",
+      "value": 387.37,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -61331,6 +62267,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-10-30",
+      "value": 2053.01,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-30",
       "value": 25437,
@@ -61646,6 +62602,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-10-30",
+      "value": 370.26,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -62006,6 +62981,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-02",
+      "value": 2044.12,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-02",
       "value": 25164.36,
@@ -62339,6 +63334,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-02",
+      "value": 369.24,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -62699,6 +63713,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-03",
+      "value": 1965.63,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-03",
       "value": 25372.01,
@@ -63012,6 +64046,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-03",
+      "value": 345.52,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -63372,6 +64425,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-04",
+      "value": 1909.19,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-04",
       "value": 25736.51,
@@ -63705,6 +64778,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-04",
+      "value": 343.5,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -64065,6 +65157,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-05",
+      "value": 1840.37,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-05",
       "value": 24315,
@@ -64398,6 +65510,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-05",
+      "value": 321.47,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -64758,6 +65889,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-06",
+      "value": 1699.74,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-06",
       "value": 24579.42,
@@ -65091,6 +66242,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-06",
+      "value": 304.02,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -65451,6 +66621,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-09",
+      "value": 1701.54,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-09",
       "value": 25253.14,
@@ -65784,6 +66974,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-09",
+      "value": 321.97,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -66144,6 +67353,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-10",
+      "value": 1693.09,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-10",
       "value": 25065.87,
@@ -66477,6 +67706,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-10",
+      "value": 332.97,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -66837,6 +68085,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-11",
+      "value": 1718.02,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-11-11",
       "value": 25466.19,
@@ -67175,6 +68443,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-11",
+      "value": 344.11,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-11",
       "value": 8762.95459349,
@@ -67416,6 +68703,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-12",
+      "value": 1700.77,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -67755,6 +69062,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-12",
+      "value": 335.73,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -68246,6 +69572,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-13",
+      "value": 1720.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-13",
       "value": 5365.98938,
@@ -68598,6 +69944,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-13",
+      "value": 342.41,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -69107,6 +70472,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-16",
+      "value": 1677.33,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-16",
       "value": 5244.97993,
@@ -69459,6 +70844,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-16",
+      "value": 319.12,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -69914,6 +71318,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-17",
+      "value": 1604.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-17",
       "value": 5087.21233,
@@ -70266,6 +71690,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-17",
+      "value": 306.61,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -70667,6 +72110,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-18",
+      "value": 1572.23,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-18",
       "value": 5080.2657,
@@ -71024,6 +72487,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-18",
+      "value": 307.55,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-18",
       "value": 166.11584089,
@@ -71360,6 +72842,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-19",
+      "value": 1474.13,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -71718,6 +73220,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-19",
+      "value": 285.33,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -72133,6 +73654,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-20",
+      "value": 1328.53,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-20",
       "value": 4352.27267,
@@ -72301,6 +73842,25 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "tpex",
+      "date": "2026-11-20",
+      "value": 263.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/23"
+      },
+      "retrievedAt": "2026-11-22T17:18:16.454Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T17:18:16.454Z",
       "method": "official-api",
       "sessionStatus": "close",
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
@@ -72513,6 +74073,87 @@
         "change": 1.18,
         "changePct": 1.43
       }
+    },
+    {
+      "metricId": "brentFutures",
+      "date": "2026-11-22",
+      "value": 92.56,
+      "status": "verified",
+      "source": {
+        "name": "Google Finance · BZW00:NYMEX",
+        "url": "https://www.google.com/finance/quote/BZW00:NYMEX"
+      },
+      "retrievedAt": "2026-11-22T17:17:55.494Z",
+      "publishedAt": null,
+      "unit": "USD／桶",
+      "market": "US-FUTURES",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T17:17:55.494Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "Google Finance 主報價與嵌入資料核對；最新／延遲期貨報價快照，非現貨、非官方結算；1D 依來源比較基準，不代表前一筆保存快照",
+      "rawHash": "0455eaf4ca3bfaa6c116e2023cc83e18c88f314b64d46e1cb3f8ad301b0a4eed",
+      "quote": {
+        "symbol": "BZW00:NYMEX",
+        "quotedAt": "2026-11-22T16:58:25.000Z",
+        "referencePrice": 91.98,
+        "change": 0.58,
+        "changePct": 0.63
+      }
+    },
+    {
+      "metricId": "usdtwdQuote",
+      "date": "2026-11-22",
+      "value": 32.958,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · USD/TWD 主報價",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/USDTWD%3DX?range=5d&interval=1d"
+      },
+      "retrievedAt": "2026-11-22T17:17:54.950Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T17:17:54.950Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "採 regularMarketPrice／regularMarketTime／regularMarketChangePercent；漲跌採同源 regularMarketChange 或與主報價相符的 fulldayChange；比較基準由主報價減同源漲跌計算。不使用日線 close 或依查詢範圍改變的 chartPreviousClose。非台北外匯收盤。",
+      "rawHash": "fc82b2182e182560249791d9c25180334306178f15ce2e319c89c4422c1e443d",
+      "quote": {
+        "symbol": "USDTWD=X",
+        "quotedAt": "2026-11-22T14:25:50.000Z",
+        "referencePrice": 32.947,
+        "change": 0.011,
+        "changePct": 0.0334
+      }
+    },
+    {
+      "metricId": "wtiFutures",
+      "date": "2026-11-22",
+      "value": 83.62,
+      "status": "verified",
+      "source": {
+        "name": "Google Finance · CLW00:NYMEX",
+        "url": "https://www.google.com/finance/quote/CLW00:NYMEX"
+      },
+      "retrievedAt": "2026-11-22T17:17:55.715Z",
+      "publishedAt": null,
+      "unit": "USD／桶",
+      "market": "US-FUTURES",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T17:17:55.715Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "Google Finance 主報價與嵌入資料核對；最新／延遲期貨報價快照，非現貨、非官方結算；1D 依來源比較基準，不代表前一筆保存快照",
+      "rawHash": "c0ab67b339dbc3052da3a06b6ebda19b45215a488bcff44c86dbfb28602223c8",
+      "quote": {
+        "symbol": "CLW00:NYMEX",
+        "quotedAt": "2026-11-22T16:58:30.000Z",
+        "referencePrice": 82.44,
+        "change": 1.18,
+        "changePct": 1.43
+      }
     }
   ],
   "events": [],
@@ -72528,7 +74169,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
       },
       "publishedAt": "2026-11-18T19:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72542,7 +74183,7 @@
         "url": "https://in.marketscreener.com/news/dollar-at-19-month-high-as-policymakers-data-cement-december-rate-hike-bets-ce785edddb8cf623"
       },
       "publishedAt": null,
-      "retrievedAt": "2026-11-22T12:36:23.844Z",
+      "retrievedAt": "2026-11-22T17:18:17.274Z",
       "confidence": "reported",
       "meetingDate": "2026-12-09",
       "approximate": true
@@ -72558,7 +74199,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
       },
       "publishedAt": "2026-11-12T17:45:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72572,7 +74213,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
       },
       "publishedAt": "2026-10-28T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72586,7 +74227,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
       },
       "publishedAt": "2026-10-07T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72600,7 +74241,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72614,7 +74255,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72628,7 +74269,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
       },
       "publishedAt": "2026-08-19T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72642,7 +74283,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       "publishedAt": "2026-07-29T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72656,7 +74297,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       },
       "publishedAt": "2026-07-08T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72670,7 +74311,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     },
     {
@@ -72684,7 +74325,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T12:36:23.337Z",
+      "retrievedAt": "2026-11-22T17:18:16.544Z",
       "confidence": "official"
     }
   ],
@@ -74668,6 +76309,155 @@
         },
         {
           "name": "Google 期貨報價 brentFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "TPEX 外資買賣超",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 股票市場廣度",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TPEX 儀表板融資與指數",
+          "status": "success",
+          "count": 80
+        },
+        {
+          "name": "CME FedWatch 精確快照",
+          "status": "failed",
+          "count": 0,
+          "message": "精確機率尚未串接：需官方完整快照。政策報導與 FOMC 公告已另列，不補估百分比。"
+        },
+        {
+          "name": "Fed 官方 FOMC 公告",
+          "status": "success",
+          "count": 11
+        },
+        {
+          "name": "每日雷達核對補充",
+          "status": "success",
+          "count": 0
+        },
+        {
+          "name": "Reuters 政策補充 2026-11-18",
+          "status": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "e7a8d525-3685-4eba-8723-411604a61c6f",
+      "startedAt": "2026-11-22T17:17:45.031Z",
+      "finishedAt": "2026-11-22T17:18:17.310Z",
+      "status": "partial",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 306
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 97
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 101
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 102
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 300
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "Yahoo 收盤 nasdaq",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "Yahoo 收盤 sox",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "Yahoo 收盤 nikkei",
+          "status": "success",
+          "count": 99
+        },
+        {
+          "name": "Yahoo 收盤 sp500",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "Yahoo 收盤 kospi",
+          "status": "success",
+          "count": 100
+        },
+        {
+          "name": "Yahoo 收盤 usdtwd",
+          "status": "success",
+          "count": 106
+        },
+        {
+          "name": "TAIFEX TX 外資未平倉",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Yahoo USD/TWD 主報價",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "CNN Fear & Greed Index",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "Google 期貨報價 brentFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Google 期貨報價 wtiFutures",
           "status": "success",
           "count": 1
         },
