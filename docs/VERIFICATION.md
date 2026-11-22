@@ -5,6 +5,8 @@
 - 78 項測試通過；3876 筆觀測、12 筆政策驗證通過，TypeScript／Vite／Pages 子目錄正式 HTTP 檢查通過。
 - CNN 官方 graphdata 成功取得 105 個觀測日（2026-06-25 至 11-20）。最新原始分數 9.67368421052632、rating=extreme fear、更新時間 11/20 23:59:52 UTC；卡片顯示 10 分／極度恐懼，詳情保留精度。
 - current.previous_close=18.6761904761905 與歷史前值不一致，變化採 CNN 來源前收基準且不填日期；測試明確涵蓋此差異。另涵蓋 UTC 午夜錨點、同日去重、0 與 null、範圍／分類／來源／未來時間、日期切換、修訂版本、版面遷移與 Regime 不納入。
+- [雲端完整更新與部署](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/45023002261)成功：28 個來源工作，27 成功，CNN 擷取 105 筆成功；唯一待配置仍為 CME 精確快照。觀測 3876 筆、網站快照台灣 20:36:23。
+- 真實線上桌面／390×844 手機可見 CNN 卡、10 分／極度恐懼、前收基準及更新時間；詳情 9.6737 原始精度、7／30／90 趨勢與 CNN 來源可讀。手機 clientWidth=scrollWidth=375。截圖 outputs/cnn-fear-greed-2026-11-22.jpg 為本次驗收，未納入 Git／網站。
 
 ## 2026-11-22 匯率主報價對齊
 
