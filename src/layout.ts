@@ -6,7 +6,7 @@ export const layoutSchema = z
   .object({
     version: z.literal(1),
     defaultsRevision: z
-      .union([z.literal(2), z.literal(3), z.literal(4)])
+      .union([z.literal(2), z.literal(3), z.literal(4), z.literal(5)])
       .optional(),
     sort: z.enum(["manual", "change", "alerts"]),
     cards: z
@@ -33,6 +33,7 @@ const DEFAULT_IDS = [
   "sp500",
   "kospi",
   "nikkei",
+  "fearGreed",
   "usdtwdQuote",
   "wti",
   "brent",
@@ -45,7 +46,7 @@ const DEFAULT_IDS = [
 ];
 export const defaultLayout = (): Layout => ({
   version: 1,
-  defaultsRevision: 4,
+  defaultsRevision: 5,
   sort: "manual",
   cards: [
     ...DEFAULT_IDS,
@@ -74,15 +75,19 @@ export function parseLayout(input: unknown): Layout {
         : c,
     );
   if (
-    parsed.defaultsRevision !== 4 &&
+    (!parsed.defaultsRevision || parsed.defaultsRevision < 4) &&
     !parsed.cards.some((c) => c.id === "usdtwdQuote")
   )
     parsed.cards = parsed.cards.map((c) =>
       c.id === "usdtwd" ? { ...c, id: "usdtwdQuote" } : c,
     );
+  if (!parsed.defaultsRevision || parsed.defaultsRevision < 5)
+    parsed.cards = parsed.cards.map((c) =>
+      c.id === "fearGreed" ? { ...c, visible: true } : c,
+    );
   return {
     ...parsed,
-    defaultsRevision: 4,
+    defaultsRevision: 5,
     cards: [
       ...parsed.cards,
       ...ACTIVE_METRICS.filter(
@@ -90,6 +95,8 @@ export function parseLayout(input: unknown): Layout {
       ).map((m) => ({
         id: m.id,
         visible:
+          ((!parsed.defaultsRevision || parsed.defaultsRevision < 5) &&
+            m.id === "fearGreed") ||
           (!parsed.defaultsRevision && ["wti", "brent"].includes(m.id)) ||
           ((!parsed.defaultsRevision || parsed.defaultsRevision < 3) &&
             ["wtiFutures", "brentFutures"].includes(m.id)),

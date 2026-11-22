@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T02:53:03.024Z",
+  "generatedAt": "2026-11-22T12:30:44.819Z",
   "observations": [
     {
       "metricId": "brent",
@@ -6633,6 +6633,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-06-25",
+      "value": 25.428571428571427,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-06-25",
       "value": 8930.3,
@@ -7205,6 +7228,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-06-26",
+      "value": 24.657142857142855,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -7781,6 +7827,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-06-29",
+      "value": 26.857142857142858,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-06-29",
       "value": 8394.65,
@@ -8353,6 +8422,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-06-30",
+      "value": 29.971428571428568,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -8929,6 +9021,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-01",
+      "value": 31.62857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-01",
       "value": 8303.41,
@@ -9501,6 +9616,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-02",
+      "value": 32.542857142857144,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -10245,6 +10383,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-06",
+      "value": 41.65714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-06",
       "value": 8051.33,
@@ -10817,6 +10978,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-07",
+      "value": 39.771428571428565,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -11393,6 +11577,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-08",
+      "value": 38.62857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-08",
       "value": 7246.79,
@@ -11965,6 +12172,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-09",
+      "value": 44.714285714285715,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -12541,6 +12771,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-10",
+      "value": 46.82857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-10",
       "value": 7475.94,
@@ -13059,6 +13312,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-13",
+      "value": 40.857142857142854,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -13635,6 +13911,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-14",
+      "value": 41.057142857142864,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-14",
       "value": 6856.83,
@@ -14207,6 +14506,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-15",
+      "value": 44.42857142857144,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -14783,6 +15105,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-16",
+      "value": 41.857142857142854,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-16",
       "value": 6820.6,
@@ -15357,6 +15702,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-17",
+      "value": 37,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-07-17",
       "value": 25520.24,
@@ -15911,6 +16279,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-20",
+      "value": 36.00000000000001,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-20",
       "value": 6516.27,
@@ -16463,6 +16854,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-21",
+      "value": 42.771428571428565,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -17039,6 +17453,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-22",
+      "value": 44.42857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-22",
       "value": 6797.7,
@@ -17611,6 +18048,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-23",
+      "value": 40.85714285714287,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -18187,6 +18647,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-24",
+      "value": 40.771428571428565,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-24",
       "value": 6690.62,
@@ -18759,6 +19242,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-27",
+      "value": 38.228571428571435,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -19335,6 +19841,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-28",
+      "value": 37.142857142857146,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-28",
       "value": 6023.66,
@@ -19907,6 +20436,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-29",
+      "value": 25.557142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -20483,6 +21035,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-07-30",
+      "value": 38.114285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-07-30",
       "value": 5593.56,
@@ -21055,6 +21630,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-07-31",
+      "value": 39.57142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -21631,6 +22229,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-03",
+      "value": 46.142857142857146,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-03",
       "value": 6257.45,
@@ -22203,6 +22824,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-04",
+      "value": 58.971428571428575,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
     },
     {
       "metricId": "kospi",
@@ -22779,6 +23423,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-05",
+      "value": 60.228571428571435,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-05",
       "value": 6598.26,
@@ -23351,6 +24018,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-06",
+      "value": 59.6857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
     },
     {
       "metricId": "kospi",
@@ -23927,6 +24617,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-07",
+      "value": 65.14285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-07",
       "value": 6258.77,
@@ -24499,6 +25212,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-10",
+      "value": 64.37142857142858,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
     },
     {
       "metricId": "kospi",
@@ -25075,6 +25811,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-11",
+      "value": 60.08571428571429,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-11",
       "value": 6345.53,
@@ -25627,6 +26386,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-12",
+      "value": 61.68571428571429,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
     },
     {
       "metricId": "kospi",
@@ -26203,6 +26985,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-13",
+      "value": 66.11428571428573,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-13",
       "value": 6813.34,
@@ -26775,6 +27580,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-14",
+      "value": 64.31428571428572,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
     },
     {
       "metricId": "kospi",
@@ -27351,6 +28179,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-17",
+      "value": 59.142857142857146,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-08-17",
       "value": 26644.91,
@@ -27903,6 +28754,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-18",
+      "value": 54.628571428571426,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -28479,6 +29353,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-19",
+      "value": 56.62857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-19",
       "value": 6471.17,
@@ -29051,6 +29948,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-20",
+      "value": 51.37142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -29627,6 +30547,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-21",
+      "value": 54.65714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-21",
       "value": 6912.95,
@@ -30199,6 +31142,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-24",
+      "value": 54.97142857142858,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -30775,6 +31741,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-25",
+      "value": 59.60000000000001,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-25",
       "value": 6742.74,
@@ -31347,6 +32336,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-26",
+      "value": 53.94285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -31923,6 +32935,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-27",
+      "value": 57.314285714285724,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "greed"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-27",
       "value": 6912.37,
@@ -32497,6 +33532,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-08-28",
+      "value": 53.74285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-08-28",
       "value": 6788.88,
@@ -33015,6 +34073,29 @@
       "vintage": "2026-11-21T14:42:55.723Z",
       "method": "official-api",
       "rawHash": "02cc2deceb85ed141529d2e40278e79c67b677b0e2f01e16160d81a3732eec77"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-08-31",
+      "value": 49.2,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -33591,6 +34672,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-01",
+      "value": 44.857142857142854,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-01",
       "value": 6835.8,
@@ -34163,6 +35267,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-02",
+      "value": 46.057142857142864,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -34739,6 +35866,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-03",
+      "value": 47.51428571428572,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-03",
       "value": 6579.48,
@@ -35311,6 +36461,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-04",
+      "value": 45.228571428571435,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -36055,6 +37228,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-08",
+      "value": 39.142857142857146,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-08",
       "value": 6954.52,
@@ -36627,6 +37823,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-09",
+      "value": 38.2,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -37203,6 +38422,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-10",
+      "value": 31.914285714285718,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-10",
       "value": 7033.92,
@@ -37775,6 +39017,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-11",
+      "value": 33.114285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -38351,6 +39616,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-14",
+      "value": 32.08571428571429,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-14",
       "value": 6684.37,
@@ -38923,6 +40211,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-15",
+      "value": 29.25714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -39499,6 +40810,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-16",
+      "value": 27.028571428571432,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-16",
       "value": 6717.97,
@@ -40071,6 +41405,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-17",
+      "value": 29.457142857142856,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -40647,6 +42004,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-18",
+      "value": 28.48571428571429,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-18",
       "value": 6894.23,
@@ -41219,6 +42599,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-21",
+      "value": 33.94285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -41853,6 +43256,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-22",
+      "value": 35.228571428571435,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-22",
       "value": 7017.91,
@@ -42483,6 +43909,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-23",
+      "value": 33.65714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -43117,6 +44566,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-24",
+      "value": 34.51428571428572,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "marginOtc",
       "date": "2026-09-24",
       "value": 2117.28,
@@ -43749,6 +45221,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-25",
+      "value": 36.91428571428571,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-09-25",
       "value": 27068.72,
@@ -44247,6 +45742,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-28",
+      "value": 32.4,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -44767,6 +46285,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-09-29",
+      "value": 31.057142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -45421,6 +46962,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-09-30",
+      "value": 30.314285714285717,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-09-30",
       "value": 6838.04,
@@ -46071,6 +47635,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-01",
+      "value": 29.228571428571428,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -46725,6 +48312,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-02",
+      "value": 38.199999999999996,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-02",
       "value": 7003.74,
@@ -47377,6 +48987,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-05",
+      "value": 43.08571428571429,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "marginOtc",
       "date": "2026-10-05",
       "value": 2241.73,
@@ -48007,6 +49640,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-06",
+      "value": 47.02857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -48661,6 +50317,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-07",
+      "value": 44.714285714285715,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-07",
       "value": 6803.9,
@@ -49311,6 +50990,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-08",
+      "value": 39.17142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -49965,6 +51667,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-09",
+      "value": 43.51428571428572,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "nasdaq",
       "date": "2026-10-09",
       "value": 27366.17,
@@ -50463,6 +52188,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-12",
+      "value": 45.228571428571435,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -50987,6 +52735,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-13",
+      "value": 45.6,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "neutral"
+      }
     },
     {
       "metricId": "kospi",
@@ -51641,6 +53412,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-14",
+      "value": 28.785714285714285,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-14",
       "value": 6008.81,
@@ -52291,6 +54085,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-15",
+      "value": 32,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -52945,6 +54762,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-16",
+      "value": 18.214285714285715,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-16",
       "value": 5668.05,
@@ -53595,6 +55435,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-19",
+      "value": 19.514285714285716,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -54249,6 +56112,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-20",
+      "value": 28.742857142857144,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-20",
       "value": 5552.74,
@@ -54899,6 +56785,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-21",
+      "value": 30.25714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -55553,6 +57462,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-22",
+      "value": 19.985714285714288,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-22",
       "value": 5533.77,
@@ -56205,6 +58137,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-23",
+      "value": 16.685714285714287,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-23",
       "value": 5550.3,
@@ -56725,6 +58680,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-26",
+      "value": 29.8285714285714,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-26",
       "value": 5469.47,
@@ -57243,6 +59221,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-27",
+      "value": 32.8857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -57897,6 +59898,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-28",
+      "value": 34.4,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-28",
       "value": 6012.44,
@@ -58547,6 +60571,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-10-29",
+      "value": 30.7672268907563,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -59201,6 +61248,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-10-30",
+      "value": 26.3193277310924,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-10-30",
       "value": 5730.74,
@@ -59851,6 +61921,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-02",
+      "value": 19.391718426501,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -60523,6 +62616,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-03",
+      "value": 23.5428571428571,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-11-03",
       "value": 5648.79,
@@ -61171,6 +63287,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-04",
+      "value": 34.1714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -61843,6 +63982,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-05",
+      "value": 19.9911468812877,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-11-05",
       "value": 5383.8,
@@ -62511,6 +64673,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-06",
+      "value": 24.3531746031746,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -63183,6 +65368,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-09",
+      "value": 31.5142857142857,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-11-09",
       "value": 5018.85,
@@ -63851,6 +66059,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-10",
+      "value": 37.3714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -64523,6 +66754,29 @@
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-11",
+      "value": 35.9428571428571,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "kospi",
       "date": "2026-11-11",
       "value": 5375.36,
@@ -65083,6 +67337,29 @@
       "vintage": "2026-11-21T14:42:56.002Z",
       "method": "official-api",
       "rawHash": "358e69c93b2a806ef40e7d4b8cfe069127c21b4a40740bf6dc16f3f6cd474718"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-12",
+      "value": 40.3428571428571,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "kospi",
@@ -65847,6 +68124,29 @@
       "sessionStatus": "close",
       "evidence": "上櫃四碼股票之數字漲跌欄統計；排除 ETF、權證與除權息等無數字比價列",
       "rawHash": "1d3dcf9de0b34d5f6098d15e712e88551ccc45c48a0d1b62e9e89244fb78af34"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-13",
+      "value": 37.3714285714286,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
     },
     {
       "metricId": "foreign",
@@ -66687,6 +68987,29 @@
       "rawHash": "c0872325e33d042609aa50f3ecbf74bf57b9641e2630d96b3c65643a38f2bdb0"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-16",
+      "value": 31.0673189823875,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "foreign",
       "date": "2026-11-16",
       "value": -701.89212163,
@@ -67471,6 +69794,29 @@
       "rawHash": "fffb1099ae206294ac1c316cae846da0b3e97ea1f524b2d4f2b41de123afb650"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-17",
+      "value": 25.9505791505792,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "foreign",
       "date": "2026-11-17",
       "value": -380.93637437,
@@ -68201,6 +70547,29 @@
       "rawHash": "a05772a8a154df8ba5cec9e01b5017632f6638b9d40875bf44cf3aba10e9c3ba"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-18",
+      "value": 29.8857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "fear"
+      }
+    },
+    {
       "metricId": "foreign",
       "date": "2026-11-18",
       "value": -765.63675949,
@@ -68875,6 +71244,29 @@
       "sessionStatus": "close",
       "evidence": "上櫃四碼股票之數字漲跌欄統計；排除 ETF、權證與除權息等無數字比價列",
       "rawHash": "647493569f5ab2bd15242dbb41560c29523714147074a2c409fe49bc20957a16"
+    },
+    {
+      "metricId": "fearGreed",
+      "date": "2026-11-19",
+      "value": 15.8676691729323,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear"
+      }
     },
     {
       "metricId": "foreign",
@@ -69580,6 +71972,31 @@
       "rawHash": "0878593e9ad2a4802ed24444ea6e61303e50edcb1b04c44fb8695533ffa10922"
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-20",
+      "value": 9.67368421052632,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-22T12:30:38.143Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-22T12:30:38.143Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "35dc78497f7932d036da8f902b3d98085254ce65fab7c36c4fd0d955647517e7",
+      "sentiment": {
+        "rating": "extreme fear",
+        "updatedAt": "2026-11-20T23:59:52.000Z",
+        "previousClose": 18.6761904761905
+      }
+    },
+    {
       "metricId": "foreign",
       "date": "2026-11-20",
       "value": -95.10543572,
@@ -70111,7 +72528,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
       },
       "publishedAt": "2026-11-18T19:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70125,7 +72542,7 @@
         "url": "https://in.marketscreener.com/news/dollar-at-19-month-high-as-policymakers-data-cement-december-rate-hike-bets-ce785edddb8cf623"
       },
       "publishedAt": null,
-      "retrievedAt": "2026-11-22T02:53:02.997Z",
+      "retrievedAt": "2026-11-22T12:30:44.773Z",
       "confidence": "reported",
       "meetingDate": "2026-12-09",
       "approximate": true
@@ -70141,7 +72558,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
       },
       "publishedAt": "2026-11-12T17:45:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70155,7 +72572,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
       },
       "publishedAt": "2026-10-28T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70169,7 +72586,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
       },
       "publishedAt": "2026-10-07T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70183,7 +72600,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70197,7 +72614,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70211,7 +72628,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
       },
       "publishedAt": "2026-08-19T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70225,7 +72642,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       "publishedAt": "2026-07-29T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70239,7 +72656,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       },
       "publishedAt": "2026-07-08T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70253,7 +72670,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     },
     {
@@ -70267,7 +72684,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T02:53:02.331Z",
+      "retrievedAt": "2026-11-22T12:30:43.690Z",
       "confidence": "official"
     }
   ],
@@ -71945,6 +74362,155 @@
           "name": "Yahoo USD/TWD 主報價",
           "status": "success",
           "count": 1
+        },
+        {
+          "name": "Google 期貨報價 wtiFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Google 期貨報價 brentFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "TPEX 外資買賣超",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 股票市場廣度",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TPEX 儀表板融資與指數",
+          "status": "success",
+          "count": 80
+        },
+        {
+          "name": "CME FedWatch 精確快照",
+          "status": "failed",
+          "count": 0,
+          "message": "精確機率尚未串接：需官方完整快照。政策報導與 FOMC 公告已另列，不補估百分比。"
+        },
+        {
+          "name": "Fed 官方 FOMC 公告",
+          "status": "success",
+          "count": 11
+        },
+        {
+          "name": "每日雷達核對補充",
+          "status": "success",
+          "count": 0
+        },
+        {
+          "name": "Reuters 政策補充 2026-11-18",
+          "status": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "da5fb2ae-1d17-466c-9e49-38f1d9cb30d8",
+      "startedAt": "2026-11-22T12:30:33.373Z",
+      "finishedAt": "2026-11-22T12:30:44.819Z",
+      "status": "partial",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 309
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 98
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 102
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 303
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "Yahoo 收盤 nikkei",
+          "status": "success",
+          "count": 100
+        },
+        {
+          "name": "Yahoo 收盤 sox",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 kospi",
+          "status": "success",
+          "count": 101
+        },
+        {
+          "name": "Yahoo 收盤 usdtwd",
+          "status": "success",
+          "count": 107
+        },
+        {
+          "name": "Yahoo 收盤 sp500",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 nasdaq",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "TAIFEX TX 外資未平倉",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Yahoo USD/TWD 主報價",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "CNN Fear & Greed Index",
+          "status": "success",
+          "count": 105
         },
         {
           "name": "Google 期貨報價 wtiFutures",

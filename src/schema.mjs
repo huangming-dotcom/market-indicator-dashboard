@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { CATALOG } from "./catalog.mjs";
+import { CNN_RATING_KEYS } from "./sentiment.mjs";
 export const dateSchema = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -36,6 +37,13 @@ export const observationSchema = z
     sessionStatus: z.enum(["close", "snapshot"]).optional(),
     evidence: z.string().optional(),
     rawHash: z.string().optional(),
+    sentiment: z
+      .object({
+        rating: z.enum(CNN_RATING_KEYS),
+        updatedAt: timestamp.optional(),
+        previousClose: z.number().min(0).max(100).optional(),
+      })
+      .optional(),
     quote: z
       .object({
         symbol: z.string(),
@@ -50,6 +58,33 @@ export const observationSchema = z
     const err = (message) =>
       ctx.addIssue({ code: z.ZodIssueCode.custom, message });
     if (!CATALOG[o.metricId]) return;
+    if (
+      o.metricId === "fearGreed" &&
+      o.value !== null &&
+      (o.value < 0 || o.value > 100 || !o.sentiment)
+    )
+      err("CNN 指數須為 0–100 並附來源分類");
+    if (
+      o.metricId === "fearGreed" &&
+      !["production.dataviz.cnn.io", "www.cnn.com", "edition.cnn.com"].includes(
+        new URL(o.source.url).hostname,
+      )
+    )
+      err("CNN 指數須附 CNN 官方來源");
+    if (o.sentiment) {
+      if (o.metricId !== "fearGreed") err("情緒資料只能附於 CNN 指數");
+      if (
+        o.sentiment.updatedAt &&
+        (Date.parse(o.sentiment.updatedAt) > Date.parse(o.retrievedAt) ||
+          new Intl.DateTimeFormat("en-CA", {
+            timeZone: "America/New_York",
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+          }).format(new Date(o.sentiment.updatedAt)) !== o.date)
+      )
+        err("CNN 更新時間與觀測日不一致");
+    }
     if (CATALOG[o.metricId].quoteSymbol && o.value !== null && !o.quote)
       err("主報價／期貨快照需附報價時間與來源比較基準");
     if (o.quote) {

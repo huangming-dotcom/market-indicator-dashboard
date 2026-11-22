@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { sentimentRating } from "./sentiment.mjs";
 import {
   Area,
   AreaChart,
@@ -62,7 +63,7 @@ import {
   taipeiToday,
   volumeRatio,
 } from "./analytics";
-import type { Dataset } from "./types";
+import type { Dataset, Observation } from "./types";
 
 const NAV = [
   { id: "overview", label: "市場總覽", icon: Layers3 },
@@ -150,6 +151,11 @@ function SourceFoot({
             報價 {fmtTime(s.current.quote.quotedAt)}（台灣）
           </small>
         )}
+        {s.current?.sentiment?.updatedAt && (
+          <small className="block">
+            CNN 更新 {fmtTime(s.current.sentiment.updatedAt)}（台灣）
+          </small>
+        )}
       </span>
       {s.stale ? (
         <span className="badge warn">
@@ -164,6 +170,32 @@ function SourceFoot({
       ) : (
         <span className="badge muted">缺值</span>
       )}
+    </div>
+  );
+}
+function SentimentGauge({ observation }: { observation?: Observation }) {
+  const value = observation?.value,
+    classification = sentimentRating(observation?.sentiment?.rating);
+  return (
+    <div className={`sentiment-box sentiment-${classification.tone}`}>
+      <div className="flex-between">
+        <strong>{classification.label}</strong>
+        <span>0–100 · CNN 分類</span>
+      </div>
+      {value != null && (
+        <div
+          className="sentiment-meter"
+          role="img"
+          aria-label={`恐懼與貪婪指數 ${Math.round(value)}／100，${classification.label}`}
+        >
+          <i style={{ left: `${Math.max(0, Math.min(100, value))}%` }} />
+        </div>
+      )}
+      <div className="sentiment-scale">
+        <span>恐懼</span>
+        <span>中性</span>
+        <span>貪婪</span>
+      </div>
     </div>
   );
 }
@@ -198,11 +230,14 @@ function MetricCard({
           {formatChange(id, s.change)}
         </strong>
         <span>
-          {m.quoteSymbol
-            ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
-            : "較前一交易觀測"}
+          {s.current?.sentiment?.previousClose !== undefined
+            ? "較 CNN 前收基準"
+            : m.quoteSymbol
+              ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
+              : "較前一交易觀測"}
         </span>
       </div>
+      {m.sentimentIndex && <SentimentGauge observation={s.current} />}
       {variant === "trend" && (
         <div className="sparkline" aria-label="近 20 筆交易觀測走勢">
           <ResponsiveContainer width="100%" height="100%">
@@ -224,9 +259,11 @@ function MetricCard({
       )}
       <div className="mini-compare">
         <span>
-          {m.quoteSymbol
-            ? `來源基準 ${formatValue(id, s.current?.quote?.referencePrice)}`
-            : `前值 ${s.previous?.date ?? "—"} · ${formatValue(id, s.previous?.value)}`}
+          {s.current?.sentiment?.previousClose !== undefined
+            ? `CNN 前收基準 ${formatValue(id, s.current.sentiment.previousClose)}`
+            : m.quoteSymbol
+              ? `來源基準 ${formatValue(id, s.current?.quote?.referencePrice)}`
+              : `前值 ${s.previous?.date ?? "—"} · ${formatValue(id, s.previous?.value)}`}
         </span>
         <span className={risk.tone}>{risk.label}</span>
       </div>
@@ -244,6 +281,9 @@ function MetricCard({
             ? "Yahoo 主報價快照 · 非台北收盤；日線趨勢另列"
             : "期貨最新／延遲快照 · 非現貨、非結算價"}
         </p>
+      )}
+      {m.sentimentIndex && (
+        <p className="card-definition">CNN 美國股市情緒 · 分數四捨五入顯示</p>
       )}
     </button>
   );
@@ -1581,6 +1621,7 @@ export default function App() {
                 <div className="detail-value">
                   {formatValue(detail, o?.value)} <small>{m.unit}</small>
                 </div>
+                {m.sentimentIndex && <SentimentGauge observation={o} />}
                 <div className="detail-comparisons">
                   <div>
                     <span>最新觀測</span>
@@ -1588,16 +1629,30 @@ export default function App() {
                   </div>
                   <div>
                     <span>
-                      {m.quoteSymbol ? "前一日保存快照" : "前一交易觀測"}
+                      {o?.sentiment?.previousClose !== undefined
+                        ? "CNN 前收基準"
+                        : m.quoteSymbol
+                          ? "前一日保存快照"
+                          : "前一交易觀測"}
                     </span>
-                    <strong>{s.previous?.date ?? "缺值"}</strong>
-                    <small>{formatValue(detail, s.previous?.value)}</small>
+                    <strong>
+                      {o?.sentiment?.previousClose !== undefined
+                        ? formatValue(detail, o.sentiment.previousClose)
+                        : (s.previous?.date ?? "缺值")}
+                    </strong>
+                    <small>
+                      {o?.sentiment?.previousClose !== undefined
+                        ? "基準日期未提供"
+                        : formatValue(detail, s.previous?.value)}
+                    </small>
                   </div>
                   <div>
                     <span>
-                      {m.quoteSymbol
-                        ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
-                        : "1 日變化"}
+                      {o?.sentiment?.previousClose !== undefined
+                        ? "較 CNN 前收基準"
+                        : m.quoteSymbol
+                          ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
+                          : "1 日變化"}
                     </span>
                     <strong>{formatChange(detail, s.change)}</strong>
                   </div>
@@ -1648,6 +1703,20 @@ export default function App() {
                     </dd>
                     <dt>觀測時區</dt>
                     <dd>{o?.timezone ?? "未提供"}</dd>
+                    {o?.sentiment && (
+                      <>
+                        <dt>CNN 情緒分類</dt>
+                        <dd>{sentimentRating(o.sentiment.rating).label}</dd>
+                        <dt>原始指數分數</dt>
+                        <dd>{o.value?.toFixed(4)}／100（卡片四捨五入）</dd>
+                        {o.sentiment.updatedAt && (
+                          <>
+                            <dt>CNN 更新時間</dt>
+                            <dd>{fmtTime(o.sentiment.updatedAt)}（台灣）</dd>
+                          </>
+                        )}
+                      </>
+                    )}
                     {o?.quote && (
                       <>
                         <dt>來源報價時間</dt>

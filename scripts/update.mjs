@@ -12,6 +12,7 @@ import {
   mergeObservations,
 } from "./lib.mjs";
 import * as providers from "./providers.mjs";
+import { cnnFearGreed } from "./cnn-fear-greed.mjs";
 import * as markets from "./market-providers.mjs";
 import { yahooFxQuote } from "./yahoo-fx-quote.mjs";
 import { GOOGLE_FUTURES, googleFutures } from "./google-finance.mjs";
@@ -116,6 +117,7 @@ export async function update({
         );
         await run("TAIFEX TX 外資未平倉", () => markets.taifex(start, end));
         await run("Yahoo USD/TWD 主報價", () => yahooFxQuote(start, end));
+        await run("CNN Fear & Greed Index", () => cnnFearGreed(start, end));
         await Promise.all(
           Object.keys(GOOGLE_FUTURES).map((id) =>
             run("Google 期貨報價 " + id, () => googleFutures(start, end, id)),

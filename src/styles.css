@@ -2306,3 +2306,51 @@ table,
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.sentiment-box {
+  margin: 14px 0;
+  color: #d9d3b4;
+}
+.sentiment-box .flex-between {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.sentiment-box strong {
+  font-size: 0.95rem;
+}
+.sentiment-box .flex-between > span {
+  font-size: 0.75rem;
+  color: #93a59b;
+}
+.sentiment-extreme-fear strong,
+.sentiment-fear strong {
+  color: #e7a18c;
+}
+.sentiment-neutral strong {
+  color: #d9cb8e;
+}
+.sentiment-greed strong,
+.sentiment-extreme-greed strong {
+  color: #bbd995;
+}
+.sentiment-meter {
+  position: relative;
+  height: 7px;
+  margin: 12px 2px 8px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ca7865, #bba26b, #a9c489, #7faf87);
+}
+.sentiment-meter i {
+  position: absolute;
+  top: -3px;
+  width: 3px;
+  height: 13px;
+  border-radius: 2px;
+  background: #f1f3df;
+  transform: translateX(-50%);
+}
+.sentiment-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #93a59b;
+}

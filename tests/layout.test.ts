@@ -7,6 +7,25 @@ import {
   LAYOUT_KEY,
 } from "../src/layout";
 describe("版面保存與匯入", () => {
+  it("修訂 4 補入 CNN 卡，不重開既有卡或將已選日線換回主報價；之後可隱藏 CNN", () => {
+    const old = defaultLayout();
+    old.defaultsRevision = 4;
+    old.cards = old.cards.filter(
+      (c) => !["fearGreed", "usdtwdQuote"].includes(c.id),
+    );
+    old.cards.find((c) => c.id === "usdtwd")!.visible = true;
+    old.cards.find((c) => c.id === "wtiFutures")!.visible = false;
+    const next = parseLayout(old);
+    expect(next.defaultsRevision).toBe(5);
+    expect(next.cards.find((c) => c.id === "fearGreed")?.visible).toBe(true);
+    expect(next.cards.find((c) => c.id === "usdtwd")?.visible).toBe(true);
+    expect(next.cards.find((c) => c.id === "usdtwdQuote")?.visible).toBe(false);
+    expect(next.cards.find((c) => c.id === "wtiFutures")?.visible).toBe(false);
+    next.cards.find((c) => c.id === "fearGreed")!.visible = false;
+    expect(
+      parseLayout(next).cards.find((c) => c.id === "fearGreed")?.visible,
+    ).toBe(false);
+  });
   it("修訂 3 換成主報價卡並保留位置、隱藏、風格與寬度，日線另列", () => {
     const old = defaultLayout();
     old.defaultsRevision = 3;
@@ -18,7 +37,7 @@ describe("版面保存與匯入", () => {
     fx.width = 2;
     const index = old.cards.indexOf(fx),
       next = parseLayout(old);
-    expect(next.defaultsRevision).toBe(4);
+    expect(next.defaultsRevision).toBe(5);
     expect(next.cards[index]).toMatchObject({
       id: "usdtwdQuote",
       visible: false,
@@ -35,7 +54,7 @@ describe("版面保存與匯入", () => {
     );
     old.cards.find((c) => c.id === "wti")!.visible = false;
     const next = parseLayout(old);
-    expect(next.defaultsRevision).toBe(4);
+    expect(next.defaultsRevision).toBe(5);
     expect(next.cards.find((c) => c.id === "wti")!.visible).toBe(false);
     for (const id of ["wtiFutures", "brentFutures"])
       expect(next.cards.find((c) => c.id === id)?.visible).toBe(true);

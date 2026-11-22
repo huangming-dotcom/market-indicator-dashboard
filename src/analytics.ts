@@ -50,11 +50,14 @@ export function snapshot(data: Dataset, id: string, date: string) {
     (!!other &&
       !!current &&
       sessionLag(dailyMarket, other.date, current.date) === sessions);
-  const change = CATALOG[id].quoteSymbol
-    ? (current?.quote?.changePct ?? null)
-    : completeGap(previous, 1)
-      ? delta(current, previous, id)
-      : null;
+  const change =
+    current?.sentiment?.previousClose !== undefined && current.value !== null
+      ? current.value - current.sentiment.previousClose
+      : CATALOG[id].quoteSymbol
+        ? (current?.quote?.changePct ?? null)
+        : completeGap(previous, 1)
+          ? delta(current, previous, id)
+          : null;
   const five =
     !CATALOG[id].quoteSymbol && completeGap(rows.at(-6), 5)
       ? delta(current, rows.at(-6), id)

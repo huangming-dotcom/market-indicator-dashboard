@@ -79,7 +79,7 @@ catalog.dailyMarket 決定股票／台股結構日行情使用的 US、TW、JP�
 
 自訂版面是獨立 layout schema v1，保存於瀏覽器 localStorage（market-radar-layout-v1），不改市場數據。可匯入／匯出 JSON；只接受有效 active metric ID、唯一卡片、指定樣式與寬度。舊版儲存損壞時使用預設版面。
 
-layout.defaultsRevision=4 為現行預設修訂。舊版油價卡片依修訂 2／3 遷移；修訂 3→4 將 usdtwd 卡片替換為 usdtwdQuote，保留排序／顯示／風格／寬度，日線指標仍可自行加入；不重開已隱藏的原油卡。
+layout.defaultsRevision=5 為現行預設修訂。舊版油價卡片依修訂 2／3 遷移；修訂 3→4 將 usdtwd 卡片替換為 usdtwdQuote，保留偏好。修訂 4→5 僅補入 CNN 卡，不重新開啟既有隱藏卡片或重新替換使用者主動選回的日線；修訂 5 之後可自行隱藏 CNN。
 
 USD/TWD 使用 market=FX、timezone=Europe/London、method=market-data-api、sessionStatus=close；驗證 TWD=X／CURRENCY／報價幣別 TWD，保留 4 位小數，只收來源日已結束且為週一至五的日線。FRED H.10 保持 official-api 與其原時區，跨方法不計算匯率差值；備援不覆蓋既有 Yahoo 日線。
 
@@ -87,7 +87,15 @@ usdtwd 為保留的歷史日線；新 usdtwdQuote 才是預設卡片主報價，
 
 Yahoo 快照驗證使用其實際 quoteTimezone 與 Yahoo endpoint，不套 Google／NYMEX 日期與網址。主報價變化取 quote.changePct，五日變化缺值；獨立日線維持原比較規則。Regime v4 使用主報價輸入，缺少歷史主報價時減少覆蓋，不以日線混充。
 
-## Google 期貨快照
+## CNN 情緒指數
+
+fearGreed 為 0–100 分，change=absolute、單位分、precision=0（僅影響顯示）。sentiment 包含 rating（CNN 原文允許值）、選填 updatedAt 與 previousClose（0–100）。有效分數須附分類；只允許 CNN 官方來源；更新時間不得晚於擷取，並與紐約觀測日一致。缺值仍為 null，不等於 0。
+
+官方 graphdata 歷史 row.x 為毫秒：午夜 UTC 視為來源日期錨點，不誤退為紐約前日；非午夜快照依紐約日期。相同日期取較晚紀錄，current 主指數再覆蓋同日歷史；不執行插值。歷史日期錨點不是精確發布時間，publishedAt 保留 null。來源 rating 只做繁體翻譯，不根據四捨五入後分數重新分類。
+
+current.previous_close 與歷史前值可能不同，最新 change 採來源基準並顯示「較 CNN 前收基準」，不填造其日期。歷史日沒有該欄位時才使用歷史前一筆比較。相同分數但分類／更新時間／基準變更追加 vintage。此情緒指標不影響既有 Regime 六項輸入及規則版本。
+
+## Google 期貨快照契約
 
 wtiFutures／brentFutures 使用獨立 metric，method=market-data-api、sessionStatus=snapshot、market=US-FUTURES、timezone=America/New_York，date 為報價時間的紐約日期。quote 欄位包含 symbol（CLW00:NYMEX／BZW00:NYMEX）、quotedAt（精確來源時間）、referencePrice、change、changePct（百分比單位）。publishedAt 未提供保持 null；quote 時間不可晚於 retrievedAt。
 

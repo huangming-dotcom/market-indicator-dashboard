@@ -38,6 +38,8 @@ if (!file || !process.argv.includes("--reviewed")) {
       "krx.co.kr",
       "nasdaq.com",
       "yahoo.com",
+      "cnn.com",
+      "cnn.io",
       "google.com",
       "nikkei.co.jp",
       "federalreserve.gov",

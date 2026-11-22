@@ -59,6 +59,45 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("使用者操作", () => {
+  it("CNN 卡顯示來源分類、0–100 色帶、前收基準及更新時間，詳情保留原始精度", async () => {
+    vi.mocked(fetch).mockResolvedValue({
+      ok: true,
+      json: async () =>
+        dataset([
+          obs("fearGreed", "2026-11-20", 24.5, {
+            source: {
+              name: "CNN Fear & Greed Index",
+              url: "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+            },
+            sentiment: {
+              rating: "extreme fear",
+              previousClose: 30,
+              updatedAt: "2026-11-20T23:59:52Z",
+            },
+          }),
+        ]),
+    } as Response);
+    render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    const card = screen.getByLabelText("檢視CNN Fear & Greed Index詳細資料");
+    expect(card.textContent).toContain("極度恐懼");
+    expect(card.textContent).toContain("CNN 前收基準 30");
+    expect(
+      within(card).getByRole("img", {
+        name: "恐懼與貪婪指數 25／100，極度恐懼",
+      }),
+    ).toBeTruthy();
+    expect(card.textContent).toContain("CNN 更新");
+    fireEvent.click(card);
+    const detail = within(
+      screen.getByRole("dialog", { name: "CNN Fear & Greed Index" }),
+    );
+    expect(detail.getByText("24.5000／100（卡片四捨五入）")).toBeTruthy();
+    expect(detail.getByText("基準日期未提供")).toBeTruthy();
+    expect(
+      detail.getByRole("link", { name: "CNN Fear & Greed Index" }),
+    ).toBeTruthy();
+  });
   it("匯率主報價與 Yahoo 畫面一致，詳情說明歷史圖為獨立日線", async () => {
     const quote = {
       symbol: "USDTWD=X",

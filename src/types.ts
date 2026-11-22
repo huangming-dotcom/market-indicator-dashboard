@@ -17,6 +17,7 @@ export interface Observation {
   sessionStatus?: "close" | "snapshot";
   evidence?: string;
   rawHash?: string;
+  sentiment?: { rating: string; updatedAt?: string; previousClose?: number };
   quote?: {
     symbol: string;
     quotedAt: string;

@@ -44,6 +44,17 @@ const m = (id, label, unit, group, source, extra = {}) => ({
   ...extra,
 });
 export const METRICS = [
+  m("fearGreed", "CNN Fear & Greed Index", "分", "macro", "fred", {
+    precision: 0,
+    change: "absolute",
+    maxAge: 3,
+    sentimentIndex: true,
+    source: {
+      name: "CNN Fear & Greed Index",
+      url: "https://www.cnn.com/markets/fear-and-greed",
+    },
+    note: "CNN 美國股市恐懼與貪婪指數，0–100；卡片四捨五入顯示，資料保留原始精度。分類採 CNN rating，最新變化依 CNN 前收基準，基準日期未提供；不加入本平台 Regime 六項輸入。",
+  }),
   m("us2y", "美債 2Y", "%", "macro", "treasury", {
     change: "bp",
     precision: 2,

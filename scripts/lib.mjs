@@ -92,7 +92,8 @@ export function mergeObservations(existing, incoming) {
       canonical(same.source.url) === canonical(o.source.url) &&
       same.period === o.period &&
       same.publishedAt === o.publishedAt &&
-      JSON.stringify(same.quote) === JSON.stringify(o.quote)
+      JSON.stringify(same.quote) === JSON.stringify(o.quote) &&
+      JSON.stringify(same.sentiment) === JSON.stringify(o.sentiment)
     )
       continue;
     result.push(o);
