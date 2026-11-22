@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T00:40:43.738Z",
+  "generatedAt": "2026-11-22T00:45:41.367Z",
   "observations": [
     {
       "metricId": "brent",
@@ -70057,7 +70057,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
       },
       "publishedAt": "2026-11-18T19:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70071,7 +70071,7 @@
         "url": "https://in.marketscreener.com/news/dollar-at-19-month-high-as-policymakers-data-cement-december-rate-hike-bets-ce785edddb8cf623"
       },
       "publishedAt": null,
-      "retrievedAt": "2026-11-22T00:40:43.655Z",
+      "retrievedAt": "2026-11-22T00:45:41.343Z",
       "confidence": "reported",
       "meetingDate": "2026-12-09",
       "approximate": true
@@ -70087,7 +70087,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
       },
       "publishedAt": "2026-11-12T17:45:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70101,7 +70101,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
       },
       "publishedAt": "2026-10-28T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70115,7 +70115,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
       },
       "publishedAt": "2026-10-07T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70129,7 +70129,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70143,7 +70143,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70157,7 +70157,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
       },
       "publishedAt": "2026-08-19T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70171,7 +70171,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       "publishedAt": "2026-07-29T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70185,7 +70185,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       },
       "publishedAt": "2026-07-08T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70199,7 +70199,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     },
     {
@@ -70213,7 +70213,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-22T00:40:42.717Z",
+      "retrievedAt": "2026-11-22T00:45:40.997Z",
       "confidence": "official"
     }
   ],
@@ -71328,6 +71328,145 @@
         },
         {
           "name": "Google 期貨報價 wtiFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "TPEX 外資買賣超",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 股票市場廣度",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TPEX 儀表板融資與指數",
+          "status": "success",
+          "count": 80
+        },
+        {
+          "name": "CME FedWatch 精確快照",
+          "status": "failed",
+          "count": 0,
+          "message": "精確機率尚未串接：需官方完整快照。政策報導與 FOMC 公告已另列，不補估百分比。"
+        },
+        {
+          "name": "Fed 官方 FOMC 公告",
+          "status": "success",
+          "count": 11
+        },
+        {
+          "name": "每日雷達核對補充",
+          "status": "success",
+          "count": 0
+        },
+        {
+          "name": "Reuters 政策補充 2026-11-18",
+          "status": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4c832181-99be-4192-a226-247fc26260d3",
+      "startedAt": "2026-11-22T00:45:09.785Z",
+      "finishedAt": "2026-11-22T00:45:41.367Z",
+      "status": "partial",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 309
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 98
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 102
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 303
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "Yahoo 收盤 nikkei",
+          "status": "success",
+          "count": 100
+        },
+        {
+          "name": "Yahoo 收盤 usdtwd",
+          "status": "success",
+          "count": 107
+        },
+        {
+          "name": "Yahoo 收盤 sox",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 nasdaq",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 sp500",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 kospi",
+          "status": "success",
+          "count": 101
+        },
+        {
+          "name": "TAIFEX TX 外資未平倉",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Google 期貨報價 wtiFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Google 期貨報價 brentFutures",
           "status": "success",
           "count": 1
         },
