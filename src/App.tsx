@@ -1628,7 +1628,9 @@ export default function App() {
                       {o?.method === "reviewed-import"
                         ? "人工核對匯入"
                         : o?.method === "market-data-api"
-                          ? "行情來源日線"
+                          ? o?.quote
+                            ? "行情網頁快照"
+                            : "行情來源日線"
                           : "官方端點"}
                     </dd>
                     <dt>觀測時區</dt>

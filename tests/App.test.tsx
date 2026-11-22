@@ -95,6 +95,7 @@ describe("使用者操作", () => {
     expect(screen.getByLabelText("檢視WTI 原油現貨詳細資料")).toBeTruthy();
     fireEvent.click(card);
     expect(await screen.findByText("來源報價時間")).toBeTruthy();
+    expect(screen.getByText(/行情網頁快照/)).toBeTruthy();
     expect(
       screen.getByRole("link", { name: "Google Finance" }).getAttribute("href"),
     ).toContain("CLW00:NYMEX");
