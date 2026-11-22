@@ -216,6 +216,13 @@ function MetricCard({
         <span className={risk.tone}>{risk.label}</span>
       </div>
       <SourceFoot id={id} data={data} date={date} />
+      {["wti", "brent", "usdtwd"].includes(id) && (
+        <p className="card-definition">
+          {id === "usdtwd"
+            ? "1 USD 對應 TWD · 日線口徑見來源，非台北收盤"
+            : "EIA 現貨 · 非期貨，依來源發布日期更新"}
+        </p>
+      )}
     </button>
   );
 }
@@ -1257,6 +1264,13 @@ export default function App() {
                     </span>
                   </button>
                 </div>
+                <div className="update-schedule" aria-label="資料更新時間說明">
+                  <span>每日更新（台灣）07:00／09:00／17:30／22:30</span>
+                  <span>
+                    已發布快照 {fmtTime(data.generatedAt)}
+                    ；來源日期以各卡片為準，排程可能延後。
+                  </span>
+                </div>
                 <div className="close-quality">
                   <span>
                     收盤資料到齊{" "}
@@ -1626,6 +1640,19 @@ export default function App() {
                       "未接通的資料請依 README 核對匯入。"}
                   </p>
                   {o?.evidence && <p>核對依據：{o.evidence}</p>}
+                  {m.reference && (
+                    <p className="panel-note">
+                      Google 提供的是期貨參考，與本卡現貨分開：{" "}
+                      <a
+                        className="source-link"
+                        href={m.reference.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {m.reference.name} <ExternalLink size={13} />
+                      </a>
+                    </p>
+                  )}
                   <p className="panel-note">
                     歷史回補反映目前來源版本；發布時間未知時不假設為觀測當天。不是當時可得資訊回測。
                   </p>

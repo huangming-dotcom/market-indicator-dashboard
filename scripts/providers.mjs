@@ -66,7 +66,17 @@ export function parseFred(body, id, series, ctx, start, end) {
         r.observation_date <= end &&
         numeric(r[series]) !== null,
     )
-    .map((r) => observation(id, r.observation_date, numeric(r[series]), ctx));
+    .map((r) =>
+      observation(id, r.observation_date, numeric(r[series]), ctx, {
+        source: { name: "FRED／原始發布機構", url: ctx.url },
+        ...(id === "usdtwd"
+          ? {
+              evidence:
+                "Fed H.10 美國午間買入匯率；非 Yahoo 日線、非台北外匯收盤",
+            }
+          : {}),
+      }),
+    );
 }
 export async function fred(start, end, id, series) {
   const ctx = await fetchArchived(

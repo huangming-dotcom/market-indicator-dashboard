@@ -81,15 +81,27 @@ export const METRICS = [
     precision: 3,
     threshold: 0.5,
     direction: "down",
-    note: "Fed H.10 美國午間買入匯率，非台北外匯收盤",
+    note: "Yahoo Finance TWD=X 已結束日線，1 USD 對應 TWD，非台北外匯收盤；較早歷史可為 FRED H.10，依逐筆來源為準",
+    source: {
+      name: "Yahoo Finance · USD/TWD",
+      url: "https://finance.yahoo.com/quote/TWD%3DX/",
+    },
   }),
   m("wti", "WTI 原油現貨", "USD／桶", "macro", "fred", {
     threshold: 3,
     note: "EIA Cushing 現貨，非期貨結算",
+    reference: {
+      name: "Google Finance WTI 期貨參考（非現貨）",
+      url: "https://www.google.com/finance/quote/CLW00:NYMEX",
+    },
   }),
-  m("brent", "Brent 原油現貨", "USD／桶", "macro", "fred", {
+  m("brent", "布蘭特 Brent 原油現貨", "USD／桶", "macro", "fred", {
     threshold: 3,
     note: "EIA Europe Brent 現貨，非期貨結算",
+    reference: {
+      name: "Google Finance 布蘭特期貨參考（非現貨）",
+      url: "https://www.google.com/finance/quote/BZW00:NYMEX",
+    },
   }),
   m("sp500", "S&P 500", "點", "global", "fred", {
     threshold: 2,
@@ -239,7 +251,7 @@ for (const metric of METRICS) {
 export const CATALOG = Object.fromEntries(METRICS.map((x) => [x.id, x]));
 // Preserve historical AI data validation while removing it from navigation and coverage.
 export const ACTIVE_METRICS = METRICS.filter((metric) => metric.group !== "ai");
-export const RULE_VERSION = "regime-v2-close";
+export const RULE_VERSION = "regime-v3-fx";
 export const GROUPS = {
   macro: "總經與利率",
   fed: "FedWatch",

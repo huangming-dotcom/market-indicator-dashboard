@@ -84,6 +84,8 @@ export function delta(
     a.meetingDate !== b.meetingDate
   )
     return null;
+  // Yahoo FX daily close and Fed H.10 noon fixing are different measurements.
+  if (id === "usdtwd" && a.method !== b.method) return null;
   const mode = CATALOG[id].change;
   if (mode === "bp") return (a.value - b.value) * 100;
   if (mode === "pp" || mode === "absolute") return a.value - b.value;

@@ -143,6 +143,23 @@ export default function OverviewBoard({
       {!cards.length && (
         <div className="empty">目前未選擇卡片，請從「自訂版面」加入指標。</div>
       )}
+      {cards.some((c) => ["wti", "brent"].includes(c.id)) && (
+        <p className="panel-note oil-reference">
+          原油卡片採 EIA 現貨；Google Finance 的報價為期貨，另供參考：{" "}
+          <a href={CATALOG.wti.reference.url} target="_blank" rel="noreferrer">
+            WTI 期貨
+          </a>{" "}
+          ·{" "}
+          <a
+            href={CATALOG.brent.reference.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            布蘭特期貨
+          </a>
+          。兩者不混算。
+        </p>
+      )}
       {message && (
         <p className="layout-message" role="status">
           {message}

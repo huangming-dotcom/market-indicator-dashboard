@@ -29,6 +29,7 @@ npm run preview
 
 1. 選擇右上日期，查看截至該日的資料。各指標保留原市場觀測日、前值日期及來源時間。
 2. 點「自訂版面」選擇卡片、完整／精簡／趨勢樣式、單／雙欄寬度；用上下按鈕或拖曳排列。可改依漲跌幅或異常程度排序。設定自動保存在目前瀏覽器；跨裝置可匯出／匯入版面 JSON。
+   WTI 與布蘭特現貨預設顯示在總覽。舊版儲存的版面會一次補入這兩張卡片，保留其他排序／風格；之後自行隱藏不會再次強制開啟。
 3. 點指標開啟詳情，查看日變化、5 日變化、7／30／90 曆日趨勢、實際來源及擷取／發布／版本時間。
 4. 分頁包含總經、全球股市、台股、風險歷史、來源品質。AI 基本面已依需求移除；舊資料契約保留相容性。
 5. 「匯出快照」下載目前日期的數據、政策補充、規則版本及提醒。重新載入只讀取網站已發布快照；資料蒐集在更新管線執行。
@@ -40,7 +41,7 @@ npm run preview
 | 指標                   | 實際來源／定義                                                                                  |
 | ---------------------- | ----------------------------------------------------------------------------------------------- |
 | 2Y／10Y／30Y           | 美國財政部 Par Yield XML，5 日變化須有 6 筆觀測                                                 |
-| USD/TWD                | FRED DEXTAUS／Fed H.10，美國午間買入匯率，非台北收盤                                            |
+| USD/TWD                | Yahoo Finance TWD=X 已結束來源日線，1 USD 對應 TWD；FRED DEXTAUS 保留歷史與備援，非台北收盤     |
 | WTI／Brent             | FRED DCOILWTICO／DCOILBRENTEU，EIA 現貨，非期貨結算                                             |
 | S&P 500／NASDAQ        | Yahoo Finance ^GSPC／^IXIC 已完成日線；FRED 作歷史與備援，不覆蓋已取得的 Yahoo 日線             |
 | SOX／KOSPI／Nikkei 225 | Yahoo Finance ^SOX／^KS11／^N225，未調整價格指數收盤，非 ETF／期貨                              |
@@ -56,6 +57,10 @@ npm run preview
 每筆資料保留實際網址及時間。初始回補約 150 曆日；上市法人／融資／廣度、上櫃外資／廣度先抓最近 6 個交易日；上櫃融資端點目前回傳約 40 日。TAIFEX 最新端點先建立 1 日，前值需後續每日累積或核對匯入。沒有前值時保留缺值。
 
 Yahoo 公開端點不是服務保證，可能限流或改版。解析驗證代碼、時區、價格範圍與已收盤狀態；失敗保留歷史並標示品質。所有資料再發布須遵守原來源條款。
+
+USD/TWD 以 Yahoo Europe/London 來源日期為準，只匯入已跨入下一來源日的週一至週五日線，保留 4 位小數（卡片顯示 3 位），不以 regularMarketPrice 盤中報價冒充收盤。Yahoo 日線與 Fed H.10 午間定價是不同口徑，跨來源方法的匯率比較顯示缺值。
+
+Google Finance 的 [WTI CLW00](https://www.google.com/finance/quote/CLW00:NYMEX) 與 [Brent BZW00](https://www.google.com/finance/quote/BZW00:NYMEX) 明確屬於期貨，僅在總覽與指標詳情提供另開參考連結，不寫入現貨序列。原油現貨仍使用 EIA／FRED；2026-11-22 核對 [EIA WTI](https://www.eia.gov/dnav/pet/hist/RWTCD.htm) 與 [EIA Brent](https://www.eia.gov/dnav/pet/hist/RBRTEd.htm) 兩者最新已發布觀測都為 11/17，不能用較新的期貨價格填成現貨。
 
 ### FedWatch 為何仍可能缺精確百分比？
 
@@ -75,6 +80,7 @@ npm run data:update -- --start 2026-06-01 --end 2026-11-21 --strict
 預設回抓 150 曆日；不可指定未來。HTTP 最多重試 3 次，每次逾時 20 秒。驗證後原子替換 JSON；修訂追加 vintage，不刪歷史。相同數值且僅查詢日期範圍改變不新增版本。更新鎖防止重複執行。
 
 - GitHub Actions 在台灣時間 **07:00、09:00、17:30、22:30** 更新，涵蓋美股收盤、重試、亞洲收盤與台股信用資料；排程可能延後，並非即時行情保證。
+- 頁面上方直接顯示排定時段與最近已發布快照時間。GitHub 排程可能因平台負載延後或跳過（[官方說明](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)）；需以 Actions 實際執行及網站快照為準，不把排定時間視為已完成更新。
 - 單一來源失敗會保留舊值，成功來源仍更新並發布；頁面顯示部分來源待補及落後日期。全部來源失敗、schema 或驗收失敗則不部署。
 - --strict 適合診斷：任一來源失敗回傳非零；正常排程採部分成功發布，避免 CME 未配置阻擋其他市場。
 - 推送 main 後自動驗證、測試與部署；手動更新在 Actions → Daily market data → Run workflow 勾選 update_data。
@@ -87,7 +93,7 @@ npm run data:update -- --start 2026-06-01 --end 2026-11-21 --strict
 - 定義以 src/catalog.mjs、schema 以 src/schema.mjs、計算以 src/analytics.ts 為單一來源；[JSON Schema](docs/history.schema.json)是匯出檔。
 - 日行情採 US／TW／JP／KR 交易日曆（2025–2027，exchange_calendars 4.13.3），處理休市、夏令時間及提早收盤。日曆是社群模型；臨時休市須維護。超出覆蓋範圍顯示未知，不宣稱最新。開發者可在隔離 Python 環境安裝該版本後執行 scripts/generate-calendars.py；網站和更新不需 Python。
 - 美債／匯率／現貨能源保留各自發布頻率及時效，不能套股票交易日曆，不能保證與股市同步。
-- Risk Regime 版本 regime-v2-close，納入交易日落後判斷；至少 4／6 有效輸入且跨市場日期差不超過 3 日，否則資料不足。歷史使用目前資料版本重算，不保證 point-in-time 回測。
+- Risk Regime 版本 regime-v3-fx，納入交易日落後及匯率跨來源口徑判斷；至少 4／6 有效輸入且跨市場日期差不超過 3 日，否則資料不足。歷史使用目前資料版本重算，不保證 point-in-time 回測。
 - 7／30／90 是曆日視窗；缺值不插補。廣度排除持平、未成交與無比價。
 - 發布時間未知保留 null，擷取時間不等於發布時間。本工具的風險規則未經投資績效驗證。
 

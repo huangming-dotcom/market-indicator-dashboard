@@ -3,6 +3,14 @@ import { fetchArchived, observation, numeric, rocDate } from "./lib.mjs";
 import { isCompletedSession } from "../src/sessions.mjs";
 
 export const YAHOO = {
+  usdtwd: {
+    symbol: "TWD=X",
+    market: "FX",
+    timezone: "Europe/London",
+    instrumentType: "CURRENCY",
+    currency: "TWD",
+    precision: 4,
+  },
   sp500: { symbol: "^GSPC", market: "US", timezone: "America/New_York" },
   nasdaq: { symbol: "^IXIC", market: "US", timezone: "America/New_York" },
   sox: { symbol: "^SOX", market: "US", timezone: "America/New_York" },
@@ -18,9 +26,10 @@ export function parseYahoo(body, id, ctx, start, end) {
     payload.chart.error ||
     !result ||
     result.meta.symbol !== config.symbol ||
-    result.meta.instrumentType !== "INDEX"
+    result.meta.instrumentType !== (config.instrumentType ?? "INDEX") ||
+    (config.currency && result.meta.currency !== config.currency)
   )
-    throw new Error("Yahoo 指數回應或代碼不符");
+    throw new Error("Yahoo 行情回應、報價幣別或代碼不符");
   if (result.meta.exchangeTimezoneName !== config.timezone)
     throw new Error("Yahoo 交易時區變動");
   const dates = result.timestamp;
@@ -38,12 +47,19 @@ export function parseYahoo(body, id, ctx, start, end) {
     day: "2-digit",
   });
   const seen = new Set();
+  const currencyToday =
+    config.instrumentType === "CURRENCY"
+      ? formatter.format(new Date(ctx.retrievedAt))
+      : null;
   return dates.flatMap((stamp, index) => {
     const date = formatter.format(new Date(stamp * 1000));
     if (
       date < start ||
       date > end ||
-      !isCompletedSession(config.market, date, ctx.retrievedAt)
+      (currencyToday
+        ? date >= currencyToday ||
+          [0, 6].includes(new Date(date + "T12:00:00Z").getUTCDay())
+        : !isCompletedSession(config.market, date, ctx.retrievedAt))
     )
       return [];
     if (seen.has(date)) throw new Error("Yahoo 交易日重複");
@@ -51,7 +67,8 @@ export function parseYahoo(body, id, ctx, start, end) {
     const raw = quotes.close[index];
     if (raw !== null && (!Number.isFinite(raw) || raw <= 0))
       throw new Error("Yahoo 收盤值無效");
-    const value = raw === null ? null : Math.round(raw * 100) / 100;
+    const scale = 10 ** (config.precision ?? 2);
+    const value = raw === null ? null : Math.round(raw * scale) / scale;
     const high = quotes.high?.[index],
       low = quotes.low?.[index];
     if (
@@ -68,7 +85,9 @@ export function parseYahoo(body, id, ctx, start, end) {
         timezone: config.timezone,
         method: "market-data-api",
         sessionStatus: "close",
-        evidence: "未調整日線收盤；已按交易日曆排除尚未收盤日",
+        evidence: currencyToday
+          ? "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice"
+          : "未調整日線收盤；已按交易日曆排除尚未收盤日",
       }),
     ];
   });

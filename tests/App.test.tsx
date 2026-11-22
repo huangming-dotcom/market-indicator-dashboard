@@ -58,6 +58,24 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("使用者操作", () => {
+  it("總覽預設顯示兩張原油現貨卡、更新時段與分開標示的 Google 期貨連結", async () => {
+    render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    expect(screen.getByLabelText("檢視WTI 原油現貨詳細資料")).toBeTruthy();
+    expect(
+      screen.getByLabelText("檢視布蘭特 Brent 原油現貨詳細資料"),
+    ).toBeTruthy();
+    expect(screen.getByLabelText("資料更新時間說明").textContent).toContain(
+      "07:00／09:00／17:30／22:30",
+    );
+    expect(
+      screen.getByRole("link", { name: "WTI 期貨" }).getAttribute("href"),
+    ).toBe("https://www.google.com/finance/quote/CLW00:NYMEX");
+    fireEvent.click(screen.getByLabelText("檢視WTI 原油現貨詳細資料"));
+    expect(
+      await screen.findByRole("link", { name: /Google Finance WTI 期貨參考/ }),
+    ).toBeTruthy();
+  });
   it("可調整卡片風格、寬度、顯示與順序，重開後保留；AI 選單已移除", async () => {
     const first = render(<App />);
     await screen.findByText("今日與前一交易觀測");

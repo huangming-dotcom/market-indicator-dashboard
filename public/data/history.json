@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T14:59:29.277Z",
+  "generatedAt": "2026-11-22T00:21:14.464Z",
   "observations": [
     {
       "metricId": "brent",
@@ -7061,6 +7061,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-06-25",
+      "value": 31.808,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-06-25",
       "value": 134.56150105,
@@ -7613,6 +7633,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-06-26",
+      "value": 31.86,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -8169,6 +8209,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-06-29",
+      "value": 31.847,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-06-29",
       "value": 112.10546174,
@@ -8721,6 +8781,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-06-30",
+      "value": 31.8659,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -9277,6 +9357,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-01",
+      "value": 31.8344,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-01",
       "value": 146.83404939,
@@ -9831,6 +9931,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-02",
+      "value": 31.8948,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-02",
       "value": 117.40053658,
@@ -10031,6 +10151,26 @@
       "vintage": "2026-11-21T09:16:55.788Z",
       "method": "official-api",
       "rawHash": "988f05a25e28f70d0b048ee1114d4b787813dc6ef2a132b36505bdc792c7ae10"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-03",
+      "value": 31.9309,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -10531,6 +10671,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-06",
+      "value": 31.928,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -11087,6 +11247,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-07",
+      "value": 32.0549,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-07",
       "value": 154.47467314,
@@ -11639,6 +11819,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-08",
+      "value": 32.1359,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -12195,6 +12395,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-09",
+      "value": 32.1092,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-09",
       "value": 104.83502597,
@@ -12711,6 +12931,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-10",
+      "value": 32.0972,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "wti",
@@ -13247,6 +13487,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-13",
+      "value": 32.0991,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -13803,6 +14063,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-14",
+      "value": 32.162,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-14",
       "value": 155.48656718,
@@ -14355,6 +14635,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-15",
+      "value": 32.1339,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -14911,6 +15211,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-16",
+      "value": 32.2109,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-16",
       "value": 103.74680186,
@@ -15445,6 +15765,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-17",
+      "value": 32.2643,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-17",
       "value": 182.44071063,
@@ -15977,6 +16317,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-20",
+      "value": 32.313,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -16533,6 +16893,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-21",
+      "value": 32.2759,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-21",
       "value": 100.50212116,
@@ -17085,6 +17465,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-22",
+      "value": 32.3254,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -17641,6 +18041,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-23",
+      "value": 32.3791,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-23",
       "value": 97.01104103,
@@ -18193,6 +18613,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-24",
+      "value": 32.299,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -18749,6 +19189,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-27",
+      "value": 32.3223,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-27",
       "value": 89.80078815,
@@ -19301,6 +19761,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-28",
+      "value": 32.302,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -19857,6 +20337,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-29",
+      "value": 32.3638,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-29",
       "value": 170.45019383,
@@ -20409,6 +20909,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-07-30",
+      "value": 32.3489,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -20965,6 +21485,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-07-31",
+      "value": 32.395,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-07-31",
       "value": 138.13496579,
@@ -21517,6 +22057,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-03",
+      "value": 32.2931,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -22073,6 +22633,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-04",
+      "value": 32.396,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-04",
       "value": 113.40636777,
@@ -22625,6 +23205,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-05",
+      "value": 32.3951,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -23181,6 +23781,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-06",
+      "value": 32.2648,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-06",
       "value": 106.50583944,
@@ -23733,6 +24353,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-07",
+      "value": 32.2068,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -24289,6 +24929,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-10",
+      "value": 32.2351,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-10",
       "value": 102.38975923,
@@ -24821,6 +25481,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-11",
+      "value": 32.2271,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -25377,6 +26057,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-12",
+      "value": 32.2091,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-12",
       "value": 99.72596202,
@@ -25929,6 +26629,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-13",
+      "value": 32.2023,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -26485,6 +27205,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-14",
+      "value": 32.1241,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-14",
       "value": 119.75502093,
@@ -27017,6 +27757,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-17",
+      "value": 31.9902,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -27573,6 +28333,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-18",
+      "value": 31.8503,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-18",
       "value": 103.33808272,
@@ -28125,6 +28905,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-19",
+      "value": 31.8819,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -28681,6 +29481,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-20",
+      "value": 31.8151,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-20",
       "value": 90.68926422,
@@ -29233,6 +30053,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-21",
+      "value": 31.8383,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -29789,6 +30629,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-24",
+      "value": 31.822,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-24",
       "value": 80.82548083,
@@ -30341,6 +31201,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-25",
+      "value": 31.812,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -30897,6 +31777,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-26",
+      "value": 31.8419,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-26",
       "value": 98.09666418,
@@ -31449,6 +32349,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-27",
+      "value": 31.8059,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -32005,6 +32925,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-08-28",
+      "value": 31.6609,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-08-28",
       "value": 110.93847809,
@@ -32503,6 +33443,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-08-31",
+      "value": 31.626,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -33059,6 +34019,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-01",
+      "value": 31.688,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-01",
       "value": 130.00849196,
@@ -33611,6 +34591,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-02",
+      "value": 31.675,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -34167,6 +35167,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-03",
+      "value": 31.7262,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-03",
       "value": 112.01667577,
@@ -34721,6 +35741,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-04",
+      "value": 31.6954,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-04",
       "value": 92.67046831,
@@ -34921,6 +35961,26 @@
       "vintage": "2026-11-21T09:16:55.866Z",
       "method": "official-api",
       "rawHash": "dc712c7f16a9d732d9d4e21606e8927cd4d78039505c3256d697a005b17394d5"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-07",
+      "value": 31.621,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -35421,6 +36481,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-08",
+      "value": 31.5049,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -35977,6 +37057,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-09",
+      "value": 31.4992,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-09",
       "value": 92.5808022,
@@ -36529,6 +37629,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-10",
+      "value": 31.464,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -37085,6 +38205,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-11",
+      "value": 31.635,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-11",
       "value": 101.11607761,
@@ -37637,6 +38777,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-14",
+      "value": 31.6762,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -38193,6 +39353,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-15",
+      "value": 31.7176,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-15",
       "value": 82.28715551,
@@ -38745,6 +39925,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-16",
+      "value": 31.7734,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -39301,6 +40501,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-17",
+      "value": 31.8596,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-17",
       "value": 107.10347398,
@@ -39855,6 +41075,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-18",
+      "value": 31.8511,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-09-18",
       "value": 120.52158761,
@@ -40015,6 +41255,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-21",
+      "value": 2067.29,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -40302,6 +41562,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-21",
+      "value": 412.57,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-21",
       "value": 8668.17533778,
@@ -40426,6 +41705,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-21",
+      "value": 31.8091,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -40588,6 +41887,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-22",
+      "value": 2085.24,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -40875,6 +42194,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-22",
+      "value": 415.17,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-22",
       "value": 10787.76313348,
@@ -40999,6 +42337,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-22",
+      "value": 31.7384,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -41161,6 +42519,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-23",
+      "value": 2108.51,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -41448,6 +42826,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-23",
+      "value": 413.76,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-23",
       "value": 8946.5068314,
@@ -41572,6 +42969,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-23",
+      "value": 31.6795,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -41714,6 +43131,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-24",
+      "value": 2117.28,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -42021,6 +43458,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-24",
+      "value": 412.99,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-24",
       "value": 7755.91428171,
@@ -42145,6 +43601,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-24",
+      "value": 31.7895,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -42643,6 +44119,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-25",
+      "value": 31.8062,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "wti",
@@ -43145,6 +44641,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-09-28",
+      "value": 31.7787,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "wti",
       "date": "2026-09-28",
       "value": 99.37,
@@ -43287,6 +44803,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-29",
+      "value": 2136.75,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -43594,6 +45130,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-29",
+      "value": 412.25,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-29",
       "value": 8361.44707733,
@@ -43718,6 +45273,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-29",
+      "value": 31.7822,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -43880,6 +45455,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-09-30",
+      "value": 2158.79,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -44187,6 +45782,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-09-30",
+      "value": 417.07,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-09-30",
       "value": 9214.92702613,
@@ -44311,6 +45925,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-09-30",
+      "value": 31.85,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -44473,6 +46107,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-01",
+      "value": 2188.72,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -44780,6 +46434,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-01",
+      "value": 418.82,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-01",
       "value": 8740.46252416,
@@ -44904,6 +46577,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-01",
+      "value": 31.8679,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -45066,6 +46759,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-02",
+      "value": 2215.39,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -45373,6 +47086,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-02",
+      "value": 426.93,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-02",
       "value": 9382.22196327,
@@ -45497,6 +47229,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-02",
+      "value": 31.8868,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -45639,6 +47391,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-05",
+      "value": 2241.73,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -45946,6 +47718,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-05",
+      "value": 432.48,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-05",
       "value": 12110.41395113,
@@ -46070,6 +47861,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-05",
+      "value": 31.8344,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -46232,6 +48043,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-06",
+      "value": 2261.51,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -46539,6 +48370,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-06",
+      "value": 430.86,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-06",
       "value": 10262.04771139,
@@ -46663,6 +48513,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-06",
+      "value": 31.7514,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -46825,6 +48695,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-07",
+      "value": 2289.58,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -47132,6 +49022,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-07",
+      "value": 430.46,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-07",
       "value": 9862.80041197,
@@ -47256,6 +49165,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-07",
+      "value": 31.7769,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -47418,6 +49347,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-08",
+      "value": 2278.72,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -47725,6 +49674,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-08",
+      "value": 426.71,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-08",
       "value": 9245.09097873,
@@ -47849,6 +49817,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-08",
+      "value": 31.8483,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -48349,6 +50337,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-10-09",
+      "value": 31.9254,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "wti",
       "date": "2026-10-09",
       "value": 98.73,
@@ -48491,6 +50499,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-12",
+      "value": 2283.47,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -48778,6 +50806,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-12",
+      "value": 427.9,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-12",
       "value": 8945.21928358,
@@ -48794,6 +50841,26 @@
       "vintage": "2026-11-21T09:16:55.897Z",
       "method": "official-api",
       "rawHash": "23c2920bfdb3f891c6d5aed655262b5ea6d9c289752a7b0e2a434ac8d272bab9"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-12",
+      "value": 31.9161,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -48956,6 +51023,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-13",
+      "value": 2232.01,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -49263,6 +51350,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-13",
+      "value": 414.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-13",
       "value": 12018.61264942,
@@ -49387,6 +51493,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-13",
+      "value": 31.9278,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -49549,6 +51675,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-14",
+      "value": 2255.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -49856,6 +52002,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-14",
+      "value": 420.13,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-14",
       "value": 9781.37416296,
@@ -49980,6 +52145,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-14",
+      "value": 32.105,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -50142,6 +52327,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-15",
+      "value": 2189.63,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -50449,6 +52654,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-15",
+      "value": 396.9,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-15",
       "value": 14357.55219704,
@@ -50573,6 +52797,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-15",
+      "value": 32.1899,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -50735,6 +52979,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-16",
+      "value": 2182.5,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -51042,6 +53306,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-16",
+      "value": 400.26,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-16",
       "value": 9938.1483009,
@@ -51166,6 +53449,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-16",
+      "value": 32.3269,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -51328,6 +53631,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-19",
+      "value": 2152.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -51635,6 +53958,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-19",
+      "value": 394.05,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-19",
       "value": 8667.11859964,
@@ -51759,6 +54101,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-19",
+      "value": 32.387,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -51921,6 +54283,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-20",
+      "value": 2150.08,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -52228,6 +54610,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-20",
+      "value": 387.88,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-20",
       "value": 8029.47441658,
@@ -52352,6 +54753,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-20",
+      "value": 32.4802,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -52514,6 +54935,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-21",
+      "value": 2159.68,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -52821,6 +55262,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-21",
+      "value": 395.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-21",
       "value": 8746.14166736,
@@ -52945,6 +55405,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-21",
+      "value": 32.5776,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -53107,6 +55587,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-22",
+      "value": 2126.3,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -53414,6 +55914,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-22",
+      "value": 381.69,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-22",
       "value": 9334.3747356,
@@ -53538,6 +56057,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-22",
+      "value": 32.3659,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -54058,6 +56597,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-10-23",
+      "value": 32.597,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "wti",
       "date": "2026-10-23",
       "value": 109.72,
@@ -54558,6 +57117,26 @@
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-10-26",
+      "value": 32.5708,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "wti",
       "date": "2026-10-26",
       "value": 105.25,
@@ -54700,6 +57279,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-27",
+      "value": 2092.64,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -55007,6 +57606,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-27",
+      "value": 379.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-27",
       "value": 10316.83538938,
@@ -55131,6 +57749,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-27",
+      "value": 32.5348,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -55293,6 +57931,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-28",
+      "value": 2112.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -55600,6 +58258,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-28",
+      "value": 394.61,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-28",
       "value": 7503.40536882,
@@ -55724,6 +58401,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-28",
+      "value": 32.4255,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -55886,6 +58583,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-29",
+      "value": 2099.59,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -56193,6 +58910,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-29",
+      "value": 387.37,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-29",
       "value": 8238.12748529,
@@ -56317,6 +59053,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-29",
+      "value": 32.3828,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -56479,6 +59235,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-10-30",
+      "value": 2053.01,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -56786,6 +59562,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-10-30",
+      "value": 370.26,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-10-30",
       "value": 9396.0526766,
@@ -56910,6 +59705,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-10-30",
+      "value": 32.5669,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -57072,6 +59887,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-02",
+      "value": 2044.12,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -57397,6 +60232,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-02",
+      "value": 369.24,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-02",
       "value": 7996.87507911,
@@ -57521,6 +60375,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-02",
+      "value": 32.6064,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -57683,6 +60557,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-03",
+      "value": 1965.63,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -57988,6 +60882,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-03",
+      "value": 345.52,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-03",
       "value": 10020.3566099,
@@ -58112,6 +61025,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-03",
+      "value": 32.5851,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -58274,6 +61207,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-04",
+      "value": 1909.19,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -58599,6 +61552,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-04",
+      "value": 343.5,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-04",
       "value": 11769.30442854,
@@ -58723,6 +61695,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-04",
+      "value": 32.733,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -58885,6 +61877,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-05",
+      "value": 1840.37,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -59210,6 +62222,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-05",
+      "value": 321.47,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-05",
       "value": 9870.98883153,
@@ -59334,6 +62365,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-05",
+      "value": 32.8212,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -59496,6 +62547,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-06",
+      "value": 1699.74,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -59821,6 +62892,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-06",
+      "value": 304.02,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-06",
       "value": 13210.7185865,
@@ -59945,6 +63035,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-06",
+      "value": 33.1093,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -60107,6 +63217,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-09",
+      "value": 1701.54,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -60432,6 +63562,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-09",
+      "value": 321.97,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-09",
       "value": 8770.25617232,
@@ -60556,6 +63705,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-09",
+      "value": 32.7603,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -60718,6 +63887,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-10",
+      "value": 1693.09,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -61043,6 +64232,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-10",
+      "value": 332.97,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-10",
       "value": 10340.12240502,
@@ -61167,6 +64375,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-10",
+      "value": 32.7886,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -61329,6 +64557,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-11",
+      "value": 1718.02,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -61654,6 +64902,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-11",
+      "value": 344.11,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-11",
       "value": 8762.95459349,
@@ -61670,6 +64937,26 @@
       "vintage": "2026-11-21T09:16:55.929Z",
       "method": "official-api",
       "rawHash": "f9656767f8e906c43a2e465b2db7d677821348f04d0bb6771e3d85524cbaf831"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-11",
+      "value": 32.9538,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -61832,6 +65119,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-12",
+      "value": 1700.77,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -62157,6 +65464,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-12",
+      "value": 335.73,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "turnover",
       "date": "2026-11-12",
       "value": 10568.42457091,
@@ -62281,6 +65607,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-12",
+      "value": 32.8619,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -62574,6 +65920,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-13",
+      "value": 1720.2,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -62918,6 +66284,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-13",
+      "value": 342.41,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-13",
       "value": 95.39169401,
@@ -63060,6 +66445,26 @@
       "vintage": "2026-11-21T14:42:55.428Z",
       "method": "official-api",
       "rawHash": "1f0fd2a9f0ec53b84f2732ea0ec8d3b566eca63d43ff5ae3aaeabfa72b81c698"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-13",
+      "value": 32.939,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -63353,6 +66758,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-16",
+      "value": 1677.33,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -63697,6 +67122,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-16",
+      "value": 319.12,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-16",
       "value": -183.01702536,
@@ -63785,6 +67229,26 @@
       "vintage": "2026-11-21T09:19:20.046Z",
       "method": "official-api",
       "rawHash": "b2a1d41a65f83a318ae4d80acd47d6ad6cdfa3e86a219424c264864b1a94b326"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-16",
+      "value": 32.8764,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -64078,6 +67542,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-17",
+      "value": 1604.42,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -64422,6 +67906,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-17",
+      "value": 306.61,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-17",
       "value": -38.20722349,
@@ -64510,6 +68013,26 @@
       "vintage": "2026-11-21T09:19:20.046Z",
       "method": "official-api",
       "rawHash": "b2a1d41a65f83a318ae4d80acd47d6ad6cdfa3e86a219424c264864b1a94b326"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-17",
+      "value": 32.9629,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -64749,6 +68272,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-18",
+      "value": 1572.23,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -65093,6 +68636,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-18",
+      "value": 307.55,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-18",
       "value": 166.11584089,
@@ -65181,6 +68743,26 @@
       "vintage": "2026-11-21T09:19:20.046Z",
       "method": "official-api",
       "rawHash": "b2a1d41a65f83a318ae4d80acd47d6ad6cdfa3e86a219424c264864b1a94b326"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-18",
+      "value": 32.9108,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -65366,6 +68948,26 @@
       "market": "TW",
       "timezone": "Asia/Taipei",
       "vintage": "2026-11-21T14:42:59.441Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
+      "metricId": "marginOtc",
+      "date": "2026-11-19",
+      "value": 1474.13,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
       "method": "official-api",
       "sessionStatus": "close",
       "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
@@ -65710,6 +69312,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-19",
+      "value": 285.33,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-19",
       "value": 43.89988208,
@@ -65798,6 +69419,26 @@
       "vintage": "2026-11-21T09:19:20.046Z",
       "method": "official-api",
       "rawHash": "b2a1d41a65f83a318ae4d80acd47d6ad6cdfa3e86a219424c264864b1a94b326"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-19",
+      "value": 32.9299,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
     },
     {
       "metricId": "volume",
@@ -66028,6 +69669,26 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "marginOtc",
+      "date": "2026-11-20",
+      "value": 1328.53,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "億元",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "TWSE 臺股儀表板使用的 TPEX dashboardOtc/marginTrend；marginBalance 單位億元",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "marginTw",
       "date": "2026-11-20",
       "value": 4352.27267,
@@ -66182,6 +69843,25 @@
       "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
     },
     {
+      "metricId": "tpex",
+      "date": "2026-11-20",
+      "value": 263.31,
+      "status": "verified",
+      "source": {
+        "name": "證券櫃檯買賣中心",
+        "url": "https://www.tpex.org.tw/www/dashboardOtc/marginTrend?lang=zh-tw&days=150&date=115/11/22"
+      },
+      "retrievedAt": "2026-11-22T00:21:13.309Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-22T00:21:13.309Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "rawHash": "e1e273fae826dc8f1aea48539b9344fe0057241809132f6dd7b8cddfc487da20"
+    },
+    {
       "metricId": "trust",
       "date": "2026-11-20",
       "value": -73.46992003,
@@ -66272,6 +69952,26 @@
       "rawHash": "b2a1d41a65f83a318ae4d80acd47d6ad6cdfa3e86a219424c264864b1a94b326"
     },
     {
+      "metricId": "usdtwd",
+      "date": "2026-11-20",
+      "value": 33.0263,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782259200&period2=1795478400&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-22T00:21:07.626Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-22T00:21:07.626Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "e5ec4b76815cd8903fabb18bbf7bc20f378243d87263d9a41009d21574bbe4e5"
+    },
+    {
       "metricId": "volume",
       "date": "2026-11-20",
       "value": 170.86212904,
@@ -66303,7 +70003,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
       },
       "publishedAt": "2026-11-18T19:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66317,7 +70017,7 @@
         "url": "https://in.marketscreener.com/news/dollar-at-19-month-high-as-policymakers-data-cement-december-rate-hike-bets-ce785edddb8cf623"
       },
       "publishedAt": null,
-      "retrievedAt": "2026-11-21T14:59:29.232Z",
+      "retrievedAt": "2026-11-22T00:21:14.313Z",
       "confidence": "reported",
       "meetingDate": "2026-12-09",
       "approximate": true
@@ -66333,7 +70033,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
       },
       "publishedAt": "2026-11-12T17:45:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66347,7 +70047,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
       },
       "publishedAt": "2026-10-28T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66361,7 +70061,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
       },
       "publishedAt": "2026-10-07T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66375,7 +70075,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66389,7 +70089,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66403,7 +70103,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
       },
       "publishedAt": "2026-08-19T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66417,7 +70117,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       "publishedAt": "2026-07-29T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66431,7 +70131,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       },
       "publishedAt": "2026-07-08T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66445,7 +70145,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     },
     {
@@ -66459,7 +70159,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-21T14:59:28.692Z",
+      "retrievedAt": "2026-11-22T00:21:13.408Z",
       "confidence": "official"
     }
   ],
@@ -67174,6 +70874,135 @@
           "name": "Yahoo 收盤 kospi",
           "status": "success",
           "count": 102
+        },
+        {
+          "name": "TAIFEX TX 外資未平倉",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "TPEX 外資買賣超",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 股票市場廣度",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TPEX 儀表板融資與指數",
+          "status": "success",
+          "count": 80
+        },
+        {
+          "name": "CME FedWatch 精確快照",
+          "status": "failed",
+          "count": 0,
+          "message": "精確機率尚未串接：需官方完整快照。政策報導與 FOMC 公告已另列，不補估百分比。"
+        },
+        {
+          "name": "Fed 官方 FOMC 公告",
+          "status": "success",
+          "count": 11
+        },
+        {
+          "name": "每日雷達核對補充",
+          "status": "success",
+          "count": 0
+        },
+        {
+          "name": "Reuters 政策補充 2026-11-18",
+          "status": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "992d99c7-d13b-42a9-bcd1-c00d61221c1f",
+      "startedAt": "2026-11-22T00:21:02.657Z",
+      "finishedAt": "2026-11-22T00:21:14.464Z",
+      "status": "partial",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 309
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 98
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 102
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 303
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "Yahoo 收盤 usdtwd",
+          "status": "success",
+          "count": 107
+        },
+        {
+          "name": "Yahoo 收盤 sox",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 sp500",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 nikkei",
+          "status": "success",
+          "count": 100
+        },
+        {
+          "name": "Yahoo 收盤 kospi",
+          "status": "success",
+          "count": 101
+        },
+        {
+          "name": "Yahoo 收盤 nasdaq",
+          "status": "success",
+          "count": 105
         },
         {
           "name": "TAIFEX TX 外資未平倉",

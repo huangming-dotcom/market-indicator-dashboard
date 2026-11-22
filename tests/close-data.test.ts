@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
 import { expectedSession, sessionLag } from "../src/sessions.mjs";
-import { snapshot } from "../src/analytics";
+import { snapshot, delta } from "../src/analytics";
 import {
   parseYahoo,
   parseTaifex,
@@ -104,6 +104,86 @@ describe("收盤交易日與時區", () => {
   });
 });
 describe("新增來源解析", () => {
+  const fx = (currency = "TWD") =>
+    JSON.stringify({
+      chart: {
+        result: [
+          {
+            meta: {
+              symbol: "TWD=X",
+              instrumentType: "CURRENCY",
+              currency,
+              exchangeTimezoneName: "Europe/London",
+              regularMarketPrice: 999,
+            },
+            timestamp: [Date.parse("2026-11-20T00:00:00Z") / 1000],
+            indicators: {
+              quote: [{ close: [32.98765], high: [33.1], low: [32.8] }],
+            },
+          },
+        ],
+        error: null,
+      },
+    });
+  it("Yahoo 匯率保存一美元對新台幣的完整日線，保留四位精度而非盤中價", () => {
+    expect(
+      parseYahoo(fx(), "usdtwd", ctx, "2026-11-01", "2026-11-21")[0],
+    ).toMatchObject({
+      metricId: "usdtwd",
+      date: "2026-11-20",
+      value: 32.9877,
+      market: "FX",
+      timezone: "Europe/London",
+      method: "market-data-api",
+      sessionStatus: "close",
+    });
+  });
+  it("匯率當日尚未結束不冒充收盤，報價方向與幣別錯誤拒絕", () => {
+    expect(
+      parseYahoo(
+        fx(),
+        "usdtwd",
+        { ...ctx, retrievedAt: "2026-11-20T23:30:00Z" },
+        "2026-11-01",
+        "2026-11-21",
+      ),
+    ).toHaveLength(0);
+    expect(() =>
+      parseYahoo(fx("USD"), "usdtwd", ctx, "2026-11-01", "2026-11-21"),
+    ).toThrow();
+    expect(() =>
+      parseYahoo(
+        fx().replace("TWD=X", "TWDUSD=X"),
+        "usdtwd",
+        ctx,
+        "2026-11-01",
+        "2026-11-21",
+      ),
+    ).toThrow();
+  });
+  it("Yahoo 匯率週末 bar 不視為交易收盤", () => {
+    const saturday = fx().replace(
+      String(Date.parse("2026-11-20T00:00:00Z") / 1000),
+      String(Date.parse("2026-11-21T00:00:00Z") / 1000),
+    );
+    expect(
+      parseYahoo(
+        saturday,
+        "usdtwd",
+        { ...ctx, retrievedAt: "2026-11-22T08:00:00Z" },
+        "2026-11-01",
+        "2026-11-22",
+      ),
+    ).toHaveLength(0);
+  });
+  it("Yahoo 日線與 FRED 午間定價不跨來源計算匯率漲跌", () => {
+    const a = obs("usdtwd", "2026-11-20", 33, { method: "market-data-api" }),
+      b = obs("usdtwd", "2026-11-19", 32);
+    expect(delta(a, b, "usdtwd")).toBeNull();
+    expect(delta(a, { ...b, method: "market-data-api" }, "usdtwd")).toBeCloseTo(
+      3.125,
+    );
+  });
   it("Yahoo 依原市場日期保存收盤且不使用調整後值", () => {
     const rows = parseYahoo(
       chart(100.123),

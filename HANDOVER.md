@@ -1,12 +1,11 @@
 # 當前交接快照
 
-日期：2026-11-21（Asia/Taipei）
+日期：2026-11-22（Asia/Taipei）
 
-- 已完成：全球收盤補源（S&P／NASDAQ／SOX／KOSPI／Nikkei）、官方台股期貨與上櫃外資／融資／廣度、交易日落後檢查、自訂卡片與設定備份、Fed 官方公告及 Reuters 定性補充；移除 AI 介面。
-- 資料快照：3580 筆觀測、12 筆政策補充，全球股指及台股最新日 2026-11-20；完整筆數與時間以 public/data/history.json 為準，保留歷史修訂。
-- 驗收：48 項測試、schema 驗證、正式建置與 GitHub Pages 子目錄 HTTP 檢查通過。新版視覺驗收因桌面瀏覽工具故障未執行；不得把初版截圖視為新版驗收。詳見 [驗收紀錄](docs/VERIFICATION.md)。
-- 雲端實測：完整更新與再次部署成功，22／23 來源工作成功，唯一待配置為 CME 精確快照；公開網站與資產 HTTP 200。快照生成於台灣 22:59:29，觀測筆數維持不變。
-- 發布：公開 [GitHub](https://github.com/huangming-dotcom/market-indicator-dashboard) 及 [網站](https://huangming-dotcom.github.io/market-indicator-dashboard/)。推送 main 自動部署，每日台灣 07:00／09:00／17:30／22:30 更新，部分來源失敗仍發布其他已驗證資料。
-- 限制：CME 精確機率仍需官方完整快照或授權資料轉接，定性新聞不補數字。TAIFEX 初始僅 1 日，前值需累積。日曆覆蓋 2025–2027，臨時休市須維護。匯率／現貨油仍依官方發布頻率。
-- 權威來源：[AGENTS](AGENTS.md) 為架構慣例，[README](README.md) 為操作與資料範圍，[資料契約](docs/DATA_CONTRACT.md) 為接入說明；數據與規則以 src 定義為準。
-- Evernote：本次非收工，未要求工作日誌，未更動既有筆記。下次收工依使用者規則整合日誌。
+- 本次完成：USD/TWD 改接 Yahoo TWD=X 已結束來源日線；總覽預設加入 WTI 與布蘭特現貨，舊版版面一次補入且保留其他設定；顯示排定更新時段及已發布快照；Google 原油期貨以獨立參考連結呈現，不替換現貨。
+- 資料：3767 筆觀測、12 筆政策補充（以 public/data/history.json 為準）；Yahoo FX 最新 11/20，EIA／FRED 兩種現貨最新均 11/17，與官方原始表核對一致。未採用 Google 期貨充當現貨。
+- 驗收：54 項測試、資料驗證、正式建置及 Pages 子目錄檢查通過；本次瀏覽工具恢復，完成桌面原油卡片／詳情及手機自訂版面、無水平溢出檢查。最新驗收見 [VERIFICATION](docs/VERIFICATION.md)。
+- 既有功能：全球指數（含 SOX／KOSPI／Nikkei）、台股官方補源、交易日品質、自訂卡片、FOMC／Reuters 補充；AI 介面已移除。
+- 發布：[GitHub](https://github.com/huangming-dotcom/market-indicator-dashboard)／[網站](https://huangming-dotcom.github.io/market-indicator-dashboard/)。每日台灣 07:00／09:00／17:30／22:30 排程，部分來源成功仍發布。11/22 08:21 查核 workflow 啟用中但尚無 schedule 事件紀錄，不能宣稱今早排程已執行；本次會手動觸發雲端完整更新驗證。GitHub 排程可能延後或跳過，請以實際快照／Actions 為準。
+- 限制：CME 精確機率仍需官方完整快照／授權轉接；TAIFEX 初始一日前值待累積；交易日曆覆蓋 2025–2027；原油現貨依發布頻率。Regime 版本 regime-v3-fx，跨 Yahoo／H.10 匯率口徑不計差值。
+- 權威：[AGENTS](AGENTS.md) 架構、[README](README.md) 操作與來源範圍、[資料契約](docs/DATA_CONTRACT.md) 接入說明，src 為機器定義。非收工，本次未更動 Evernote。

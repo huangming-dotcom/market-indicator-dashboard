@@ -79,6 +79,10 @@ catalog.dailyMarket 決定股票／台股結構日行情使用的 US、TW、JP�
 
 自訂版面是獨立 layout schema v1，保存於瀏覽器 localStorage（market-radar-layout-v1），不改市場數據。可匯入／匯出 JSON；只接受有效 active metric ID、唯一卡片、指定樣式與寬度。舊版儲存損壞時使用預設版面。
 
+layout.defaultsRevision=2 為現行預設修訂。缺此標記的舊版設定一次啟用 WTI／Brent 現貨，保留其他設定；修訂 2 之後隱藏原油的選擇會保留，不重設整個版面。
+
+USD/TWD 使用 market=FX、timezone=Europe/London、method=market-data-api、sessionStatus=close；驗證 TWD=X／CURRENCY／報價幣別 TWD，保留 4 位小數，只收來源日已結束且為週一至五的日線。FRED H.10 保持 official-api 與其原時區，跨方法不計算匯率差值；備援不覆蓋既有 Yahoo 日線。Google Finance CLW00／BZW00 是期貨參考連結，禁止寫入 wti／brent 現貨 metric。
+
 ## 建議資料庫遷移
 
 - `metric_definitions(id, unit, frequency, market, source_id, definition_version)`
