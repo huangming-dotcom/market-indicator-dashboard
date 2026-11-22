@@ -6,6 +6,8 @@
 - 實際 Yahoo 主報價 32.958，來源時間 2026-11-20T22:36:29Z（台灣 11/21 06:36:29），同源漲跌 +0.0110、+0.0334%（卡片顯示 +0.03%），比較基準 32.947。不同的日線終值 33.0263 留在 usdtwd，沒有覆寫或刪除。
 - 新 usdtwdQuote 採 regularMarketPrice／regularMarketTime，與歷史日線完全分列。主報價缺少時拒絕日線回填；測試涵蓋 chartPreviousClose 隨 range 變動不影響主報價基準、零漲跌、幣別／時間／來源漲跌不一致、兩序列計算分離、Regime 輸入及舊版版面修訂 3→4 保留偏好。
 - Regime 版本升級 regime-v4-fx-quote；匯率改採主報價同源漲跌，歷史缺主報價時減少覆蓋，不拿日線當同口徑。詳情與迷你趨勢以獨立日線呈現，明確標示與主報價不同。
+- [雲端完整更新及發布](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/44969680585)成功；主報價 provider 成功。雲端觀測 3771 筆，快照時間台灣 09:05:55；唯一待配置的來源仍為 CME 精確快照。
+- 線上瀏覽器確認卡片 32.958／+0.03%，來源時間台灣 11/21 06:36:29，詳情漲跌 0.0110、基準 32.947；圖表明確說明日線另列。390×844 手機 clientWidth=scrollWidth=375，無水平溢出。已保存線上截圖 outputs/yahoo-fx-main-quote-2026-11-22.jpg（不納入 Git／網站）。
 
 ## 2026-11-22 Google 期貨報價卡
 
