@@ -141,13 +141,28 @@ describe("市場結構與風險", () => {
   });
   it("缺值不當 Neutral，至少四個輸入且時間一致", () => {
     expect(regime(dataset(), "2026-11-20").label).toBe("資料不足");
-    const rows = ["sp500", "nasdaq", "taiex", "usdtwd"].flatMap((id) => [
+    const rows = ["sp500", "nasdaq", "taiex", "usdtwdQuote"].flatMap((id) => [
       obs(id, "2026-11-19", 100),
-      obs(id, "2026-11-20", id === "usdtwd" ? 99 : 101),
+      obs(
+        id,
+        "2026-11-20",
+        id === "usdtwdQuote" ? 99 : 101,
+        id === "usdtwdQuote"
+          ? {
+              quote: {
+                symbol: "USDTWD=X",
+                quotedAt: "2026-11-20T12:00:00Z",
+                referencePrice: 100,
+                change: -1,
+                changePct: -1,
+              },
+            }
+          : {},
+      ),
     ]);
     expect(regime(dataset(rows), "2026-11-20").label).toBe("Risk-on");
     const staleDate = rows.map((o) =>
-      o.metricId === "usdtwd"
+      o.metricId === "usdtwdQuote"
         ? { ...o, date: o.date === "2026-11-19" ? "2026-11-14" : "2026-11-15" }
         : o,
     );

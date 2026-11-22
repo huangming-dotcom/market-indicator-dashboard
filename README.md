@@ -41,7 +41,8 @@ npm run preview
 | 指標                    | 實際來源／定義                                                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------- |
 | 2Y／10Y／30Y            | 美國財政部 Par Yield XML，5 日變化須有 6 筆觀測                                                 |
-| USD/TWD                 | Yahoo Finance TWD=X 已結束來源日線，1 USD 對應 TWD；FRED DEXTAUS 保留歷史與備援，非台北收盤     |
+| USD/TWD 主報價          | Yahoo Finance USDTWD=X regularMarketPrice／regularMarketTime，同源當日漲跌，與 Yahoo 主畫面對齊 |
+| USD/TWD 歷史日線        | Yahoo TWD=X 日線，FRED DEXTAUS 歷史備援；與主報價分列，非台北收盤                               |
 | WTI／Brent              | FRED DCOILWTICO／DCOILBRENTEU，EIA 現貨，非期貨結算                                             |
 | WTI／布蘭特期貨・Google | Google Finance CLW00:NYMEX／BZW00:NYMEX 最新／延遲報價快照；1D 依來源比較基準，非官方結算       |
 | S&P 500／NASDAQ         | Yahoo Finance ^GSPC／^IXIC 已完成日線；FRED 作歷史與備援，不覆蓋已取得的 Yahoo 日線             |
@@ -59,7 +60,9 @@ npm run preview
 
 Yahoo 公開端點不是服務保證，可能限流或改版。解析驗證代碼、時區、價格範圍與已收盤狀態；失敗保留歷史並標示品質。所有資料再發布須遵守原來源條款。
 
-USD/TWD 以 Yahoo Europe/London 來源日期為準，只匯入已跨入下一來源日的週一至週五日線，保留 4 位小數（卡片顯示 3 位），不以 regularMarketPrice 盤中報價冒充收盤。Yahoo 日線與 Fed H.10 午間定價是不同口徑，跨來源方法的匯率比較顯示缺值。
+總覽「美元／新台幣」改採 Yahoo 主報價快照（usdtwdQuote），顯示主報價、Yahoo 同源當日漲跌、來源比較基準與精確報價時間。不是即時串流或台北外匯收盤；不推定市場狀態。主報價缺失時保留缺值，不拿日線 close 補成主報價。Yahoo chartPreviousClose 隨 range 改變，不可當昨日比較基準；基準由主報價減同源 regularMarketChange／相符的 fulldayChange 得到，並核對 regularMarketChangePercent。
+
+「美元／新台幣・歷史日線」（usdtwd）保留原始數值與 vintage。主報價卡片的迷你圖／詳情趨勢讀取此獨立日線，畫面明確說明口徑不同，不能以圖中日線終值當作主報價。日線按 Europe/London 日期篩選已結束週一至週五觀測；與 Fed H.10 午間定價不跨方法計算。主報價快照從首次擷取開始累積，之前的主報價與五日變化不補估。舊版版面修訂 3→4 會將原匯率卡換為主報價，保留位置、顯示與風格；日線卡另列於自訂選單且預設隱藏。
 
 Google Finance 的 [WTI CLW00](https://www.google.com/finance/quote/CLW00:NYMEX) 與 [Brent BZW00](https://www.google.com/finance/quote/BZW00:NYMEX) 已新增為獨立報價卡，隨既有每日四次排程擷取。卡片顯示價格、Google 1D 百分比、來源基準及台灣時間的報價時間；點卡片可看來源連結與擷取時間。這是最新／延遲期貨快照，非保證即時或官方結算，不寫入現貨序列。沒有匯入完整期貨歷史，趨勢從首次擷取日起逐日累積，5 日變化保留缺值；1D 不以兩次擷取相減。Google 頁面無穩定公開 API 保證，格式／限流／同意頁失敗會保留歷史並顯示品質。
 
@@ -96,7 +99,7 @@ npm run data:update -- --start 2026-06-01 --end 2026-11-21 --strict
 - 定義以 src/catalog.mjs、schema 以 src/schema.mjs、計算以 src/analytics.ts 為單一來源；[JSON Schema](docs/history.schema.json)是匯出檔。
 - 日行情採 US／TW／JP／KR 交易日曆（2025–2027，exchange_calendars 4.13.3），處理休市、夏令時間及提早收盤。日曆是社群模型；臨時休市須維護。超出覆蓋範圍顯示未知，不宣稱最新。開發者可在隔離 Python 環境安裝該版本後執行 scripts/generate-calendars.py；網站和更新不需 Python。
 - 美債／匯率／現貨能源保留各自發布頻率及時效，不能套股票交易日曆，不能保證與股市同步。
-- Risk Regime 版本 regime-v3-fx，納入交易日落後及匯率跨來源口徑判斷；至少 4／6 有效輸入且跨市場日期差不超過 3 日，否則資料不足。歷史使用目前資料版本重算，不保證 point-in-time 回測。
+- Risk Regime 版本 regime-v4-fx-quote，匯率輸入改採主報價的同源漲跌，保留交易日落後判斷；至少 4／6 有效輸入且跨市場日期差不超過 3 日，否則資料不足。沒有歷史主報價的日期不拿日線代替，因此部分過去日期覆蓋可能較少。歷史使用目前資料版本重算，不保證 point-in-time 回測。
 - 7／30／90 是曆日視窗；缺值不插補。廣度排除持平、未成交與無比價。
 - 發布時間未知保留 null，擷取時間不等於發布時間。本工具的風險規則未經投資績效驗證。
 

@@ -6,6 +6,7 @@ import {
   render,
   screen,
   waitFor,
+  within,
 } from "@testing-library/react";
 import App from "../src/App";
 import { dataset, obs } from "./fixtures";
@@ -58,6 +59,45 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("使用者操作", () => {
+  it("匯率主報價與 Yahoo 畫面一致，詳情說明歷史圖為獨立日線", async () => {
+    const quote = {
+      symbol: "USDTWD=X",
+      quotedAt: "2026-11-20T22:36:29Z",
+      referencePrice: 32.947,
+      change: 0.011,
+      changePct: 0.0334,
+    };
+    vi.mocked(fetch).mockResolvedValue({
+      ok: true,
+      json: async () =>
+        dataset([
+          obs("usdtwd", "2026-11-20", 33.0263),
+          obs("usdtwdQuote", "2026-11-20", 32.958, {
+            quote,
+            sessionStatus: "snapshot",
+            method: "market-data-api",
+            source: {
+              name: "Yahoo 主報價",
+              url: "https://query1.finance.yahoo.com/v8/finance/chart/USDTWD%3DX?range=5d",
+            },
+          }),
+        ]),
+    } as Response);
+    render(<App />);
+    await screen.findByText("今日與前一交易觀測");
+    const card = screen.getByLabelText("檢視美元／新台幣詳細資料");
+    expect(card.textContent).toContain("32.958");
+    expect(card.textContent).not.toContain("33.026");
+    expect(card.textContent).toContain("+0.03 %");
+    expect(card.textContent).toContain("Yahoo 當日（來源基準）");
+    fireEvent.click(card);
+    expect(
+      within(screen.getByRole("dialog", { name: "美元／新台幣" })).getByText(
+        "此圖為 Yahoo 歷史日線，與卡片主報價及當日漲跌分列。",
+      ),
+    ).toBeTruthy();
+    expect(screen.getByText(/0.0110/)).toBeTruthy();
+  });
   it("Google 期貨卡顯示價格、來源 1D、來源基準與報價時間，與現貨分列", async () => {
     const quote = {
       symbol: "CLW00:NYMEX",
@@ -95,7 +135,7 @@ describe("使用者操作", () => {
     expect(screen.getByLabelText("檢視WTI 原油現貨詳細資料")).toBeTruthy();
     fireEvent.click(card);
     expect(await screen.findByText("來源報價時間")).toBeTruthy();
-    expect(screen.getByText(/行情網頁快照/)).toBeTruthy();
+    expect(screen.getByText(/行情報價快照/)).toBeTruthy();
     expect(
       screen.getByRole("link", { name: "Google Finance" }).getAttribute("href"),
     ).toContain("CLW00:NYMEX");

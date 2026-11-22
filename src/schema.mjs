@@ -51,17 +51,26 @@ export const observationSchema = z
       ctx.addIssue({ code: z.ZodIssueCode.custom, message });
     if (!CATALOG[o.metricId]) return;
     if (CATALOG[o.metricId].quoteSymbol && o.value !== null && !o.quote)
-      err("期貨報價需附報價時間與來源比較基準");
+      err("主報價／期貨快照需附報價時間與來源比較基準");
     if (o.quote) {
       const quoteDate = new Intl.DateTimeFormat("en-CA", {
-        timeZone: "America/New_York",
+        timeZone: CATALOG[o.metricId].quoteTimezone ?? "America/New_York",
         year: "numeric",
         month: "2-digit",
         day: "2-digit",
       }).format(new Date(o.quote.quotedAt));
-      if (quoteDate !== o.date) err("報價觀測日須與紐約報價日期一致");
+      if (quoteDate !== o.date) err("報價觀測日須與來源時區日期一致");
       const quoteSource = new URL(o.source.url);
-      if (
+      if (CATALOG[o.metricId].quoteProvider === "Yahoo") {
+        if (
+          !["query1.finance.yahoo.com", "query2.finance.yahoo.com"].includes(
+            quoteSource.hostname,
+          ) ||
+          decodeURIComponent(quoteSource.pathname) !==
+            "/v8/finance/chart/USDTWD=X"
+        )
+          err("匯率主報價來源須為對應 Yahoo 端點");
+      } else if (
         quoteSource.hostname !== "www.google.com" ||
         decodeURIComponent(quoteSource.pathname) !==
           `/finance/quote/${o.quote.symbol}`
@@ -76,10 +85,11 @@ export const observationSchema = z
         err("報價時間不可晚於擷取時間");
       if (
         o.value === null ||
-        Math.abs(o.value - o.quote.referencePrice - o.quote.change) > 0.03 ||
+        Math.abs(o.value - o.quote.referencePrice - o.quote.change) >
+          (CATALOG[o.metricId].quoteProvider === "Yahoo" ? 0.00015 : 0.03) ||
         Math.abs(
           (o.quote.change / o.quote.referencePrice) * 100 - o.quote.changePct,
-        ) > 0.04
+        ) > (CATALOG[o.metricId].quoteProvider === "Yahoo" ? 0.001 : 0.04)
       )
         err("報價與來源漲跌不一致");
     }

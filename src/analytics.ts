@@ -153,10 +153,10 @@ export function volumeRatio(data: Dataset, date: string) {
 export function regime(data: Dataset, date: string) {
   const inputs: { id: string; label: string; score: number; date: string }[] =
     [];
-  for (const id of ["sp500", "nasdaq", "taiex", "usdtwd"]) {
+  for (const id of ["sp500", "nasdaq", "taiex", "usdtwdQuote"]) {
     const s = snapshot(data, id, date);
     if (!s.valid || s.change === null) continue;
-    const x = id === "usdtwd" ? -s.change : s.change;
+    const x = id === "usdtwdQuote" ? -s.change : s.change;
     inputs.push({
       id,
       label: CATALOG[id].label,

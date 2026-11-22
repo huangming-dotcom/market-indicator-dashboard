@@ -77,7 +77,24 @@ export const METRICS = [
     meeting: true,
     maxAge: 3,
   }),
-  m("usdtwd", "美元／新台幣", "TWD", "macro", "fred", {
+  m("usdtwdQuote", "美元／新台幣", "TWD", "macro", "fred", {
+    precision: 3,
+    maxAge: 3,
+    threshold: 0.5,
+    direction: "down",
+    quoteSymbol: "USDTWD=X",
+    quoteProvider: "Yahoo",
+    quoteTimezone: "Europe/London",
+    quoteChangeLabel: "Yahoo 當日（來源基準）",
+    trendMetricId: "usdtwd",
+    changePrecision: 4,
+    source: {
+      name: "Yahoo Finance · USD/TWD 主報價",
+      url: "https://finance.yahoo.com/quote/USDTWD%3DX/",
+    },
+    note: "與 Yahoo 畫面主報價對齊，採 regularMarketPrice 及來源報價時間，最新／延遲快照；非台北收盤。漲跌依 Yahoo 同源基準，歷史日線另列，不與主報價混算。",
+  }),
+  m("usdtwd", "美元／新台幣・歷史日線", "TWD", "macro", "fred", {
     precision: 3,
     threshold: 0.5,
     direction: "down",
@@ -269,7 +286,7 @@ for (const metric of METRICS) {
 export const CATALOG = Object.fromEntries(METRICS.map((x) => [x.id, x]));
 // Preserve historical AI data validation while removing it from navigation and coverage.
 export const ACTIVE_METRICS = METRICS.filter((metric) => metric.group !== "ai");
-export const RULE_VERSION = "regime-v3-fx";
+export const RULE_VERSION = "regime-v4-fx-quote";
 export const GROUPS = {
   macro: "總經與利率",
   fed: "FedWatch",

@@ -79,9 +79,13 @@ catalog.dailyMarket 決定股票／台股結構日行情使用的 US、TW、JP�
 
 自訂版面是獨立 layout schema v1，保存於瀏覽器 localStorage（market-radar-layout-v1），不改市場數據。可匯入／匯出 JSON；只接受有效 active metric ID、唯一卡片、指定樣式與寬度。舊版儲存損壞時使用預設版面。
 
-layout.defaultsRevision=3 為現行預設修訂。缺此標記的舊版設定一次啟用 WTI／Brent 現貨；修訂 2 升級到 3 僅新增兩張 Google 期貨卡，不重新開啟已隱藏的現貨；後續隱藏期貨的選擇也會保留。
+layout.defaultsRevision=4 為現行預設修訂。舊版油價卡片依修訂 2／3 遷移；修訂 3→4 將 usdtwd 卡片替換為 usdtwdQuote，保留排序／顯示／風格／寬度，日線指標仍可自行加入；不重開已隱藏的原油卡。
 
 USD/TWD 使用 market=FX、timezone=Europe/London、method=market-data-api、sessionStatus=close；驗證 TWD=X／CURRENCY／報價幣別 TWD，保留 4 位小數，只收來源日已結束且為週一至五的日線。FRED H.10 保持 official-api 與其原時區，跨方法不計算匯率差值；備援不覆蓋既有 Yahoo 日線。
+
+usdtwd 為保留的歷史日線；新 usdtwdQuote 才是預設卡片主報價，採 sessionStatus=snapshot、USDTWD=X／CURRENCY／TWD、Europe/London，regularMarketPrice 與 regularMarketTime。quote 結構沿用報價快照契約，symbol=USDTWD=X，referencePrice 由 value－同源 change 算出。漲跌取 regularMarketChange 或與 regularMarketPrice 相符的 fulldayChange，核對 regularMarketChangePercent；不可使用依查詢範圍而變的 chartPreviousClose。引用時間、幣別或漲跌不一致時來源失敗，不用日線回填。
+
+Yahoo 快照驗證使用其實際 quoteTimezone 與 Yahoo endpoint，不套 Google／NYMEX 日期與網址。主報價變化取 quote.changePct，五日變化缺值；獨立日線維持原比較規則。Regime v4 使用主報價輸入，缺少歷史主報價時減少覆蓋，不以日線混充。
 
 ## Google 期貨快照
 

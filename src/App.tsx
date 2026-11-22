@@ -198,13 +198,17 @@ function MetricCard({
           {formatChange(id, s.change)}
         </strong>
         <span>
-          {m.quoteSymbol ? "Google 1D（來源基準）" : "較前一交易觀測"}
+          {m.quoteSymbol
+            ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
+            : "較前一交易觀測"}
         </span>
       </div>
       {variant === "trend" && (
         <div className="sparkline" aria-label="近 20 筆交易觀測走勢">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={s.rows.slice(-20)}>
+            <LineChart
+              data={history(data, m.trendMetricId ?? id, date).slice(-20)}
+            >
               <Line
                 dataKey="value"
                 type="linear"
@@ -235,7 +239,11 @@ function MetricCard({
         </p>
       )}
       {m.quoteSymbol && (
-        <p className="card-definition">期貨最新／延遲快照 · 非現貨、非結算價</p>
+        <p className="card-definition">
+          {m.quoteProvider === "Yahoo"
+            ? "Yahoo 主報價快照 · 非台北收盤；日線趨勢另列"
+            : "期貨最新／延遲快照 · 非現貨、非結算價"}
+        </p>
       )}
     </button>
   );
@@ -484,7 +492,7 @@ function TrendPanel({
   selected: string;
   setSelected: (id: string) => void;
 }) {
-  const rows = history(data, selected, date);
+  const rows = history(data, CATALOG[selected].trendMetricId ?? selected, date);
   const byDate = new Map(rows.map((o) => [o.date, o.value]));
   const points = calendarDays(date, days).map((d) => ({
     date: d,
@@ -497,6 +505,9 @@ function TrendPanel({
         <div>
           <h3>歷史趨勢</h3>
           <p>保留空白日期，不填補或插值 · {CATALOG[selected].unit}</p>
+          {CATALOG[selected].trendMetricId && (
+            <p>此圖為 Yahoo 歷史日線，與卡片主報價及當日漲跌分列。</p>
+          )}
         </div>
         <div className="trend-controls">
           <div className="select-wrap">
@@ -1423,7 +1434,7 @@ export default function App() {
                     </div>
                     <PolicyPanel data={data} date={date} />
                     <div className="metrics-grid secondary">
-                      {["usdtwd", "wti", "brent"].map((id) => (
+                      {["usdtwdQuote", "wti", "brent"].map((id) => (
                         <MetricCard key={id} id={id} {...props} />
                       ))}
                     </div>
@@ -1584,7 +1595,9 @@ export default function App() {
                   </div>
                   <div>
                     <span>
-                      {m.quoteSymbol ? "Google 1D（來源基準）" : "1 日變化"}
+                      {m.quoteSymbol
+                        ? (m.quoteChangeLabel ?? "Google 1D（來源基準）")
+                        : "1 日變化"}
                     </span>
                     <strong>{formatChange(detail, s.change)}</strong>
                   </div>
@@ -1629,7 +1642,7 @@ export default function App() {
                         ? "人工核對匯入"
                         : o?.method === "market-data-api"
                           ? o?.quote
-                            ? "行情網頁快照"
+                            ? "行情報價快照"
                             : "行情來源日線"
                           : "官方端點"}
                     </dd>
@@ -1639,14 +1652,15 @@ export default function App() {
                       <>
                         <dt>來源報價時間</dt>
                         <dd>{fmtTime(o.quote.quotedAt)}（台灣）</dd>
-                        <dt>Google 1D 比較基準</dt>
+                        <dt>{m.quoteProvider ?? "Google"} 漲跌比較基準</dt>
                         <dd>
                           {formatValue(detail, o.quote.referencePrice)} {m.unit}
                           ；非前一日保存快照
                         </dd>
                         <dt>來源漲跌金額</dt>
                         <dd>
-                          {o.quote.change.toFixed(2)} {m.unit}
+                          {o.quote.change.toFixed(m.changePrecision ?? 2)}{" "}
+                          {m.unit}
                         </dd>
                       </>
                     )}

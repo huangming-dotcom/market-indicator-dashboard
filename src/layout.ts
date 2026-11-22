@@ -5,7 +5,9 @@ const ids = new Set(ACTIVE_METRICS.map((m) => m.id));
 export const layoutSchema = z
   .object({
     version: z.literal(1),
-    defaultsRevision: z.union([z.literal(2), z.literal(3)]).optional(),
+    defaultsRevision: z
+      .union([z.literal(2), z.literal(3), z.literal(4)])
+      .optional(),
     sort: z.enum(["manual", "change", "alerts"]),
     cards: z
       .array(
@@ -31,7 +33,7 @@ const DEFAULT_IDS = [
   "sp500",
   "kospi",
   "nikkei",
-  "usdtwd",
+  "usdtwdQuote",
   "wti",
   "brent",
   "wtiFutures",
@@ -43,7 +45,7 @@ const DEFAULT_IDS = [
 ];
 export const defaultLayout = (): Layout => ({
   version: 1,
-  defaultsRevision: 3,
+  defaultsRevision: 4,
   sort: "manual",
   cards: [
     ...DEFAULT_IDS,
@@ -65,15 +67,22 @@ export function parseLayout(input: unknown): Layout {
     parsed.cards = parsed.cards.map((c) =>
       ["wti", "brent"].includes(c.id) ? { ...c, visible: true } : c,
     );
-  if (parsed.defaultsRevision !== 3)
+  if (!parsed.defaultsRevision || parsed.defaultsRevision < 3)
     parsed.cards = parsed.cards.map((c) =>
       ["wtiFutures", "brentFutures"].includes(c.id)
         ? { ...c, visible: true }
         : c,
     );
+  if (
+    parsed.defaultsRevision !== 4 &&
+    !parsed.cards.some((c) => c.id === "usdtwdQuote")
+  )
+    parsed.cards = parsed.cards.map((c) =>
+      c.id === "usdtwd" ? { ...c, id: "usdtwdQuote" } : c,
+    );
   return {
     ...parsed,
-    defaultsRevision: 3,
+    defaultsRevision: 4,
     cards: [
       ...parsed.cards,
       ...ACTIVE_METRICS.filter(
@@ -82,7 +91,7 @@ export function parseLayout(input: unknown): Layout {
         id: m.id,
         visible:
           (!parsed.defaultsRevision && ["wti", "brent"].includes(m.id)) ||
-          (parsed.defaultsRevision !== 3 &&
+          ((!parsed.defaultsRevision || parsed.defaultsRevision < 3) &&
             ["wtiFutures", "brentFutures"].includes(m.id)),
         style: "full" as const,
         width: 1 as const,
