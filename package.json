@@ -17,7 +17,9 @@
     "data:validate": "node scripts/validate.mjs",
     "data:import": "node scripts/import.mjs",
     "reports:import": "node scripts/import-reports.mjs",
-    "reports:validate": "node scripts/validate-reports.mjs"
+    "reports:validate": "node scripts/validate-reports.mjs",
+    "calendar:update": "node scripts/calendar-update.mjs",
+    "calendar:validate": "node scripts/calendar-validate.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",
@@ -25,6 +27,7 @@
     "csv-parse": "^7.0.3",
     "fast-xml-parser": "^5.0.0",
     "lucide-react": "^0.468.0",
+    "node-ical": "^0.27.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",

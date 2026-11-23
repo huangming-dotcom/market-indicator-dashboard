@@ -12,6 +12,10 @@ on:
         description: Fetch official market data before publishing
         type: boolean
         default: false
+      update_calendar:
+        description: Refresh the public MacroMicro calendar before publishing
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -39,8 +43,11 @@ jobs:
           CME_FEDWATCH_URL: ${{ vars.CME_FEDWATCH_URL }}
           CME_API_TOKEN: ${{ secrets.CME_API_TOKEN }}
           DAILY_RADAR_POLICY_URL: ${{ vars.DAILY_RADAR_POLICY_URL }}
+      - run: npm run calendar:update
+        if: github.event_name == 'schedule' || inputs.update_data == true || inputs.update_calendar == true
       - run: npm run data:validate
       - run: npm run reports:validate
+      - run: npm run calendar:validate
       - run: npm test
       - run: npm run build
       - run: npm run test:build
@@ -48,7 +55,7 @@ jobs:
         run: |
           git config user.name 'market-radar-bot'
           git config user.email 'market-radar-bot@users.noreply.github.com'
-          git add public/data/history.json
+          git add public/data/history.json public/calendar/macromicro.json
           if ! git diff --cached --quiet; then
             git commit -m 'data: update verified market history'
             git push

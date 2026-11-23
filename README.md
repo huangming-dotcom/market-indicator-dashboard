@@ -6,6 +6,12 @@ React + Vite + TypeScript + Tailwind CSS + Recharts，繁體中文市場日資�
 - [GitHub 程式碼](https://github.com/huangming-dotcom/market-indicator-dashboard)
 - [資料更新與部署紀錄](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/workflows/daily-data.yml)
 
+## 總經事件日曆
+
+主選單新增 [總經事件日曆](https://huangming-dotcom.github.io/market-indicator-dashboard/#macro-calendar)，整合使用者指定的財經 M 平方公開 Google 日曆；市場總覽也顯示近期 3 項事件。可查 7／30／90 天、搜尋 CPI／非農／FOMC 等關鍵字與篩選地區。發布時刻統一台灣時間，全天不猜時刻；可展開來源備註及原始連結。
+
+日曆隨既有 GitHub 雲端每日台灣 07:00／09:00／17:30／22:30 更新，不需本機開啟。時間可能調整，更新失敗會保留舊行程並提示；詳見 [來源與操作契約](docs/MACRO_CALENDAR.md)。本機可用 `npm run calendar:update`、`npm run calendar:validate`。
+
 ## 本機執行
 
 需要 Node.js 22.12 以上（驗收使用 24.18）及 npm：

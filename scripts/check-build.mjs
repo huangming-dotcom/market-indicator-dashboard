@@ -6,6 +6,7 @@ import path from "node:path";
 import { root } from "./lib.mjs";
 import { validateDataset } from "../src/schema.mjs";
 import { validateReports } from "../src/reports.mjs";
+import { validateCalendar } from "../src/calendar.mjs";
 
 // Exercise a repository subdirectory rather than assuming deployment at '/'.
 const mount = "/market-indicator-dashboard/";
@@ -47,10 +48,25 @@ try {
   assert.equal(dataResponse.status, 200);
   const data = validateDataset(await dataResponse.json());
   assert(data.observations.length > 0, "Missing historical observations");
-  const reportsResponse = await fetch(new URL("reports/daily-market.json", page));
-  assert.equal(reportsResponse.status, 200, "Missing daily reports at deployment subdirectory");
+  const reportsResponse = await fetch(
+    new URL("reports/daily-market.json", page),
+  );
+  assert.equal(
+    reportsResponse.status,
+    200,
+    "Missing daily reports at deployment subdirectory",
+  );
   const archive = validateReports(await reportsResponse.json());
   assert(archive.reports.length > 0, "Missing daily summaries");
+  const calendarResponse = await fetch(
+    new URL("calendar/macromicro.json", page),
+  );
+  assert.equal(
+    calendarResponse.status,
+    200,
+    "Missing calendar in Pages subdirectory",
+  );
+  validateCalendar(await calendarResponse.json());
   console.log(
     `GitHub Pages 子目錄檢查通過：${assets.length} 個資產與 ${data.observations.length} 筆觀測。`,
   );

@@ -50,6 +50,7 @@ import {
 import OverviewBoard from "./OverviewBoard";
 import PolicyPanel from "./PolicyPanel";
 import DailySummary from "./DailySummary";
+import CalendarPanel from "./CalendarPanel";
 import { validateDataset } from "./schema.mjs";
 import {
   alerts,
@@ -70,6 +71,7 @@ const NAV = [
   { id: "overview", label: "市場總覽", icon: Layers3 },
   { id: "summary", label: "每日市場摘要", icon: CalendarDays },
   { id: "macro", label: "總經與利率", icon: Landmark },
+  { id: "calendar", label: "總經事件日曆", icon: CalendarDays },
   { id: "global", label: "全球股市", icon: Globe2 },
   { id: "taiwan", label: "台股資金與結構", icon: BarChart3 },
   { id: "history", label: "風險狀態歷史", icon: History },
@@ -1056,7 +1058,11 @@ export default function App() {
     [error, setError] = useState(""),
     [loading, setLoading] = useState(true),
     [view, setView] = useState(
-      window.location.hash === "#daily-summary" ? "summary" : "overview",
+      window.location.hash === "#daily-summary"
+        ? "summary"
+        : window.location.hash === "#macro-calendar"
+          ? "calendar"
+          : "overview",
     ),
     [date, setDate] = useState(taipeiToday),
     [days, setDays] = useState(30),
@@ -1095,7 +1101,9 @@ export default function App() {
       "",
       id === "summary"
         ? "#daily-summary"
-        : window.location.pathname + window.location.search,
+        : id === "calendar"
+          ? "#macro-calendar"
+          : window.location.pathname + window.location.search,
     );
     setMobile(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1257,32 +1265,36 @@ export default function App() {
               <p>
                 {view === "summary"
                   ? "每日重點、圖表與判讀，保留完整脈絡。"
-                  : "看見市場變化，理解風險脈絡。"}
+                  : view === "calendar"
+                    ? "掌握重要總經事件與預定發布時間。"
+                    : "看見市場變化，理解風險脈絡。"}
                 <span className="desktop-inline">
                   數據、判讀、缺值，清楚分開。
                 </span>
               </p>
             </div>
             <div className="page-actions">
-              <label className="date-picker">
-                <CalendarDays size={16} />
-                <input
-                  type="date"
-                  value={date}
-                  max={taipeiToday()}
-                  min={availableDates[0]}
-                  aria-label={view === "summary" ? "摘要日期" : "觀測日期"}
-                  onInput={(e) => {
-                    const value = e.currentTarget.value;
-                    if (value && value <= taipeiToday()) setDate(value);
-                  }}
-                  onChange={(e) => {
-                    if (e.target.value && e.target.value <= taipeiToday())
-                      setDate(e.target.value);
-                  }}
-                />
-              </label>
-              {view !== "summary" && (
+              {view !== "calendar" && (
+                <label className="date-picker">
+                  <CalendarDays size={16} />
+                  <input
+                    type="date"
+                    value={date}
+                    max={taipeiToday()}
+                    min={availableDates[0]}
+                    aria-label={view === "summary" ? "摘要日期" : "觀測日期"}
+                    onInput={(e) => {
+                      const value = e.currentTarget.value;
+                      if (value && value <= taipeiToday()) setDate(value);
+                    }}
+                    onChange={(e) => {
+                      if (e.target.value && e.target.value <= taipeiToday())
+                        setDate(e.target.value);
+                    }}
+                  />
+                </label>
+              )}
+              {view !== "summary" && view !== "calendar" && (
                 <button
                   className="button export"
                   onClick={exportSnapshot}
@@ -1323,7 +1335,7 @@ export default function App() {
             props &&
             data && (
               <>
-                {view !== "summary" && (
+                {view !== "summary" && view !== "calendar" && (
                   <>
                     <div className="data-strip">
                       <div>
@@ -1383,6 +1395,9 @@ export default function App() {
                     onDate={setDate}
                     refreshKey={loadedAt}
                   />
+                )}
+                {view === "calendar" && (
+                  <CalendarPanel date={date} refreshKey={loadedAt} />
                 )}
                 {view === "overview" && (
                   <>
@@ -1469,6 +1484,12 @@ export default function App() {
                         </div>
                       </section>
                     </div>
+                    <CalendarPanel
+                      date={date}
+                      refreshKey={loadedAt}
+                      compact
+                      onOpen={() => nav("calendar")}
+                    />
                     <OverviewBoard
                       data={data}
                       date={date}
