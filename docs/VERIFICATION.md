@@ -6,6 +6,7 @@
 - 93 項測試、三份獨立資料驗證、TypeScript／Vite 及 Pages 子目錄日曆快照檢查通過。新增測試涵蓋 UTC 跨台北日、全天排他結束、UTC／台北／洛杉磯主機時區、折行／跳脫、DST／RRULE／EXDATE／RECURRENCE-ID、錯來源／截斷／floating 時刻拒絕、冪等／更新失敗保留及成功移除舊行程。
 - 本機完整頁確認 7／30／90 日、國家地區、CPI 搜尋與來源連結；390×844 手機 clientWidth=scrollWidth=375，來源備註及時間可讀。總覽有近期事件入口。
 - 雲端沿用台灣 07:00／09:00／17:30／22:30；單獨 update_calendar 可驗證日曆抓取而不修改行情。來源行程及預期／前值不回填行情，也不影響 Regime。
+- [雲端日曆更新與部署](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/45137539593)成功；公開快照 HTTP 200、status=success，最後成功台灣 16:19:15，413 項事件、11/23 起 7 天有 13 項。線上日曆與本機總覽入口均已確認，截圖 outputs/macromicro-calendar-2026-11-23.jpg 位於專案外，不提交網站。
 
 ## 2026-11-23 每日市場摘要
 

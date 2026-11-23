@@ -22,6 +22,7 @@ const timed = {
   updatedAt: null,
   chartUrl: null,
 };
+const syncedAt = new Date().toISOString();
 const data = {
   schemaVersion: 1,
   source: {
@@ -30,8 +31,8 @@ const data = {
     url: CALENDAR_URL,
     feedUrl: CALENDAR_ICS,
   },
-  lastAttemptAt: new Date().toISOString(),
-  lastSuccessAt: new Date().toISOString(),
+  lastAttemptAt: syncedAt,
+  lastSuccessAt: syncedAt,
   status: "success",
   message: null,
   rawHash: "a".repeat(64),
