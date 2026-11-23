@@ -49,6 +49,7 @@ import {
 } from "./catalog.mjs";
 import OverviewBoard from "./OverviewBoard";
 import PolicyPanel from "./PolicyPanel";
+import DailySummary from "./DailySummary";
 import { validateDataset } from "./schema.mjs";
 import {
   alerts,
@@ -67,6 +68,7 @@ import type { Dataset, Observation } from "./types";
 
 const NAV = [
   { id: "overview", label: "市場總覽", icon: Layers3 },
+  { id: "summary", label: "每日市場摘要", icon: CalendarDays },
   { id: "macro", label: "總經與利率", icon: Landmark },
   { id: "global", label: "全球股市", icon: Globe2 },
   { id: "taiwan", label: "台股資金與結構", icon: BarChart3 },
@@ -1053,7 +1055,9 @@ export default function App() {
   const [data, setData] = useState<Dataset | null>(null),
     [error, setError] = useState(""),
     [loading, setLoading] = useState(true),
-    [view, setView] = useState("overview"),
+    [view, setView] = useState(
+      window.location.hash === "#daily-summary" ? "summary" : "overview",
+    ),
     [date, setDate] = useState(taipeiToday),
     [days, setDays] = useState(30),
     [selected, setSelected] = useState("taiex"),
@@ -1086,6 +1090,13 @@ export default function App() {
   }, [detail]);
   const nav = (id: string) => {
     setView(id);
+    window.history.replaceState(
+      null,
+      "",
+      id === "summary"
+        ? "#daily-summary"
+        : window.location.pathname + window.location.search,
+    );
     setMobile(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -1244,7 +1255,9 @@ export default function App() {
                   : NAV.find((n) => n.id === view)?.label}
               </h1>
               <p>
-                看見市場變化，理解風險脈絡。
+                {view === "summary"
+                  ? "每日重點、圖表與判讀，保留完整脈絡。"
+                  : "看見市場變化，理解風險脈絡。"}
                 <span className="desktop-inline">
                   數據、判讀、缺值，清楚分開。
                 </span>
@@ -1258,7 +1271,7 @@ export default function App() {
                   value={date}
                   max={taipeiToday()}
                   min={availableDates[0]}
-                  aria-label="觀測日期"
+                  aria-label={view === "summary" ? "摘要日期" : "觀測日期"}
                   onInput={(e) => {
                     const value = e.currentTarget.value;
                     if (value && value <= taipeiToday()) setDate(value);
@@ -1269,14 +1282,16 @@ export default function App() {
                   }}
                 />
               </label>
-              <button
-                className="button export"
-                onClick={exportSnapshot}
-                disabled={!data}
-              >
-                <ArrowDownToLine size={16} />
-                匯出快照
-              </button>
+              {view !== "summary" && (
+                <button
+                  className="button export"
+                  onClick={exportSnapshot}
+                  disabled={!data}
+                >
+                  <ArrowDownToLine size={16} />
+                  匯出快照
+                </button>
+              )}
               <button
                 className="icon-button refresh"
                 disabled={loading}
@@ -1308,51 +1323,67 @@ export default function App() {
             props &&
             data && (
               <>
-                <div className="data-strip">
-                  <div>
-                    <span className="badge">日資料・非即時行情</span>
-                    <span>
-                      選定 {date}{" "}
-                      <span className="muted">
-                        ／ 資料集最新 {latest ?? "缺值"}
-                      </span>
-                    </span>
-                  </div>
-                  <button onClick={() => nav("sources")}>
-                    <span
-                      className={count < METRICS.length ? "warn" : "positive"}
+                {view !== "summary" && (
+                  <>
+                    <div className="data-strip">
+                      <div>
+                        <span className="badge">日資料・非即時行情</span>
+                        <span>
+                          選定 {date}{" "}
+                          <span className="muted">
+                            ／ 資料集最新 {latest ?? "缺值"}
+                          </span>
+                        </span>
+                      </div>
+                      <button onClick={() => nav("sources")}>
+                        <span
+                          className={
+                            count < METRICS.length ? "warn" : "positive"
+                          }
+                        >
+                          {count} / {METRICS.length} 指標可用
+                        </span>
+                        <span className="muted">
+                          查看品質 <SlidersHorizontal size={14} />
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      className="update-schedule"
+                      aria-label="資料更新時間說明"
                     >
-                      {count} / {METRICS.length} 指標可用
-                    </span>
-                    <span className="muted">
-                      查看品質 <SlidersHorizontal size={14} />
-                    </span>
-                  </button>
-                </div>
-                <div className="update-schedule" aria-label="資料更新時間說明">
-                  <span>每日更新（台灣）07:00／09:00／17:30／22:30</span>
-                  <span>
-                    已發布快照 {fmtTime(data.generatedAt)}
-                    ；來源日期以各卡片為準，排程可能延後。
-                  </span>
-                </div>
-                <div className="close-quality">
-                  <span>
-                    收盤資料到齊{" "}
-                    <strong>
-                      {closeReady} / {closeMetrics.length}
-                    </strong>{" "}
-                    · 依各市場交易日曆檢查
-                  </span>
-                  <button
-                    className="text-button"
-                    onClick={() => nav("sources")}
-                  >
-                    {data.runs.at(-1)?.status === "partial"
-                      ? "部分來源待補；其他有效資料已更新"
-                      : "查看每項應到日期與來源"}
-                  </button>
-                </div>
+                      <span>每日更新（台灣）07:00／09:00／17:30／22:30</span>
+                      <span>
+                        已發布快照 {fmtTime(data.generatedAt)}
+                        ；來源日期以各卡片為準，排程可能延後。
+                      </span>
+                    </div>
+                    <div className="close-quality">
+                      <span>
+                        收盤資料到齊{" "}
+                        <strong>
+                          {closeReady} / {closeMetrics.length}
+                        </strong>{" "}
+                        · 依各市場交易日曆檢查
+                      </span>
+                      <button
+                        className="text-button"
+                        onClick={() => nav("sources")}
+                      >
+                        {data.runs.at(-1)?.status === "partial"
+                          ? "部分來源待補；其他有效資料已更新"
+                          : "查看每項應到日期與來源"}
+                      </button>
+                    </div>
+                  </>
+                )}
+                {view === "summary" && (
+                  <DailySummary
+                    date={date}
+                    onDate={setDate}
+                    refreshKey={loadedAt}
+                  />
+                )}
                 {view === "overview" && (
                   <>
                     <div className="overview-hero">

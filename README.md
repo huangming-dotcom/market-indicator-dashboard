@@ -125,3 +125,9 @@ tests/                   合成測試（不載入網站）
 docs/                    資料契約、Schema、驗收
 .github/workflows/       更新與 GitHub Pages 發布
 ```
+
+## 每日市場摘要
+
+主選單新增「每日市場摘要」，也可直接開啟 [每日摘要頁](https://huangming-dotcom.github.io/market-indicator-dashboard/#daily-summary)。可按日期閱讀原有 ChatGPT 市場雷達的文字、表格及互動圖表；無當日報告會標示待同步，保留原始報告日期與匯入時間。
+
+原文封存不等同逐項核實行情，不會覆蓋指標卡片或影響系統風險判讀。已設 Codex 每日台灣 09:15／18:15 同步，需電腦／Codex 可執行及來源可讀；網站顯示最後成功日期。完整操作與限制見 [每日摘要契約](docs/DAILY_SUMMARY.md)。

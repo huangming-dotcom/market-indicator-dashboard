@@ -15,7 +15,9 @@
     "test:build": "node scripts/check-build.mjs",
     "data:update": "node scripts/update.mjs",
     "data:validate": "node scripts/validate.mjs",
-    "data:import": "node scripts/import.mjs"
+    "data:import": "node scripts/import.mjs",
+    "reports:import": "node scripts/import-reports.mjs",
+    "reports:validate": "node scripts/validate-reports.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",
@@ -25,7 +27,9 @@
     "lucide-react": "^0.468.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
     "recharts": "^3.0.0",
+    "remark-gfm": "^4.0.1",
     "tailwindcss": "^4.1.0",
     "zod": "^4.6.7"
   },

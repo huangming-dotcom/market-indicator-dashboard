@@ -10,6 +10,7 @@
 - 匯率卡片採 usdtwdQuote（Yahoo USDTWD=X 主報價及同源漲跌／報價時間），與 usdtwd（Yahoo 日線、FRED 備援）獨立。禁止主報價缺值時以日線補成同口徑；chartPreviousClose 隨查詢區間而變，不當作昨日主報價基準。Google 原油期貨使用 wtiFutures／brentFutures 獨立快照序列，不寫入 EIA 現貨，須保留報價時間及來源比較基準。
 - ACTIVE_METRICS 是目前介面目錄；舊 AI metric 保留 schema 相容但不顯示。版面偏好獨立存 localStorage，可匯出／匯入，不改資料。
 - CNN Fear & Greed 使用官方 graphdata 的 0–100 分與 rating，分類只翻譯來源文字；不混用加密貨幣指數或另推分級。CNN current.previous_close 為來源前收基準，日期未知，不以歷史前值替代。保留原始精度／更新時間，卡片四捨五入；不加入六項 Regime。
+- 每日市場摘要是獨立原文封存，唯一例外允許對話報告保存在 public/reports（不是 public/data 行情）。來源固定為指定「市場指標雷達」對話，保留原文日期、訊息 ID、內容雜湊及匯入時間，修訂追加版本；不可將其中數字當作已核實行情／Regime。同步與格式以 [每日摘要契約](docs/DAILY_SUMMARY.md) 為準，schema 及解析以 src/reports.mjs 為準。
 - 歷史修訂追加 vintage，既有數據不得無聲覆寫。Regime 方法變更升級規則版本。
 - 私密金鑰不進前端，raw 證據不放 public/。外部來源先驗證格式、日期與單位再入庫。
 - 驗收：npm test、npm run data:validate、npm run build；資料管線更動需涵蓋部分失敗、冪等與資料保留測試。

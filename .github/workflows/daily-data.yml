@@ -40,6 +40,7 @@ jobs:
           CME_API_TOKEN: ${{ secrets.CME_API_TOKEN }}
           DAILY_RADAR_POLICY_URL: ${{ vars.DAILY_RADAR_POLICY_URL }}
       - run: npm run data:validate
+      - run: npm run reports:validate
       - run: npm test
       - run: npm run build
       - run: npm run test:build
