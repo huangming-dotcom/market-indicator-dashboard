@@ -7,6 +7,7 @@
 - 封存測試涵蓋分段、錯來源／未來／不完整／錯誤圖表拒絕、缺值、冪等、修訂追加、失敗保留；UI 測試涵蓋日期切換、當日未同步、重載失敗重試、HTML／javascript 連結防護。
 - 本機瀏覽器確認來源線圖正常重繪、可展開數值表，11/22／11/23 切換成功；390×844 手機重排後 clientWidth=scrollWidth=375，無頁面水平溢出，寬表格局部捲動。
 - Codex 同步排程已建立且 ACTIVE（ID automation），台灣每日 09:15／18:15；需本機可執行及來源可讀。此為同步管線，不更動原摘要生成排程。
+- [正式部署](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/45119313625)成功。線上 #daily-summary 可見 11/22、11/23 日期、完整 11/23 原文及原文封存標示；驗收截圖 outputs/daily-market-summary-2026-11-23.jpg 位於專案外，不提交網站。
 
 ## 2026-11-22 CNN Fear & Greed 卡片
 
