@@ -7,6 +7,7 @@
 - 匯入 11/19～11/24 共 6 日、6 個版本；11/24 為 4 個來源訊息及 7 張圖表。6 份 originalText 均精確等於各來源訊息依序以雙換行串接，SHA-256 均相符；重跑新增 0 筆。
 - 97 項測試、TypeScript／Vite／Pages 子目錄驗證通過；新增分段／純文字／使用者邊界、缺 meta 正規化、原數字／null／單位／座標及非破壞性驗證。桌面 7 張圖表與展開數值表可讀，390px 手機 clientWidth=scrollWidth=375。
 - 已更新既有 ACTIVE 同步排程的 v2 操作規則與工具上限，未新增重複排程，維持台灣 09:15／18:15。
+- [正式發布](https://github.com/huangming-dotcom/market-indicator-dashboard/actions/runs/45316352474)成功；公開摘要 JSON HTTP 200、解析內容雜湊與 Git 一致。線上可切換 11/19（3 張圖）及 11/24（7 張圖），顯示「統一閱讀格式」；截圖 outputs/daily-summary-standard-2026-11-24.jpg 位於專案外，不提交網站。
 
 ## 2026-11-24 每日更新中斷修復
 
