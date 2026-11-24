@@ -6,47 +6,17 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-24T06:49:55.161Z",
-  "lastSuccessAt": "2026-11-24T06:49:55.161Z",
+  "lastAttemptAt": "2026-11-24T20:18:42.678Z",
+  "lastSuccessAt": "2026-11-24T20:18:42.678Z",
   "status": "success",
   "message": null,
-  "rawHash": "a8206b66063b0d7750825992fecfeeb09c29b9be4bda5dff3bd78342508bfe6c",
+  "rawHash": "1978fc45e976465ef85013c894df272f289ca9864124ef0725c3b75c843848d8",
   "coverage": {
-    "start": "2026-08-26",
-    "end": "2027-11-25"
+    "start": "2026-08-27",
+    "end": "2027-11-26"
   },
   "sourceEventCount": 2587,
   "events": [
-    {
-      "id": "av60qire05u31amgto5pbfagp0@google.com:2026-08-26T12:30:00.000Z",
-      "uid": "av60qire05u31amgto5pbfagp0@google.com",
-      "title": "美國-個人消費支出物價指數[PCE]-(年增率)",
-      "description": "市場預期: 3.60%\n前值:  3.72%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
-      "date": "2026-08-26",
-      "allDay": false,
-      "startAt": "2026-08-26T12:30:00.000Z",
-      "endAt": "2026-08-26T13:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-26T19:39:09.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar"
-    },
-    {
-      "id": "hifl1em3f0oatkgv58hlckp7j0@google.com:2026-08-26T12:30:00.000Z",
-      "uid": "hifl1em3f0oatkgv58hlckp7j0@google.com",
-      "title": "美國-實質國內生產毛額[GDP]-(SAAR, 季增年率)",
-      "description": "市場預期: 1.50%\n前值:  2.10%\nMM圖表連結: https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar",
-      "date": "2026-08-26",
-      "allDay": false,
-      "startAt": "2026-08-26T12:30:00.000Z",
-      "endAt": "2026-08-26T13:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-26T19:40:02.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar"
-    },
     {
       "id": "3sfnl7dj1lma67nro9tnprfe30@google.com:2026-08-27T08:00:00.000Z",
       "uid": "3sfnl7dj1lma67nro9tnprfe30@google.com",
@@ -2001,7 +1971,7 @@
       "id": "h7sa169is933td6lu3f6hu1h0k@google.com:2026-11-25T13:30:00.000Z",
       "uid": "h7sa169is933td6lu3f6hu1h0k@google.com",
       "title": "美國-個人消費支出物價指數[PCE]-(年增率)",
-      "description": "前值:  3.65%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
+      "description": "市場預期: 3.80%\n前值:  3.65%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
       "date": "2026-11-25",
       "allDay": false,
       "startAt": "2026-11-25T13:30:00.000Z",
@@ -2009,7 +1979,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-12T19:39:03.000Z",
+      "updatedAt": "2026-11-24T19:39:08.000Z",
       "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar"
     },
     {
@@ -2316,7 +2286,7 @@
       "id": "50rdc2cedh5ggtnkgphsf7mbv4@google.com:2026-12-08T03:00:00.000Z",
       "uid": "50rdc2cedh5ggtnkgphsf7mbv4@google.com",
       "title": "中國-出口總值(美元計,年增率)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/27/cn-trade-finance-relative/279/cn-china-trade-export-growth-rate?utm_medium=calendar",
+      "description": "前值:  35.20%\nMM圖表連結: https://www.macromicro.me/collections/27/cn-trade-finance-relative/279/cn-china-trade-export-growth-rate?utm_medium=calendar",
       "date": "2026-12-08",
       "allDay": false,
       "startAt": "2026-12-08T03:00:00.000Z",
@@ -2324,14 +2294,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-12-19T19:43:45.000Z",
+      "updatedAt": "2026-11-24T19:39:34.000Z",
       "chartUrl": "https://www.macromicro.me/collections/27/cn-trade-finance-relative/279/cn-china-trade-export-growth-rate?utm_medium=calendar"
     },
     {
       "id": "rugt2g8b12ik4duspv87k64aa0@google.com:2026-12-08T03:30:00.000Z",
       "uid": "rugt2g8b12ik4duspv87k64aa0@google.com",
       "title": "澳洲-基準利率",
-      "description": "前值: 4.8500%\nMM圖表連結: https://www.macromicro.me/collections/345/mm-aud/3409/australia-interest-rate?utm_medium=calendar",
+      "description": "前值:  4.85%\nMM圖表連結: https://www.macromicro.me/collections/345/mm-aud/3409/australia-interest-rate?utm_medium=calendar",
       "date": "2026-12-08",
       "allDay": false,
       "startAt": "2026-12-08T03:30:00.000Z",
@@ -2339,7 +2309,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-23T19:40:00.000Z",
+      "updatedAt": "2026-11-24T19:39:56.000Z",
       "chartUrl": "https://www.macromicro.me/collections/345/mm-aud/3409/australia-interest-rate?utm_medium=calendar"
     },
     {
