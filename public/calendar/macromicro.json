@@ -6,16 +6,16 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-23T08:19:15.540Z",
-  "lastSuccessAt": "2026-11-23T08:19:15.540Z",
+  "lastAttemptAt": "2026-11-24T00:01:51.179Z",
+  "lastSuccessAt": "2026-11-24T00:01:51.179Z",
   "status": "success",
   "message": null,
-  "rawHash": "afbcef5beff93157cc0c01d9b0eab3d8f1a0889ac739a6ba081fface483cda10",
+  "rawHash": "3ba4dcb47df67cf98fbd93d8a834a655010a9840981e9c37fda30cea1893cf90",
   "coverage": {
-    "start": "2026-08-25",
-    "end": "2027-11-24"
+    "start": "2026-08-26",
+    "end": "2027-11-25"
   },
-  "sourceEventCount": 2586,
+  "sourceEventCount": 2587,
   "events": [
     {
       "id": "av60qire05u31amgto5pbfagp0@google.com:2026-08-26T12:30:00.000Z",
@@ -1941,7 +1941,7 @@
       "id": "8bferuk8fktiu01fc70ksduke0@google.com:2026-11-23T08:30:00.000Z",
       "uid": "8bferuk8fktiu01fc70ksduke0@google.com",
       "title": "德國-製造業採購經理人指數[PMI]",
-      "description": "市場預期: 54.1\n前值:  54.2\nMM圖表連結: https://www.macromicro.me/collections/42/eu-industry-relative/500/eu-de-germany-pmi?utm_medium=calendar",
+      "description": "市場預期: 54.1\n前值:  53.9\nMM圖表連結: https://www.macromicro.me/collections/42/eu-industry-relative/500/eu-de-germany-pmi?utm_medium=calendar",
       "date": "2026-11-23",
       "allDay": false,
       "startAt": "2026-11-23T08:30:00.000Z",
@@ -1949,14 +1949,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-22T19:39:20.000Z",
+      "updatedAt": "2026-11-23T19:39:21.000Z",
       "chartUrl": "https://www.macromicro.me/collections/42/eu-industry-relative/500/eu-de-germany-pmi?utm_medium=calendar"
     },
     {
       "id": "hvf5318c64obj5rsn3cak03ih4@google.com:2026-11-23T09:00:00.000Z",
       "uid": "hvf5318c64obj5rsn3cak03ih4@google.com",
       "title": "歐元區-製造業採購經理人指數[PMI]",
-      "description": "市場預期: 52.7\n前值:  52.7\nMM圖表連結: https://www.macromicro.me/collections/42/eu-industry-relative/499/eu-ea19-euro-area-pmi?utm_medium=calendar",
+      "description": "市場預期: 52.7\n前值:  52.9\nMM圖表連結: https://www.macromicro.me/collections/42/eu-industry-relative/499/eu-ea19-euro-area-pmi?utm_medium=calendar",
       "date": "2026-11-23",
       "allDay": false,
       "startAt": "2026-11-23T09:00:00.000Z",
@@ -1964,7 +1964,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-22T19:39:24.000Z",
+      "updatedAt": "2026-11-23T19:39:25.000Z",
       "chartUrl": "https://www.macromicro.me/collections/42/eu-industry-relative/499/eu-ea19-euro-area-pmi?utm_medium=calendar"
     },
     {
@@ -2326,6 +2326,21 @@
       "status": "CONFIRMED",
       "updatedAt": "2025-12-19T19:43:45.000Z",
       "chartUrl": "https://www.macromicro.me/collections/27/cn-trade-finance-relative/279/cn-china-trade-export-growth-rate?utm_medium=calendar"
+    },
+    {
+      "id": "rugt2g8b12ik4duspv87k64aa0@google.com:2026-12-08T03:30:00.000Z",
+      "uid": "rugt2g8b12ik4duspv87k64aa0@google.com",
+      "title": "澳洲-基準利率",
+      "description": "前值: 4.8500%\nMM圖表連結: https://www.macromicro.me/collections/345/mm-aud/3409/australia-interest-rate?utm_medium=calendar",
+      "date": "2026-12-08",
+      "allDay": false,
+      "startAt": "2026-12-08T03:30:00.000Z",
+      "endAt": "2026-12-08T04:00:00.000Z",
+      "endDate": null,
+      "sourceTimezone": "Etc/UTC",
+      "status": "CONFIRMED",
+      "updatedAt": "2026-11-23T19:40:00.000Z",
+      "chartUrl": "https://www.macromicro.me/collections/345/mm-aud/3409/australia-interest-rate?utm_medium=calendar"
     },
     {
       "id": "7ogavd2rbc3pi4f4srlu7bbi9g@google.com:2026-12-09T14:45:00.000Z",
@@ -6211,6 +6226,51 @@
       "status": "CONFIRMED",
       "updatedAt": "2026-11-11T19:43:58.000Z",
       "chartUrl": "https://www.macromicro.me/collections/9/us-market-relative/48/target-rate?utm_medium=calendar"
+    },
+    {
+      "id": "72pqaespo6ofuakihetfbjv9h8@google.com:2027-11-24T13:30:00.000Z",
+      "uid": "72pqaespo6ofuakihetfbjv9h8@google.com",
+      "title": "美國-初次申請失業救濟金人數",
+      "description": "MM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
+      "date": "2027-11-24",
+      "allDay": false,
+      "startAt": "2027-11-24T13:30:00.000Z",
+      "endAt": "2027-11-24T14:00:00.000Z",
+      "endDate": null,
+      "sourceTimezone": "Etc/UTC",
+      "status": "CONFIRMED",
+      "updatedAt": "2026-11-12T19:48:34.000Z",
+      "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
+    },
+    {
+      "id": "ja81n8t3l4hgpgb8d8ahhodsik@google.com:2027-11-24T13:30:00.000Z",
+      "uid": "ja81n8t3l4hgpgb8d8ahhodsik@google.com",
+      "title": "美國-個人消費支出物價指數[PCE]-(年增率)",
+      "description": "MM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
+      "date": "2027-11-24",
+      "allDay": false,
+      "startAt": "2027-11-24T13:30:00.000Z",
+      "endAt": "2027-11-24T14:00:00.000Z",
+      "endDate": null,
+      "sourceTimezone": "Etc/UTC",
+      "status": "CONFIRMED",
+      "updatedAt": "2026-11-12T19:45:49.000Z",
+      "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar"
+    },
+    {
+      "id": "nielipc3g8c2t1jerl7r73cuig@google.com:2027-11-24T13:30:00.000Z",
+      "uid": "nielipc3g8c2t1jerl7r73cuig@google.com",
+      "title": "美國-實質國內生產毛額[GDP]-(SAAR, 季增年率)",
+      "description": "MM圖表連結: https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar",
+      "date": "2027-11-24",
+      "allDay": false,
+      "startAt": "2027-11-24T13:30:00.000Z",
+      "endAt": "2027-11-24T14:00:00.000Z",
+      "endDate": null,
+      "sourceTimezone": "Etc/UTC",
+      "status": "CONFIRMED",
+      "updatedAt": "2026-11-12T19:45:17.000Z",
+      "chartUrl": "https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar"
     }
   ]
 }
