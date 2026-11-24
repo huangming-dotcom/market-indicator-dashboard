@@ -7,6 +7,7 @@ import { extractReports, importReports } from "../scripts/import-reports.mjs";
 import {
   RADAR_THREAD,
   reportBlocks,
+  normalizeReportChart,
   validateReports,
 } from "../src/reports.mjs";
 const body =
@@ -19,6 +20,78 @@ const thread = (text = body) => ({
   turns: [{ items: [{ type: "agentMessage", id: "report-message", text }] }],
 });
 describe("每日摘要封存", () => {
+  it("相容中英文日報標頭、三級續篇及純文字續篇，原文和訊息 ID 不遺漏", () => {
+    const start =
+      "# 📡 Market Indicator Agent｜Morning Market Radar\n\n2026-11-24（二）\n\n## ① 變化\n" +
+      "內容。".repeat(40);
+    const parts = [
+      start,
+      "### USD/TWD\n原文數據，不改寫。",
+      "補充原文，不必另有標題。",
+      "### 補充核實\n## 五行摘要\n本報告不構成投資建議。",
+    ];
+    const input = {
+      thread: { id: RADAR_THREAD },
+      page: { order: "newest_first" },
+      turns: [
+        {
+          items: parts.map((text, i) => ({
+            type: "agentMessage",
+            id: `part-${i}`,
+            text,
+          })),
+        },
+      ],
+    };
+    const [r] = extractReports(input, "2026-11-24T02:00:00Z");
+    expect(r.originalText).toBe(parts.join("\n\n"));
+    expect(r.messageIds).toEqual(["part-0", "part-1", "part-2", "part-3"]);
+    expect(r.formatVersion).toBe(2);
+  });
+  it("遇到使用者訊息就停止併入舊報告，避免把後續無關內容合併", () => {
+    const input = thread();
+    input.turns[0].items.push(
+      { type: "userMessage", id: "u", text: "其他問題" },
+      { type: "agentMessage", id: "unrelated", text: "### 無關回答\n不應匯入" },
+    );
+    expect(extractReports(input)[0].originalText).toBe(body);
+  });
+  it("圖表缺少 meta 時只補章節標題，保留數字、null、單位與來源座標", () => {
+    const chart = {
+      chartType: "line",
+      xKey: "date",
+      series: [{ dataKey: "rate", label: "USD/TWD", valuePrefix: "NT$" }],
+      yAxisMin: 32,
+      yAxisMax: 34,
+      data: [
+        { date: "11/23", rate: 32.895 },
+        { date: "11/24", rate: null },
+      ],
+    };
+    const before = JSON.stringify(chart);
+    const c = normalizeReportChart(
+      chart,
+      "### USD/TWD｜美元兌新台幣\n\n# 32.895\n",
+    );
+    expect(c.meta.title).toBe("USD/TWD｜美元兌新台幣");
+    expect(
+      normalizeReportChart(chart, "### 台積電月營收\n# 5,868.9億\n").meta.title,
+    ).toBe("台積電月營收");
+    expect(c.data).toEqual(chart.data);
+    expect(c.series[0].valuePrefix).toBe("NT$");
+    expect(c.yAxisMin).toBe(32);
+    expect(JSON.stringify(chart)).toBe(before);
+    expect(() => normalizeReportChart({ ...chart, yAxisMax: 31 })).toThrow();
+    expect(() =>
+      normalizeReportChart({
+        ...chart,
+        data: [{ date: "11/23", rate: "32.895" }],
+      }),
+    ).toThrow();
+    expect(() =>
+      normalizeReportChart({ ...chart, meta: "execute code" }),
+    ).toThrow();
+  });
   it("依原文日期封存，支援多段文字，忽略預覽及非摘要訊息", () => {
     const input = thread(body.replace("本報告不構成投資建議。", ""));
     input.turns[0].items.push({

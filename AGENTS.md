@@ -11,6 +11,7 @@
 - ACTIVE_METRICS 是目前介面目錄；舊 AI metric 保留 schema 相容但不顯示。版面偏好獨立存 localStorage，可匯出／匯入，不改資料。
 - CNN Fear & Greed 使用官方 graphdata 的 0–100 分與 rating，分類只翻譯來源文字；不混用加密貨幣指數或另推分級。CNN current.previous_close 為來源前收基準，日期未知，不以歷史前值替代。保留原始精度／更新時間，卡片四捨五入；不加入六項 Regime。
 - 每日市場摘要是獨立原文封存，唯一例外允許對話報告保存在 public/reports（不是 public/data 行情）。來源固定為指定「市場指標雷達」對話，保留原文日期、訊息 ID、內容雜湊及匯入時間，修訂追加版本；不可將其中數字當作已核實行情／Regime。同步與格式以 [每日摘要契約](docs/DAILY_SUMMARY.md) 為準，schema 及解析以 src/reports.mjs 為準。
+- 每日摘要標準格式 v2 僅正規化分段及呈現：相容多級／純文字續篇及中英文日報標頭，圖表缺 meta 時只在顯示層取原文章節標題，保留數字、null、單位與座標。不得為了統一格式改寫原文／hash 或推估資料；排程依既有 v2 importer 執行。
 - M 平方公開日曆獨立存 public/calendar，是第三方預定行程，非已核實公布值／Regime 輸入。schema、固定來源及時效在 src/calendar.mjs；完整更新契約見 [總經日曆](docs/MACRO_CALENDAR.md)。時間統一台北，全天保留純日期／排他結束日，不猜時間；成功刷新反映來源改期／移除，失敗保留舊快照並揭露失敗／過期，原始證據另存。
 - 歷史修訂追加 vintage，既有數據不得無聲覆寫。Regime 方法變更升級規則版本。
 - 私密金鑰不進前端，raw 證據不放 public/。外部來源先驗證格式、日期與單位再入庫。

@@ -50,9 +50,10 @@ function ReportChart({ chart }: { chart: any }) {
             <YAxis
               tick={{ fill: "#a9b8af", fontSize: 11 }}
               width={48}
-              domain={
-                chart.chartType === "bar" ? [0, "auto"] : ["auto", "auto"]
-              }
+              domain={[
+                chart.yAxisMin ?? (chart.chartType === "bar" ? 0 : "auto"),
+                chart.yAxisMax ?? "auto",
+              ]}
             />
             <Tooltip
               contentStyle={{
@@ -67,7 +68,7 @@ function ReportChart({ chart }: { chart: any }) {
                 <Bar
                   key={s.dataKey}
                   dataKey={s.dataKey}
-                  name={`${s.label}${s.valueSuffix ? `（${s.valueSuffix}）` : ""}`}
+                  name={`${s.label}${s.valuePrefix || s.valueSuffix ? `（${s.valuePrefix ?? ""}${s.valueSuffix ?? ""}）` : ""}`}
                   fill={colors[i % colors.length]}
                   radius={[4, 4, 0, 0]}
                 />
@@ -76,7 +77,7 @@ function ReportChart({ chart }: { chart: any }) {
                   key={s.dataKey}
                   type="linear"
                   dataKey={s.dataKey}
-                  name={`${s.label}${s.valueSuffix ? `（${s.valueSuffix}）` : ""}`}
+                  name={`${s.label}${s.valuePrefix || s.valueSuffix ? `（${s.valuePrefix ?? ""}${s.valueSuffix ?? ""}）` : ""}`}
                   stroke={colors[i % colors.length]}
                   strokeWidth={2}
                   dot={{ r: 3 }}
@@ -97,6 +98,7 @@ function ReportChart({ chart }: { chart: any }) {
                 {chart.series.map((s: any) => (
                   <th key={s.dataKey}>
                     {s.label}
+                    {s.valuePrefix}
                     {s.valueSuffix}
                   </th>
                 ))}
@@ -225,6 +227,7 @@ export default function DailySummary({
             <span>
               摘要日期 <strong>{report.date}</strong> · 匯入{" "}
               {time(report.importedAt)}（台灣） · {versions} 個封存版本
+              {` · 統一閱讀格式 · ${blocks.filter((b) => b.kind === "chart").length} 張圖表`}
             </span>
             <a href={RADAR_URL} target="_blank" rel="noreferrer">
               查看原對話 ↗

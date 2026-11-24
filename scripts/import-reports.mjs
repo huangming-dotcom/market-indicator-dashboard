@@ -3,7 +3,11 @@ import { readFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import path from "node:path";
 import { atomicJson, root, withLock } from "./lib.mjs";
-import { RADAR_THREAD, validateReports } from "../src/reports.mjs";
+import {
+  RADAR_THREAD,
+  REPORT_FORMAT_VERSION,
+  validateReports,
+} from "../src/reports.mjs";
 
 export const reportPath = path.join(root, "public/reports/daily-market.json");
 export function extractReports(thread, importedAt = new Date().toISOString()) {
@@ -16,10 +20,20 @@ export function extractReports(thread, importedAt = new Date().toISOString()) {
       : thread.turns;
   for (const turn of turns ?? []) {
     for (const item of turn.items ?? []) {
+      if (item.type === "userMessage") {
+        current = undefined;
+        continue;
+      }
       if (item.type !== "agentMessage" || !item.text) continue;
       const text = item.text;
-      if (/^# .*市場指標雷達/m.test(text.slice(0, 120))) {
-        const match = text.slice(0, 400).match(/(20\d{2})\/(\d{2})\/(\d{2})/);
+      const startsReport =
+        /^#\s+.*(?:市場指標雷達|Market Indicator Agent.*Morning Market Radar)/i.test(
+          text.trimStart().slice(0, 160),
+        );
+      if (startsReport) {
+        const match = text
+          .slice(0, 400)
+          .match(/(20\d{2})[/-](\d{2})[/-](\d{2})/);
         current = match
           ? {
               date: `${match[1]}-${match[2]}-${match[3]}`,
@@ -31,7 +45,9 @@ export function extractReports(thread, importedAt = new Date().toISOString()) {
       }
       if (
         current &&
-        (current.parts.length === 0 || /^## /m.test(text.slice(0, 120)))
+        (current.parts.length === 0 ||
+          /^#{1,6}\s+/m.test(text.trimStart().slice(0, 120)) ||
+          !/不構成投資建議/.test(current.parts.join("\n")))
       ) {
         if (text.includes("[truncated]") || text.includes("…[truncated]"))
           throw new Error("來源內容遭截斷，請增大讀取上限");
@@ -47,6 +63,7 @@ export function extractReports(thread, importedAt = new Date().toISOString()) {
     return {
       date: g.date,
       title: "Market Indicator Agent｜市場指標雷達",
+      formatVersion: REPORT_FORMAT_VERSION,
       originalText,
       messageIds: g.messageIds,
       importedAt,
