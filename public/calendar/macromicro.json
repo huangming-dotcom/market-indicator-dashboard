@@ -6,62 +6,17 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-25T05:17:19.995Z",
-  "lastSuccessAt": "2026-11-25T05:17:19.995Z",
+  "lastAttemptAt": "2026-11-25T19:31:07.694Z",
+  "lastSuccessAt": "2026-11-25T19:31:07.694Z",
   "status": "success",
   "message": null,
-  "rawHash": "f402f55a40a37fc28e6aabd8fd1a9337d830fe995d6b9d6e3f3e6700b4125f02",
+  "rawHash": "ce884b0155e1cab27ba06b063926c584a3d1c61bbad7ad49ddaca7ecc5c562c7",
   "coverage": {
-    "start": "2026-08-27",
-    "end": "2027-11-26"
+    "start": "2026-08-28",
+    "end": "2027-11-27"
   },
   "sourceEventCount": 2587,
   "events": [
-    {
-      "id": "3sfnl7dj1lma67nro9tnprfe30@google.com:2026-08-27T08:00:00.000Z",
-      "uid": "3sfnl7dj1lma67nro9tnprfe30@google.com",
-      "title": "台灣-景氣對策信號分數",
-      "description": "前值:  41.0\nMM圖表連結: https://www.macromicro.me/collections/10/tw-monitoring-indicators-relative/79/tw-monitoring-indicators?utm_medium=calendar",
-      "date": "2026-08-27",
-      "allDay": false,
-      "startAt": "2026-08-27T08:00:00.000Z",
-      "endAt": "2026-08-27T08:30:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-13T19:39:26.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/10/tw-monitoring-indicators-relative/79/tw-monitoring-indicators?utm_medium=calendar"
-    },
-    {
-      "id": "8vi9cv57o2jvjqgqie2c8hbjac@google.com:2026-08-27T01:30:00.000Z",
-      "uid": "8vi9cv57o2jvjqgqie2c8hbjac@google.com",
-      "title": "中國-工業企業利潤(累計年增率)",
-      "description": "前值:  18.70%\nMM圖表連結: https://www.macromicro.me/collections/25/cn-industry-relative/259/cn-industrial-enterprises-total-profits?utm_medium=calendar",
-      "date": "2026-08-27",
-      "allDay": false,
-      "startAt": "2026-08-27T01:30:00.000Z",
-      "endAt": "2026-08-27T02:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-13T19:40:03.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/25/cn-industry-relative/259/cn-industrial-enterprises-total-profits?utm_medium=calendar"
-    },
-    {
-      "id": "l53978t00ot219estqnte31ceo@google.com:2026-08-27T12:30:00.000Z",
-      "uid": "l53978t00ot219estqnte31ceo@google.com",
-      "title": "美國-初次申請失業救濟金人數",
-      "description": "市場預期: 208000.0\n前值:  207000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
-      "date": "2026-08-27",
-      "allDay": false,
-      "startAt": "2026-08-27T12:30:00.000Z",
-      "endAt": "2026-08-27T13:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-27T19:39:18.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
-    },
     {
       "id": "l5js7kdeeuv7ihssdqutpj88rg@google.com:2026-08-28T09:00:00.000Z",
       "uid": "l5js7kdeeuv7ihssdqutpj88rg@google.com",
