@@ -6,11 +6,11 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-25T19:31:07.694Z",
-  "lastSuccessAt": "2026-11-25T19:31:07.694Z",
+  "lastAttemptAt": "2026-11-26T04:44:45.813Z",
+  "lastSuccessAt": "2026-11-26T04:44:45.813Z",
   "status": "success",
   "message": null,
-  "rawHash": "ce884b0155e1cab27ba06b063926c584a3d1c61bbad7ad49ddaca7ecc5c562c7",
+  "rawHash": "df5e1a080d6cfa072883cc0ffa53cc08888cbc3593e54bc5b4e467b6d0d5284e",
   "coverage": {
     "start": "2026-08-28",
     "end": "2027-11-27"
@@ -1926,7 +1926,7 @@
       "id": "h7sa169is933td6lu3f6hu1h0k@google.com:2026-11-25T13:30:00.000Z",
       "uid": "h7sa169is933td6lu3f6hu1h0k@google.com",
       "title": "美國-個人消費支出物價指數[PCE]-(年增率)",
-      "description": "市場預期: 3.80%\n前值:  3.65%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
+      "description": "市場預期: 3.80%\n前值:  3.67%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar",
       "date": "2026-11-25",
       "allDay": false,
       "startAt": "2026-11-25T13:30:00.000Z",
@@ -1934,14 +1934,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-24T19:39:08.000Z",
+      "updatedAt": "2026-11-25T19:39:09.000Z",
       "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/25/pce-price?utm_medium=calendar"
     },
     {
       "id": "oqtiutife57mtr428kn32g8h6c@google.com:2026-11-25T13:30:00.000Z",
       "uid": "oqtiutife57mtr428kn32g8h6c@google.com",
       "title": "美國-實質國內生產毛額[GDP]-(SAAR, 季增年率)",
-      "description": "市場預期: 3.40%\n前值:  3.40%\nMM圖表連結: https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar",
+      "description": "市場預期: 3.40%\n前值:  2.20%\nMM圖表連結: https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar",
       "date": "2026-11-25",
       "allDay": false,
       "startAt": "2026-11-25T13:30:00.000Z",
@@ -1949,14 +1949,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-19T19:39:58.000Z",
+      "updatedAt": "2026-11-25T19:39:58.000Z",
       "chartUrl": "https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar"
     },
     {
       "id": "u0k468ssagu1irqu22er4jg398@google.com:2026-11-25T15:30:00.000Z",
       "uid": "u0k468ssagu1irqu22er4jg398@google.com",
       "title": "美國-原油庫存(週變動)",
-      "description": "前值:  3380.0k\nMM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
+      "description": "市場預期: 2000.0k\n前值:  3380.0k\nMM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
       "date": "2026-11-25",
       "allDay": false,
       "startAt": "2026-11-25T15:30:00.000Z",
@@ -1964,14 +1964,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-19T19:39:36.000Z",
+      "updatedAt": "2026-11-25T19:39:33.000Z",
       "chartUrl": "https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar"
     },
     {
       "id": "11i4ekul88qebcjpen7cr8p34o@google.com:2026-11-26T13:30:00.000Z",
       "uid": "11i4ekul88qebcjpen7cr8p34o@google.com",
       "title": "美國-初次申請失業救濟金人數",
-      "description": "前值:  203000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
+      "description": "前值:  189000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
       "date": "2026-11-26",
       "allDay": false,
       "startAt": "2026-11-26T13:30:00.000Z",
@@ -1979,7 +1979,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-19T19:39:20.000Z",
+      "updatedAt": "2026-11-25T19:39:19.000Z",
       "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
     },
     {
@@ -2286,7 +2286,7 @@
       "id": "au0mnq6glc4on6qo79pr9m11o8@google.com:2026-12-09T01:30:00.000Z",
       "uid": "au0mnq6glc4on6qo79pr9m11o8@google.com",
       "title": "中國-消費者物價指數[CPI] (年增率)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/24/cn-price-relative/225/cn-cpi?utm_medium=calendar",
+      "description": "前值:  0.70%\nMM圖表連結: https://www.macromicro.me/collections/24/cn-price-relative/225/cn-cpi?utm_medium=calendar",
       "date": "2026-12-09",
       "allDay": false,
       "startAt": "2026-12-09T01:30:00.000Z",
@@ -2294,14 +2294,14 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-05-22T19:42:18.000Z",
+      "updatedAt": "2026-11-25T19:39:48.000Z",
       "chartUrl": "https://www.macromicro.me/collections/24/cn-price-relative/225/cn-cpi?utm_medium=calendar"
     },
     {
       "id": "m1jhhget0b7pmq4mgkqhrnbigc@google.com:2026-12-09T08:00:00.000Z",
       "uid": "m1jhhget0b7pmq4mgkqhrnbigc@google.com",
       "title": "台灣-出口值(年增率)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar",
+      "description": "前值: 58.92%\nMM圖表連結: https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar",
       "date": "2026-12-09",
       "allDay": false,
       "startAt": "2026-12-09T08:00:00.000Z",
@@ -2309,7 +2309,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-12-04T19:42:11.000Z",
+      "updatedAt": "2026-11-25T19:39:24.000Z",
       "chartUrl": "https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar"
     },
     {
@@ -2331,7 +2331,7 @@
       "id": "r4k2mtvq9b6g293p3ih7dro1d0@google.com:2026-12-08T23:00:00.000Z",
       "uid": "r4k2mtvq9b6g293p3ih7dro1d0@google.com",
       "title": "南韓-實質國內生產毛額[GDP]-(年增率)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/3280/world-gdp/26070/east-asia-real-gdp?utm_medium=calendar",
+      "description": "前值:  3.75%\nMM圖表連結: https://www.macromicro.me/collections/3280/world-gdp/26070/east-asia-real-gdp?utm_medium=calendar",
       "date": "2026-12-09",
       "allDay": false,
       "startAt": "2026-12-08T23:00:00.000Z",
@@ -2339,7 +2339,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-09-01T19:40:57.000Z",
+      "updatedAt": "2026-11-25T19:39:55.000Z",
       "chartUrl": "https://www.macromicro.me/collections/3280/world-gdp/26070/east-asia-real-gdp?utm_medium=calendar"
     },
     {
