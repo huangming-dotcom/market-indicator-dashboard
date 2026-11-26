@@ -6,32 +6,17 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-26T04:44:45.813Z",
-  "lastSuccessAt": "2026-11-26T04:44:45.813Z",
+  "lastAttemptAt": "2026-11-26T19:14:25.525Z",
+  "lastSuccessAt": "2026-11-26T19:14:25.525Z",
   "status": "success",
   "message": null,
-  "rawHash": "df5e1a080d6cfa072883cc0ffa53cc08888cbc3593e54bc5b4e467b6d0d5284e",
+  "rawHash": "99f0d21babd6c529da0cc85725e040200a916a21308bb100076ef93b306c2bf8",
   "coverage": {
-    "start": "2026-08-28",
-    "end": "2027-11-27"
+    "start": "2026-08-29",
+    "end": "2027-11-28"
   },
   "sourceEventCount": 2587,
   "events": [
-    {
-      "id": "l5js7kdeeuv7ihssdqutpj88rg@google.com:2026-08-28T09:00:00.000Z",
-      "uid": "l5js7kdeeuv7ihssdqutpj88rg@google.com",
-      "title": "歐元區-經濟信心指數",
-      "description": "市場預期: 97.5\n前值:  97.1\nMM圖表連結: https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar",
-      "date": "2026-08-28",
-      "allDay": false,
-      "startAt": "2026-08-28T09:00:00.000Z",
-      "endAt": "2026-08-28T09:30:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-08-28T19:39:48.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar"
-    },
     {
       "id": "c29eod813la0m4a992iun4e8k0@google.com:2026-08-31T01:30:00.000Z",
       "uid": "c29eod813la0m4a992iun4e8k0@google.com",
