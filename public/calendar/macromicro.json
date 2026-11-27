@@ -6,14 +6,14 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-27T04:51:31.454Z",
-  "lastSuccessAt": "2026-11-27T04:51:31.454Z",
+  "lastAttemptAt": "2026-11-27T19:08:29.133Z",
+  "lastSuccessAt": "2026-11-27T19:08:29.133Z",
   "status": "success",
   "message": null,
-  "rawHash": "467196af233284f0a2674c39892b4bd56dda2d9b08d2ce1e8770a39e86da1e8b",
+  "rawHash": "b80abe974f602e89886bd49090b6647ecd5e0c46b84cc88e1de43819a0363f52",
   "coverage": {
-    "start": "2026-08-29",
-    "end": "2027-11-28"
+    "start": "2026-08-30",
+    "end": "2027-11-29"
   },
   "sourceEventCount": 2586,
   "events": [
