@@ -6,16 +6,16 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-26T19:14:25.525Z",
-  "lastSuccessAt": "2026-11-26T19:14:25.525Z",
+  "lastAttemptAt": "2026-11-27T04:51:31.454Z",
+  "lastSuccessAt": "2026-11-27T04:51:31.454Z",
   "status": "success",
   "message": null,
-  "rawHash": "99f0d21babd6c529da0cc85725e040200a916a21308bb100076ef93b306c2bf8",
+  "rawHash": "467196af233284f0a2674c39892b4bd56dda2d9b08d2ce1e8770a39e86da1e8b",
   "coverage": {
     "start": "2026-08-29",
     "end": "2027-11-28"
   },
-  "sourceEventCount": 2587,
+  "sourceEventCount": 2586,
   "events": [
     {
       "id": "c29eod813la0m4a992iun4e8k0@google.com:2026-08-31T01:30:00.000Z",
@@ -1938,21 +1938,6 @@
       "chartUrl": "https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar"
     },
     {
-      "id": "u0k468ssagu1irqu22er4jg398@google.com:2026-11-25T15:30:00.000Z",
-      "uid": "u0k468ssagu1irqu22er4jg398@google.com",
-      "title": "美國-原油庫存(週變動)",
-      "description": "市場預期: 2000.0k\n前值:  3380.0k\nMM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
-      "date": "2026-11-25",
-      "allDay": false,
-      "startAt": "2026-11-25T15:30:00.000Z",
-      "endAt": "2026-11-25T16:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-11-25T19:39:33.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar"
-    },
-    {
       "id": "11i4ekul88qebcjpen7cr8p34o@google.com:2026-11-26T13:30:00.000Z",
       "uid": "11i4ekul88qebcjpen7cr8p34o@google.com",
       "title": "美國-初次申請失業救濟金人數",
@@ -2016,7 +2001,7 @@
       "id": "e12brv9i2gshcluk5fh604r360@google.com:2026-11-27T10:00:00.000Z",
       "uid": "e12brv9i2gshcluk5fh604r360@google.com",
       "title": "歐元區-經濟信心指數",
-      "description": "前值:  96.9\nMM圖表連結: https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar",
+      "description": "市場預期: 97.2\n前值:  96.9\nMM圖表連結: https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar",
       "date": "2026-11-27",
       "allDay": false,
       "startAt": "2026-11-27T10:00:00.000Z",
@@ -2024,7 +2009,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-14T19:39:32.000Z",
+      "updatedAt": "2026-11-26T19:39:37.000Z",
       "chartUrl": "https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar"
     },
     {
@@ -2121,7 +2106,7 @@
       "id": "k78einug4soi7sh14tfqh8jrac@google.com:2026-12-02T15:30:00.000Z",
       "uid": "k78einug4soi7sh14tfqh8jrac@google.com",
       "title": "美國-原油庫存(週變動)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
+      "description": "前值:  1109.0k\nMM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
       "date": "2026-12-02",
       "allDay": false,
       "startAt": "2026-12-02T15:30:00.000Z",
@@ -2129,7 +2114,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-12-18T19:41:50.000Z",
+      "updatedAt": "2026-11-26T19:39:31.000Z",
       "chartUrl": "https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar"
     },
     {
@@ -2151,7 +2136,7 @@
       "id": "1pjcpsjari28b2a2u29c1co77s@google.com:2026-12-03T13:30:00.000Z",
       "uid": "1pjcpsjari28b2a2u29c1co77s@google.com",
       "title": "美國-初次申請失業救濟金人數",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
+      "description": "前值:  189000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
       "date": "2026-12-03",
       "allDay": false,
       "startAt": "2026-12-03T13:30:00.000Z",
@@ -2159,7 +2144,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-11-11T19:47:07.000Z",
+      "updatedAt": "2026-11-26T19:39:14.000Z",
       "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
     },
     {
@@ -2286,7 +2271,7 @@
       "id": "m1jhhget0b7pmq4mgkqhrnbigc@google.com:2026-12-09T08:00:00.000Z",
       "uid": "m1jhhget0b7pmq4mgkqhrnbigc@google.com",
       "title": "台灣-出口值(年增率)",
-      "description": "前值: 58.92%\nMM圖表連結: https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar",
+      "description": "前值:  58.92%\nMM圖表連結: https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar",
       "date": "2026-12-09",
       "allDay": false,
       "startAt": "2026-12-09T08:00:00.000Z",
@@ -2294,7 +2279,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-25T19:39:24.000Z",
+      "updatedAt": "2026-11-26T19:39:19.000Z",
       "chartUrl": "https://www.macromicro.me/collections/13/tw-trade-relative/118/tw-exports-yoy?utm_medium=calendar"
     },
     {
@@ -2346,7 +2331,7 @@
       "id": "02sfmeesg0dgl127l0emecqld8@google.com:2026-12-10T13:30:00.000Z",
       "uid": "02sfmeesg0dgl127l0emecqld8@google.com",
       "title": "美國-消費者物價指數[CPI] (NSA,年增率)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar",
+      "description": "前值: 3.74%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar",
       "date": "2026-12-10",
       "allDay": false,
       "startAt": "2026-12-10T13:30:00.000Z",
@@ -2354,7 +2339,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-12-08T19:42:16.000Z",
+      "updatedAt": "2026-11-26T19:39:27.000Z",
       "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar"
     },
     {
