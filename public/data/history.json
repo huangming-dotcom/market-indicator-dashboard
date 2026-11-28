@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T19:08:28.695Z",
+  "generatedAt": "2026-11-28T04:36:45.078Z",
   "observations": [
     {
       "metricId": "brent",
@@ -84667,6 +84667,33 @@
       }
     },
     {
+      "metricId": "brentFutures",
+      "date": "2026-11-27",
+      "value": 95.48,
+      "status": "verified",
+      "source": {
+        "name": "Google Finance · BZW00:NYMEX",
+        "url": "https://www.google.com/finance/quote/BZW00:NYMEX"
+      },
+      "retrievedAt": "2026-11-28T04:36:25.296Z",
+      "publishedAt": null,
+      "unit": "USD／桶",
+      "market": "US-FUTURES",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:25.296Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "Google Finance 主報價與嵌入資料核對；最新／延遲期貨報價快照，非現貨、非官方結算；1D 依來源比較基準，不代表前一筆保存快照",
+      "rawHash": "1644a273b8fb655bf229cb97bbf4688b66f6db72421aa918e3252a751eecb153",
+      "quote": {
+        "symbol": "BZW00:NYMEX",
+        "quotedAt": "2026-11-27T22:50:27.000Z",
+        "referencePrice": 94.61,
+        "change": 0.87,
+        "changePct": 0.92
+      }
+    },
+    {
       "metricId": "dealer",
       "date": "2026-11-27",
       "value": -1.95078354,
@@ -84748,6 +84775,31 @@
       }
     },
     {
+      "metricId": "fearGreed",
+      "date": "2026-11-27",
+      "value": 24.8857142857143,
+      "status": "verified",
+      "source": {
+        "name": "CNN Fear & Greed Index",
+        "url": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.840Z",
+      "publishedAt": null,
+      "unit": "分",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:24.840Z",
+      "method": "official-api",
+      "sessionStatus": "snapshot",
+      "evidence": "CNN 官方 graphdata。歷史午夜 UTC x 為來源日期標記；非午夜時間按紐約觀測日。情緒分類使用來源 rating，前收基準僅採 current.previous_close，不指定未提供的基準日期。",
+      "rawHash": "1a3d5ddd62b476889abd7c59d5435babb285f50e701187d7ae07cbbead3bb1cf",
+      "sentiment": {
+        "rating": "extreme fear",
+        "updatedAt": "2026-11-27T23:59:59.000Z",
+        "previousClose": 15.5967450271248
+      }
+    },
+    {
       "metricId": "foreign",
       "date": "2026-11-27",
       "value": -296.2806664,
@@ -84785,6 +84837,26 @@
       "rawHash": "8c0a4eedfd9ce21c7aa3fa3de5bc4deb7ba1b4fd77b4ed939ddce66644725cbe"
     },
     {
+      "metricId": "futures",
+      "date": "2026-11-27",
+      "value": -107503,
+      "status": "verified",
+      "source": {
+        "name": "臺灣期貨交易所",
+        "url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.604Z",
+      "publishedAt": null,
+      "unit": "口",
+      "market": "TW",
+      "timezone": "Asia/Taipei",
+      "vintage": "2026-11-28T04:36:24.604Z",
+      "method": "official-api",
+      "sessionStatus": "close",
+      "evidence": "臺股期貨（TX）外資及陸資；未平倉多方減空方，不含交易量多空淨額",
+      "rawHash": "c70849a5bd130108c788ecdf5cf21226c6e86f14df177db1f8286ec63206c2d7"
+    },
+    {
       "metricId": "kospi",
       "date": "2026-11-27",
       "value": null,
@@ -84804,6 +84876,26 @@
       "sessionStatus": "close",
       "evidence": "未調整日線收盤；已按交易日曆排除尚未收盤日",
       "rawHash": "86dc9b395120a3f54c0276b01d2351cf59a9eda8baf2ab95e81b43571266d7b7"
+    },
+    {
+      "metricId": "kospi",
+      "date": "2026-11-27",
+      "value": 4915.68,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · ^KS11",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1782777600&period2=1795996800&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.474Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "KR",
+      "timezone": "Asia/Seoul",
+      "vintage": "2026-11-28T04:36:24.474Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "未調整日線收盤；已按交易日曆排除尚未收盤日",
+      "rawHash": "36d20455455e63235ec08011e3334c92d7b1b8e91a8b6af09444763bbc03881f"
     },
     {
       "metricId": "marginOtc",
@@ -84884,6 +84976,26 @@
       "sessionStatus": "close",
       "evidence": "未調整日線收盤；已按交易日曆排除尚未收盤日",
       "rawHash": "84f9a91d618543272c8bceba00371f1a5cf4f6eafccb1bb02c96903326f611f7"
+    },
+    {
+      "metricId": "nikkei",
+      "date": "2026-11-27",
+      "value": 58711.11,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · ^N225",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EN225?period1=1782777600&period2=1795996800&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.460Z",
+      "publishedAt": null,
+      "unit": "點",
+      "market": "JP",
+      "timezone": "Asia/Tokyo",
+      "vintage": "2026-11-28T04:36:24.460Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "未調整日線收盤；已按交易日曆排除尚未收盤日",
+      "rawHash": "d3e401b31bc9e595ec86597beb988f106519e58458614df0f954d024a085ce4e"
     },
     {
       "metricId": "sox",
@@ -84999,6 +85111,80 @@
       "rawHash": "6fe4676f567f94625446768efb176d425a749a67b4294147f692a481323827bb"
     },
     {
+      "metricId": "us10y",
+      "date": "2026-11-27",
+      "value": 4.94,
+      "status": "verified",
+      "source": {
+        "name": "美國財政部",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026"
+      },
+      "retrievedAt": "2026-11-28T04:36:15.523Z",
+      "publishedAt": null,
+      "unit": "%",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:15.523Z",
+      "method": "official-api",
+      "rawHash": "9e001161ac6b994da31d322fe1d2e98a47520899cd8051e961417c97e256427d"
+    },
+    {
+      "metricId": "us2y",
+      "date": "2026-11-27",
+      "value": 4.69,
+      "status": "verified",
+      "source": {
+        "name": "美國財政部",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026"
+      },
+      "retrievedAt": "2026-11-28T04:36:15.523Z",
+      "publishedAt": null,
+      "unit": "%",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:15.523Z",
+      "method": "official-api",
+      "rawHash": "9e001161ac6b994da31d322fe1d2e98a47520899cd8051e961417c97e256427d"
+    },
+    {
+      "metricId": "us30y",
+      "date": "2026-11-27",
+      "value": 5.33,
+      "status": "verified",
+      "source": {
+        "name": "美國財政部",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026"
+      },
+      "retrievedAt": "2026-11-28T04:36:15.523Z",
+      "publishedAt": null,
+      "unit": "%",
+      "market": "US",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:15.523Z",
+      "method": "official-api",
+      "rawHash": "9e001161ac6b994da31d322fe1d2e98a47520899cd8051e961417c97e256427d"
+    },
+    {
+      "metricId": "usdtwd",
+      "date": "2026-11-27",
+      "value": 32.9179,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · TWD=X",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1782777600&period2=1795996800&interval=1d&events=history&includePrePost=false"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.466Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-28T04:36:24.466Z",
+      "method": "market-data-api",
+      "sessionStatus": "close",
+      "evidence": "Yahoo USD/TWD 來源時區已結束日線；1 USD 對應 TWD，非台北外匯收盤；不使用盤中 regularMarketPrice",
+      "rawHash": "23e1fd2e450e17cd6cd069cf9901bb46e1c1b2bf85bf6b02dddefe100e73f741"
+    },
+    {
       "metricId": "usdtwdQuote",
       "date": "2026-11-27",
       "value": 32.96,
@@ -85053,6 +85239,33 @@
       }
     },
     {
+      "metricId": "usdtwdQuote",
+      "date": "2026-11-27",
+      "value": 32.979,
+      "status": "verified",
+      "source": {
+        "name": "Yahoo Finance · USD/TWD 主報價",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/USDTWD%3DX?range=5d&interval=1d"
+      },
+      "retrievedAt": "2026-11-28T04:36:24.713Z",
+      "publishedAt": null,
+      "unit": "TWD",
+      "market": "FX",
+      "timezone": "Europe/London",
+      "vintage": "2026-11-28T04:36:24.713Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "採 regularMarketPrice／regularMarketTime／regularMarketChangePercent；漲跌採同源 regularMarketChange 或與主報價相符的 fulldayChange；比較基準由主報價減同源漲跌計算。不使用日線 close 或依查詢範圍改變的 chartPreviousClose。非台北外匯收盤。",
+      "rawHash": "3133fa7336801a76d3f78f1f6617563a9a8d37274ab42bcfbd4acc615b8164e4",
+      "quote": {
+        "symbol": "USDTWD=X",
+        "quotedAt": "2026-11-27T22:09:01.000Z",
+        "referencePrice": 32.918,
+        "change": 0.061,
+        "changePct": 0.1853
+      }
+    },
+    {
       "metricId": "volume",
       "date": "2026-11-27",
       "value": 86.74737476,
@@ -85069,6 +85282,33 @@
       "vintage": "2026-11-27T19:07:53.490Z",
       "method": "official-api",
       "rawHash": "6fe4676f567f94625446768efb176d425a749a67b4294147f692a481323827bb"
+    },
+    {
+      "metricId": "wtiFutures",
+      "date": "2026-11-27",
+      "value": 83.33,
+      "status": "verified",
+      "source": {
+        "name": "Google Finance · CLW00:NYMEX",
+        "url": "https://www.google.com/finance/quote/CLW00:NYMEX"
+      },
+      "retrievedAt": "2026-11-28T04:36:25.106Z",
+      "publishedAt": null,
+      "unit": "USD／桶",
+      "market": "US-FUTURES",
+      "timezone": "America/New_York",
+      "vintage": "2026-11-28T04:36:25.106Z",
+      "method": "market-data-api",
+      "sessionStatus": "snapshot",
+      "evidence": "Google Finance 主報價與嵌入資料核對；最新／延遲期貨報價快照，非現貨、非官方結算；1D 依來源比較基準，不代表前一筆保存快照",
+      "rawHash": "61133a88194434c7accc59c8350ca95e866b5435de8cd29d16afc6718b376178",
+      "quote": {
+        "symbol": "CLW00:NYMEX",
+        "quotedAt": "2026-11-27T22:50:31.000Z",
+        "referencePrice": 83.68,
+        "change": -0.35,
+        "changePct": -0.42
+      }
     }
   ],
   "events": [],
@@ -85084,7 +85324,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
       },
       "publishedAt": "2026-11-18T19:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85114,7 +85354,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
       },
       "publishedAt": "2026-11-12T17:45:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85128,7 +85368,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
       },
       "publishedAt": "2026-10-28T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85142,7 +85382,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
       },
       "publishedAt": "2026-10-07T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85156,7 +85396,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85170,7 +85410,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
       },
       "publishedAt": "2026-09-16T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85184,7 +85424,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
       },
       "publishedAt": "2026-08-19T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85198,7 +85438,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       "publishedAt": "2026-07-29T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85212,7 +85452,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       },
       "publishedAt": "2026-07-08T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -85226,7 +85466,7 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
       },
       "publishedAt": "2026-06-17T18:00:00.000Z",
-      "retrievedAt": "2026-11-27T19:08:27.520Z",
+      "retrievedAt": "2026-11-28T04:36:44.376Z",
       "confidence": "official"
     },
     {
@@ -88876,6 +89116,156 @@
           "status": "failed",
           "count": 0,
           "message": "Google 期貨報價缺少或相互矛盾"
+        },
+        {
+          "name": "Google 期貨報價 brentFutures",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "TPEX 外資買賣超",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "TPEX 股票市場廣度",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TPEX 儀表板融資與指數",
+          "status": "success",
+          "count": 82
+        },
+        {
+          "name": "CME FedWatch 精確快照",
+          "status": "failed",
+          "count": 0,
+          "message": "精確機率尚未串接：需官方完整快照。政策報導與 FOMC 公告已另列，不補估百分比。"
+        },
+        {
+          "name": "Fed 官方 FOMC 公告",
+          "status": "success",
+          "count": 10
+        },
+        {
+          "name": "每日雷達核對補充",
+          "status": "success",
+          "count": 0
+        },
+        {
+          "name": "Reuters 政策補充 2026-11-18",
+          "status": "failed",
+          "count": 0,
+          "message": "政策補充報導原文核對失敗"
+        }
+      ]
+    },
+    {
+      "id": "fbbcb0f3-4b46-40b9-a2fd-6baafd08073c",
+      "startedAt": "2026-11-28T04:36:14.974Z",
+      "finishedAt": "2026-11-28T04:36:45.078Z",
+      "status": "partial",
+      "providers": [
+        {
+          "name": "Treasury",
+          "status": "success",
+          "count": 309
+        },
+        {
+          "name": "FRED DEXTAUS",
+          "status": "success",
+          "count": 99
+        },
+        {
+          "name": "FRED DCOILWTICO",
+          "status": "success",
+          "count": 103
+        },
+        {
+          "name": "FRED DCOILBRENTEU",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED SP500",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "FRED NASDAQCOM",
+          "status": "success",
+          "count": 104
+        },
+        {
+          "name": "TWSE 月成交",
+          "status": "success",
+          "count": 306
+        },
+        {
+          "name": "TWSE flow",
+          "status": "success",
+          "count": 18
+        },
+        {
+          "name": "TWSE breadth",
+          "status": "success",
+          "count": 12
+        },
+        {
+          "name": "TWSE margin",
+          "status": "success",
+          "count": 6
+        },
+        {
+          "name": "Yahoo 收盤 nikkei",
+          "status": "success",
+          "count": 100
+        },
+        {
+          "name": "Yahoo 收盤 usdtwd",
+          "status": "success",
+          "count": 108
+        },
+        {
+          "name": "Yahoo 收盤 sp500",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 sox",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "Yahoo 收盤 kospi",
+          "status": "success",
+          "count": 102
+        },
+        {
+          "name": "Yahoo 收盤 nasdaq",
+          "status": "success",
+          "count": 105
+        },
+        {
+          "name": "TAIFEX TX 外資未平倉",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "Yahoo USD/TWD 主報價",
+          "status": "success",
+          "count": 1
+        },
+        {
+          "name": "CNN Fear & Greed Index",
+          "status": "success",
+          "count": 106
+        },
+        {
+          "name": "Google 期貨報價 wtiFutures",
+          "status": "success",
+          "count": 1
         },
         {
           "name": "Google 期貨報價 brentFutures",

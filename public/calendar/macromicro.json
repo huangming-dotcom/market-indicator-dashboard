@@ -6,11 +6,11 @@
     "url": "https://calendar.google.com/calendar/embed?src=c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com&ctz=Asia%2FTaipei",
     "feedUrl": "https://calendar.google.com/calendar/ical/c_597b99efc6b2429fff1bf02863b61b7b08a176d17fb6ad0b1d6ba1f3fa3ac9c9%40group.calendar.google.com/public/basic.ics"
   },
-  "lastAttemptAt": "2026-11-27T19:08:29.133Z",
-  "lastSuccessAt": "2026-11-27T19:08:29.133Z",
+  "lastAttemptAt": "2026-11-28T04:36:45.607Z",
+  "lastSuccessAt": "2026-11-28T04:36:45.607Z",
   "status": "success",
   "message": null,
-  "rawHash": "b80abe974f602e89886bd49090b6647ecd5e0c46b84cc88e1de43819a0363f52",
+  "rawHash": "8f3eb91492cb2f5996cc8c2bac6e8fc59260157d4d3f358104fc60d1af0a7427",
   "coverage": {
     "start": "2026-08-30",
     "end": "2027-11-29"
@@ -1908,6 +1908,21 @@
       "chartUrl": "https://www.macromicro.me/collections/58/jp-manufacturing-service/797/jp-pmi?utm_medium=calendar"
     },
     {
+      "id": "11i4ekul88qebcjpen7cr8p34o@google.com:2026-11-25T13:30:00.000Z",
+      "uid": "11i4ekul88qebcjpen7cr8p34o@google.com",
+      "title": "美國-初次申請失業救濟金人數",
+      "description": "前值: 189000.0000\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
+      "date": "2026-11-25",
+      "allDay": false,
+      "startAt": "2026-11-25T13:30:00.000Z",
+      "endAt": "2026-11-25T14:00:00.000Z",
+      "endDate": null,
+      "sourceTimezone": "Etc/UTC",
+      "status": "CONFIRMED",
+      "updatedAt": "2026-11-27T19:39:16.000Z",
+      "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
+    },
+    {
       "id": "h7sa169is933td6lu3f6hu1h0k@google.com:2026-11-25T13:30:00.000Z",
       "uid": "h7sa169is933td6lu3f6hu1h0k@google.com",
       "title": "美國-個人消費支出物價指數[PCE]-(年增率)",
@@ -1938,21 +1953,6 @@
       "chartUrl": "https://www.macromicro.me/collections/2/us-gdp-relative/12/real-gdp-growth?utm_medium=calendar"
     },
     {
-      "id": "11i4ekul88qebcjpen7cr8p34o@google.com:2026-11-26T13:30:00.000Z",
-      "uid": "11i4ekul88qebcjpen7cr8p34o@google.com",
-      "title": "美國-初次申請失業救濟金人數",
-      "description": "前值:  189000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
-      "date": "2026-11-26",
-      "allDay": false,
-      "startAt": "2026-11-26T13:30:00.000Z",
-      "endAt": "2026-11-26T14:00:00.000Z",
-      "endDate": null,
-      "sourceTimezone": "Etc/UTC",
-      "status": "CONFIRMED",
-      "updatedAt": "2026-11-25T19:39:19.000Z",
-      "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
-    },
-    {
       "id": "mqv2rpv0vdioeri2luvv399s9o@google.com:2026-11-25T19:00:00.000Z",
       "uid": "mqv2rpv0vdioeri2luvv399s9o@google.com",
       "title": "美國聯準會褐皮書",
@@ -1971,7 +1971,7 @@
       "id": "1jqg3gauvgm7hmp735j8m8fgn4@google.com:2026-11-27T08:00:00.000Z",
       "uid": "1jqg3gauvgm7hmp735j8m8fgn4@google.com",
       "title": "台灣-實質國內生產毛額[GDP]-(年增率)",
-      "description": "市場預期: 14.36%\n前值:  14.36%\nMM圖表連結: https://www.macromicro.me/collections/11/tw-gdp-relative/98/tw-real-gdp?utm_medium=calendar",
+      "description": "市場預期: 14.36%\n前值:  13.31%\nMM圖表連結: https://www.macromicro.me/collections/11/tw-gdp-relative/98/tw-real-gdp?utm_medium=calendar",
       "date": "2026-11-27",
       "allDay": false,
       "startAt": "2026-11-27T08:00:00.000Z",
@@ -1979,7 +1979,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-20T19:40:00.000Z",
+      "updatedAt": "2026-11-27T19:40:04.000Z",
       "chartUrl": "https://www.macromicro.me/collections/11/tw-gdp-relative/98/tw-real-gdp?utm_medium=calendar"
     },
     {
@@ -2001,7 +2001,7 @@
       "id": "e12brv9i2gshcluk5fh604r360@google.com:2026-11-27T10:00:00.000Z",
       "uid": "e12brv9i2gshcluk5fh604r360@google.com",
       "title": "歐元區-經濟信心指數",
-      "description": "市場預期: 97.2\n前值:  96.9\nMM圖表連結: https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar",
+      "description": "市場預期: 97.2\n前值:  96.5\nMM圖表連結: https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar",
       "date": "2026-11-27",
       "allDay": false,
       "startAt": "2026-11-27T10:00:00.000Z",
@@ -2009,7 +2009,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-26T19:39:37.000Z",
+      "updatedAt": "2026-11-27T19:39:48.000Z",
       "chartUrl": "https://www.macromicro.me/collections/36/eu-economic-sentiment-relative/420/eu-ea19-euro-area-economic-sentiment?utm_medium=calendar"
     },
     {
@@ -2046,7 +2046,7 @@
       "id": "punvftbi0iq46iujoalnci07ao@google.com:2026-11-30T01:30:00.000Z",
       "uid": "punvftbi0iq46iujoalnci07ao@google.com",
       "title": "中國-官方製造業採購經理人指數[PMI]",
-      "description": "前值:  49.3\nMM圖表連結: https://www.macromicro.me/collections/25/cn-industry-relative/232/cn-pmi-caixin?utm_medium=calendar",
+      "description": "市場預期: 49.5\n前值:  49.3\nMM圖表連結: https://www.macromicro.me/collections/25/cn-industry-relative/232/cn-pmi-caixin?utm_medium=calendar",
       "date": "2026-11-30",
       "allDay": false,
       "startAt": "2026-11-30T01:30:00.000Z",
@@ -2054,7 +2054,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-16T19:39:34.000Z",
+      "updatedAt": "2026-11-27T19:39:51.000Z",
       "chartUrl": "https://www.macromicro.me/collections/25/cn-industry-relative/232/cn-pmi-caixin?utm_medium=calendar"
     },
     {
@@ -2076,7 +2076,7 @@
       "id": "5peg28vktc02shj2rfq7r5vr2s@google.com:2026-12-01T15:00:00.000Z",
       "uid": "5peg28vktc02shj2rfq7r5vr2s@google.com",
       "title": "美國-ISM製造業指數[PMI]",
-      "description": "前值:  55.5\nMM圖表連結: https://www.macromicro.me/collections/8/us-industry-relative/54/ism?utm_medium=calendar",
+      "description": "市場預期: 55.2\n前值:  55.5\nMM圖表連結: https://www.macromicro.me/collections/8/us-industry-relative/54/ism?utm_medium=calendar",
       "date": "2026-12-01",
       "allDay": false,
       "startAt": "2026-12-01T15:00:00.000Z",
@@ -2084,7 +2084,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-18T19:39:03.000Z",
+      "updatedAt": "2026-11-27T19:39:06.000Z",
       "chartUrl": "https://www.macromicro.me/collections/8/us-industry-relative/54/ism?utm_medium=calendar"
     },
     {
@@ -2151,7 +2151,7 @@
       "id": "cl3skkeq25d97sfs23gdqo3p9o@google.com:2026-12-03T15:00:00.000Z",
       "uid": "cl3skkeq25d97sfs23gdqo3p9o@google.com",
       "title": "美國-ISM服務業指數[Services PMI]",
-      "description": "前值:  54.5\nMM圖表連結: https://www.macromicro.me/collections/8/us-industry-relative/55/ism-nonmanu?utm_medium=calendar",
+      "description": "市場預期: 54.5\n前值:  54.5\nMM圖表連結: https://www.macromicro.me/collections/8/us-industry-relative/55/ism-nonmanu?utm_medium=calendar",
       "date": "2026-12-03",
       "allDay": false,
       "startAt": "2026-12-03T15:00:00.000Z",
@@ -2159,7 +2159,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-20T19:39:03.000Z",
+      "updatedAt": "2026-11-27T19:39:03.000Z",
       "chartUrl": "https://www.macromicro.me/collections/8/us-industry-relative/55/ism-nonmanu?utm_medium=calendar"
     },
     {
@@ -2286,7 +2286,7 @@
       "id": "p4it0utiv8up4uv7ikg8rtl66g@google.com:2026-12-09T15:30:00.000Z",
       "uid": "p4it0utiv8up4uv7ikg8rtl66g@google.com",
       "title": "美國-原油庫存(週變動)",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
+      "description": "前值:  1109.0k\nMM圖表連結: https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar",
       "date": "2026-12-09",
       "allDay": false,
       "startAt": "2026-12-09T15:30:00.000Z",
@@ -2294,7 +2294,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-12-18T19:41:52.000Z",
+      "updatedAt": "2026-11-27T19:39:41.000Z",
       "chartUrl": "https://www.macromicro.me/collections/19/mm-oil-price/178/us-oil-inventory?utm_medium=calendar"
     },
     {
@@ -2331,7 +2331,7 @@
       "id": "02sfmeesg0dgl127l0emecqld8@google.com:2026-12-10T13:30:00.000Z",
       "uid": "02sfmeesg0dgl127l0emecqld8@google.com",
       "title": "美國-消費者物價指數[CPI] (NSA,年增率)",
-      "description": "前值: 3.74%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar",
+      "description": "前值:  3.74%\nMM圖表連結: https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar",
       "date": "2026-12-10",
       "allDay": false,
       "startAt": "2026-12-10T13:30:00.000Z",
@@ -2339,7 +2339,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2026-11-26T19:39:27.000Z",
+      "updatedAt": "2026-11-27T19:39:35.000Z",
       "chartUrl": "https://www.macromicro.me/collections/5/us-price-relative/10/cpi?utm_medium=calendar"
     },
     {
@@ -2361,7 +2361,7 @@
       "id": "k0pv5c4vgo1tnjpifloffp1ro8@google.com:2026-12-10T13:30:00.000Z",
       "uid": "k0pv5c4vgo1tnjpifloffp1ro8@google.com",
       "title": "美國-初次申請失業救濟金人數",
-      "description": "MM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
+      "description": "前值:  189000.0\nMM圖表連結: https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar",
       "date": "2026-12-10",
       "allDay": false,
       "startAt": "2026-12-10T13:30:00.000Z",
@@ -2369,7 +2369,7 @@
       "endDate": null,
       "sourceTimezone": "Etc/UTC",
       "status": "CONFIRMED",
-      "updatedAt": "2025-11-11T19:47:10.000Z",
+      "updatedAt": "2026-11-27T19:39:23.000Z",
       "chartUrl": "https://www.macromicro.me/collections/4/us-employ-relative/19/initial-jobless-claims?utm_medium=calendar"
     },
     {
